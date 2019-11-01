@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>01 Homework</title>
+</head>
+
+<body>
+    <header>
+        <h1>01 - Házi feladat</h1>
+    </header>
+    <article>
+        <h2>Elméleti kérdések</h2>
+    </article>
+    <section>
+        <p>
+            <strong>-Mi az az URL?</strong><br>
+            Az URL egy webcím. Ez alapján tudjuk beazonosítani milyen oldalt szeretnénk megnyitni,
+            a böngészőnk címsorában.<br>
+            Ez is egy mozaikszó: <strong>U</strong>niform <strong>R</strong>esource <strong>L</strong>ocator.
+            Vagyis egységes erőforrás hely.<br>
+            Több részből épül fel: <em>protokoll,tartománynév,portszám,elérési út.</em><br>
+
+            <strong>-Mi az az IP cím?</strong><br>
+            Az <strong>I</strong>nternet <strong>P</strong>rotocol egy egyedi hálózati azonosító.
+            Minden végpontnak a hálózaton saját IP címe van.<br>
+            Van IPv4(32bites) és IPv6(128bites) cím. Ez alapján találjuk meg a weboldalakat is például.<br>
+
+            <strong>-Mi az a domain név?</strong><br>
+            A domain név a szerver beazonosítására létrehozott névtartomány. Az IP cím szöveges megfelelője.<br>
+            Több szintű. Top-level domain, second-level domain, third-level domain. Őt azonosítja be a DNS szerver.<br>
+
+            <strong>-Mi az az aldomain?</strong><br>
+            Ponttal elválasztott, összetettebb domain név első része. Példaként:<br>
+            Ha van egy www.blog.homework.hu címünk akkor a blog. lesz az első fele vagyis az <strong>aldomain</strong>
+            címünk.<br>
+
+            <strong>-Mi az a Domain Name Service?</strong><br>
+            A <strong>D</strong>omain <strong>N</strong>ame <strong>S</strong>ervice azonosítja a webcímünket és navigál
+            el
+            a kívánt szerverhez.<br>
+            Mindez hierarchikus felépítésű mint akármilyen hálózati rendszer vagyis szerverről szerverre lépkedve jutunk
+            el a kívánt helyre.<br>
+
+            <strong>-Mi az az IANA és mi a feladata?</strong><br>
+            <strong>I</strong>nternet <strong>A</strong>ssigned <strong>N</strong>umbers <strong>A</strong>uthory<br>
+            Az ő feladatuk az internet zökkenőmentes működése. Ők koordinálnak néhány kulcsfontosságú elemet. Ilyenek
+            például:<br>
+            Domain Name Services<br>
+            IP címekért és az autonóm rendszerszámokért a zökkenőmentes internetes forgalomirányításhoz.<br>
+            Az internetes protokollok számozási rendszerért a szabványügi testületekkel együttműködve.<br>
+
+            <strong>-Mi az az Internet Szolgáltatók Tanácsa és mi a feladata?</strong><br>
+            Az internet szolgáltatók tanácsa egy hálózati koordinációs központ.<br>
+            Feladatuk az alábbiak:<br>
+            <strong>1.</strong> Az egyesület célja a magyarországi Internet szolgáltatók szakmai koordinációs és
+            érdekvédelmi képviselete,<br>
+            különös tekintettel a .hu Top-level domain adminisztráció szabályozására.<br>
+            <strong>2.</strong> A tagok által az egyesület felé közvetített szakmai jellegű, valamint
+            jogi-adminisztratív problémák orvoslása,<br>
+            különös tekintettel az irányadó nemzetközi standardokra.<br>
+            <strong>3.</strong> Domain név regisztrációs feladatokat lát el.<br>
+
+            <strong>-Mi az a Budapest Internet Exchange?</strong><br>
+            A <strong>BIX</strong> idális forgalom kicserélő központ. Hozzá csatlakozik be az összes magyarországi
+            internet szolgáltató.<br>
+            Ezen keresztül csatlakozunk rá az internet gerinchálózatára Magyarországon.
+        </p>
+    </section>
+        <hr>
+    <section>
+        <p>
+            <strong>-Mi az a HTML?</strong><br>
+            <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage vagyis
+            hiperszöveges jelölőnyelv.<br>
+            Leíró nyelv melynek a W3C internetes szabványoknak kell megfelelnie. Mindenki számára elérhető tartalmat
+            lehet vele létrehozni.<br>
+
+            <strong>-Írd le a HTML dokumentum általános szerkezetét!</strong><br>
+            Áll egy dokumentum típus definícióból a legelején, ahol megadjuk milyen HTML-ben írjuk.<br>
+            Áll egy html nevű html elemből vagyis ezen belül teljes egészében html dokumentumról van szó.<br>
+            Áll egy head-ből vagyis fejlécből, mely adatról szólnak<br>
+            Áll egy body nevű html szövegtörzsből.<br>
+
+            <strong>-Mi az a Document Type Definition?</strong><br>
+            A <strong>DTD</strong>-vel definiáljuk a struktúrát és az elemeket, vagyis adjuk meg miben írjuk a kódot.<br>
+            
+            <strong>-Mi az a head?</strong><br>
+            A head a fejléc, ami adatot tartalmaz az oldalról. Magán az oldalon információt nem látunk róla csak a böngésző kis fülecskéjén.
+            Nálam ez a 01 Homework.<br>
+
+            <strong>-Mi az a body?</strong><br>
+            A body a szövegtörzs. Ez tartalmazza az oldalon megjelenített tartalmat.<br>
+
+            <strong>-Mik azok a metaadatok?</strong><br>
+            A meta adatok, tagok azon információkat leírok adatok az oldal adatairól. Ilyen lehet például az oldal szerzője, rövid leírása.<br>
+
+            <strong>-Mi az a title és hova írhatjuk? Mi az a br?</strong><br>
+            A head elembe vagyis a fejlécbe írhatjuk, a title lesz az oldal rövid címe ami megjelenik nekünk a böngésző kis fülén.<br>
+            A br elem a sortörés elem amit mindig használnunk kell ha sortörést szeretnénk, mert egy sima enter nem elegendő a kódszerkesztőben.<br>
+            A br elemnek nincs záróeleme!<br>
+        </p>
+        <hr>
+    </section>
+    <section>
+        <p>
+            <strong>-Mik azok a HTML elemek?</strong><br>
+            A HTML elemek a dokumentum szerkezeti elemei, ezekből épül fel hierarcikus alapon a tartalom. Például: html,head,body,title,section,stb.<br>
+
+            <strong>-Mik azok a HTML tagek?</strong><br>
+            A HTML tagek a html-t leíró formázó utasításai. Minden (majdnem minden) tagnek van záró utasítása.<br>
+
+            <strong>-Mit jelent az, hogy egy tag páros vagy páratlan?</strong><br>
+            Például egy szabálynál megmondhatjuk, hogy minden páros paragrafus piros színű legyen, vagy egy táblázatba,felsorolásba minden páros sor zöld minden páratlan piros.<br>
+
+            <strong>-Mit jelent az, hogy a HTML dokumentum fa szerkezetű?</strong><br>
+            Azt, hogy hierarcikus felépítésű. Először definiáljuk, utána megadjuk a html elemet, utána címsort, azzal egyenrangú a szövegtörzs, stb. így építkezve.<br>
+            Vagyis az elemek egymásba ágyazva vagy egymás mellett jelennek meg.<br>
+
+            <strong>-Mi a különbség a DOM és a forráskód között?</strong><br>
+            A <strong>D</strong>ocument <strong>O</strong>bjectum <strong>M</strong>odel egy szabványos interface, amelyen keresztül
+            kapcsolatot lehet létesíteni JavaScriptel.<br>
+            A forráskód pedig a leíró nyelv (jelen esetben ez a HTML) definícióinak és utasításain sorozatát tartalmazza, vagyis a fordítóprogram
+            dokumentumként jeleníti meg nekünk vagy más esetben szoftverként.<br>
+            A DOM-ot a böngésző használja, fordítja le a forráskódot pedig a fejlesztő írja.<br>
+
+            <strong>-Mit jelent, hogy egy elem egy másiknak a gyermeke?</strong><br>
+            A gyökér html eleme a head és a body, ezeknek lehet például a gyereke a h1, vagyis a tagek egymásba ágyazását jelenti.<br>
+
+            <strong>-Mi az a gyökérelem? Mi az a HTML validáció?</strong><br>
+            A gyökér elem a html elem. Ez jelent a legfelső szintű elemet, ez adja meg a html dokumentum gyökerét. Minden többi elem ennek az elemnek a gyermeke.<br>
+            A HTML validáció azt jelenti, hogy egy HTML kód megfelel az adott HTML szabványoknak. Különböző HTML verziók nem biztos hogy validált a régebbi szabványok szerint.<br>
+
+            <strong>-Mi az a szemantikus HTML, miért fontos?</strong><br>
+            Kifejezéssel bíró HTML elemek. Fontos azért lehet, hogy ha valaki látás sérült például, akkor amikor egy program felolvassa a szöveget,<br>
+            különböző hangsúllyal lehetséges. Például <em>ez egy szemantikus elem.</em><br>                  
+        </p>
+        <hr>
+    </section>
+    <section>
+        <p>
+            Kutató munka:<br>
+            <strong>Hogyan tudunk HTML kódot megjeleníti, úgy ahogy van, anélkül, hogy a böngésző feldolgozná azt, mint HTML kód?</strong><br>
+            &lt;strong&gt; a kacsacsőrös elemeket kell helyettesíteni & lt és & gt elemmel a végükön kapcsos zárójellel. A megjelenítésnek a megjelenítése &amp;lt;=&lt; és &amp;gt;=&gt;<br>
+        </p>
+    </section>
+    <hr>
+    <section>
+        <p>
+            <strong>Add meg a címét egy max. 15 perces videónak arról, hogy "mi történik mikor Internetezünk".</strong><br>
+            Nézd meg az alábbi videót,
+            <a href="https://www.youtube.com/watch?v=x3c1ih2NJEg">az internet működéséről.</a>
+        </p>
+    </section>
+    <section>
+        <p>
+            <strong>Válassz ki egy szövegszintű, egy csoportosító és egy szekciót képező elemet a HTML Living Standardból és írj egy kb. 5 mondatos összefoglalót az egyes elemekről.<br>
+            Írj egy-egy példát is az elemek használatáról. A példák teljesértékű HTML oldalak legyenek.</strong><br>
+            -Szövegszintű elem az, amikor magát a megejelenítendő tartalmat,szöveget formázod az elemmel. Ilyen például <sup>Felsőindex</sup>
+            vagy a <strong><i>vastag dőltbetűs elemek.</i></strong><br>
+            -A csoportosító elemek a HTML-ben saját sorban jönnek létre és zárulnak is le, vagyis bármit írunk utána vagy elé a csoportosító elem teljesen új sorban fog nekünk megjellenni.<br>
+            Ilyen például egy <hr> elem.<br>
+            -A szekció képző elemek a HTML-ben külön szekciót-részt hoznak létre a dokumentumon belül. Ilyenek például a &lt;body&gt; ami maga a html szövegtörzse vagy a &lt;footer&gt; ami a lábjegyzet.<br>
+            Ezek mind mind külön szekciót képeznek.
+        </p>
+    </section>
+
+    <footer>Kovács Gergely - 01. számú házi feladat</footer>
+
+</body>
+
+</html>
