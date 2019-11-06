@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #tartalom{
+                color: blue;
+                font-family: Georgia, 'Times New Roman', Times, serif;"
+            }
+            h1{
+                text-decoration-line: underline;
+            }
+            article{
+                height: 1000px;
+            }
+            
+        </style>
+        <script>
+            function mfp(){
+                document.getElementById("prb").innerHTML="Megváltozott tartalom ";
+            }
+        </script>
+    </head>
+    <body>
+        <header id="trtl">
+            <h3>2019.10.29.</h3>
+            <div style="text-align: center; height: 100px;">
+                <h1 style="text-decoration-line: none;">Házi feladat</h1>
+            </div>
+        </header>
+        <hr>
+        <div style="height: 400px;">
+            <br><br>
+            <h2>Tartalom:</h2>
+            <ul>
+                <li id="tartalom"><a href="#intern" >Internet</a></li>
+                <li id="tartalom"><a href="#htmldoc" >HTML dokumentum</a></li>
+                <li id="tartalom"><a href="#htmlel" >HTML elemek</a></li>
+                <li id="tartalom"><a href="#htmlcodedispl" >HTML forráskód megjelenítése</a></li>
+                <li id="tartalom"><a href="#intrntflow" >Internetezés folyamata</a></li>
+                <li id="tartalom"><a href="#kutat" >Kutatómunkák</a></li>
+            </ul>
+        </div>
+        <article>
+            <header>
+                <table>
+                    <tr>
+                        <td style="width: 400px;"><h1 id="intern">Internet</h1></td>
+                        <td><a href="#trtl">(Top)</a></td>
+                    </tr>
+                </table>
+            </header>
+            <dl>
+                <dt>
+                    <h3>-Mi az az URL?</h3>
+                </dt>
+                <dd>
+                    <p><strong>"Uniform Resource Locator"</strong> vagy <strong style="text-decoration-line: underline;">webcím</strong>, az interneten található különböző adatok elérésének címe.</p>
+                    <p>Tartalmazza az adat teljes elérhetőségének minden koordinátáját.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az az IP-cím?</h3>
+                </dt>
+                <dd>
+                    <p>A hálózatra kapcsolt minden eszközre, az internet előírása szerint egy egyedi azonosító lessz generálva.</p>
+                    <p>Az <strong>"Internet Protocol"-cím,</strong> egy pontokkal elválasztott számsorozat, és az egymás között kommunikáló eszközök azonosítására szolgál. Egy eszköznek lehet több IP címe, és több eszköznek lehet egy címe is, vagy egy eszköz címe rendszeresen változhat is.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi a Domain név?</h3>
+                </dt>
+                <dd>
+                    <p> <em> Az IP-cím</em> bonyolultsága miatt, egy web oldal, adat, vagy eszköz IP-címének, adunk egy könnyebben megjegyezhető szövegsorral megjelenített <strong style="text-decoration-line: underline;">tartománynevet</strong>, amelyet a DNS tartománynév-rendszer az IP-címre lefordítva további feldolgozásra küldi.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az Aldomain?</h3>
+                </dt>
+                <dd>
+                    <p>Egy <em> fő domain</em> címen regisztrált web oldal ágazata az <strong> aldomain.</strong> Kizárólag a fő domain része, és olyan adatkimutatásokra van használva, melyek szerkezete külömbözik a fő domain szerkezetétől. Példaként, ha egy web oldalt több nyelven szándékozunk megjeleníteni, a kiinduló, csak a tartalomjegyzéket tartalmazó index oldal lenne a fő domain, a lényeges adatokat tartalmazó oldal, pedig nyelvenként szétosztva aldomainonként lennének a fő domainhez csatolva.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az a Domain Name Service?</h3>
+                </dt>
+                <dd>
+                    <p>A DNS tartománynév-rendszer egy hierarchikus elnevezési rendszer, amely fő feladata a hálózatra csatolt eszközök, az emberek számára érthető domain neveinek átalakítása a megfelelő IP-címekre az eszközök közötti kommunikáció érdekében. </p>
+                </dd>
+                <dt>
+                    <h3>-Mi az IANA, és mi a feladata?</h3>
+                </dt>
+                <dd>
+                    <p>Az <strong>Internet Assigned Numbers Authority</strong> egy szervezet, amely az internet szabványinak, és protokolljainak megfelelően nyílvántartja, és kiosztja a hálózatra kapcsolt eszközök egyedi azonosító számait.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az Internet Szolgáltatók Tanácsa, és mi a feladata?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>Magyarországi Internet Szolgáltatók Tanácsa Tudományos Egyesület</strong>, rövidített megnevezéssel <em><b>I</b>nternet <b>Sz</b>olgáltatók <b>T</b>anácsa </em><strong><u>(ISZT),</u></strong> a Magyarországi internet szolgáltatók érdekeit képviseli. Fő feladata a domain név regisztációs eljárás kidolgozása, tudományos, és ismeretterjesztő tanulmányok elkészítése, az internet szolgáltatás általános szerződési feltételeinek létrehozása, és az internet szolgáltatók adatforgalmának platform biztosítása.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi a Budapest Internet Exchange?</h3>
+                </dt>
+                <dd>
+                    <p>A <b>BIX</b> egy internet forgalom kicserélő központ, melynek fő feladata egy különálló platformot biztosítani a magyarországi internet szolgáltatók egymás közötti, és regionális adatforgalmai számára, a nemzetközi adatforgalmak terhelésmentesítése érdekében.</p>
+                </dd>
+            </dl>
+        </article>
+        <article>
+            <header>
+                <table>
+                    <tr>
+                        <td style="width: 400px;"><h1 id="htmldoc">HTML dokumentum</h1></td>
+                        <td><a href="#trtl">(Top)</a></td>
+                    </tr>
+                </table>
+            </header>
+            <dl>
+                <dt>
+                    <h3>-Mi a HTML?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>Hypertext Markup Language</strong> egy leíró nyelv, mely weboldalak készítésére használható. Tag-nak nevezett szimbólumokat tartalmaznak, melyek a megjelenítő programnak (böngészőnek, vagy valamelyik levelező programnak, mint pl. Microsoft Outlook) leírják hogyan kell megjeleníteni, illetve feldolgozni a megjelenítendő adatokat.</p>
+                </dd>
+                <dt>
+                    <h3>-HTML dokumentum általános szerkezete!</h3>
+                </dt>
+                <dd>
+                    <p>A HTML állomány három részre bontható: <em>Dokumentum Típus Definicióra</em>, <em>fejlécre</em>, a &#60head&#62 - taggal jelölve, és <em>törzsre</em>, a &#60body&#62 - taggal jelölve.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az a Document Type Definition?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>DTD</strong> olyan jelölési előírásokat tartalmaz, amelyek pontosan megmutatják, hogy melyik elemek hol fordulhatnak elő az adott tipusú dokumentumban, és hogy az elemeknek milyen tartalmuk, és tulajdonságaik lehetnek.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az a szemantikus HTML, és miért fontos?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>Szemantikus HTML</strong> a HTML olyan módú felhasználása, amely biztosítja a weboldalakban, és webalkalmazásokban kimutatott információk helyes értelmezését. Ez lehetővé teszi a külömböző böngészők egyéni szabványai szerint az adatok helyes megjelenítését, továbba a kereső-robotok számára, az adatok érthető megkülömböztetését.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az a HTML validáció?</h3>
+                </dt>
+                <dd>
+                    <p>Az internet fejlődése során külömböző fajta böngészők lettek létrehozva egyéni előírásokkal,  melyek a HTML kódot ezek törvényei szerint mutatják ki. A HTML kód akkor valid, ha megfelel ezeknek a törvényeknek. A külömbségek az új, és a régebbi böngésző verziók között leginkább a megjelenítési jelölőkben vannak, és a kódot ezekhez megfelelően kell megszerkeszteni.</p>
+                </dd>
+                <dt>
+                    <h3>-Mit jelent az, hogy a HTML dokumentum fa szerkezetű?</h3>
+                </dt>
+                <dd>
+                    <p>A HTML elemeket tartozásuk szerint szétosztva, egy fa szerkezetet alakítanak, amely törzs elemekből, és azok leágazásaiból áll.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi a különbség a DOM és a forráskód között?</h3>
+                </dt>
+                <dd>
+                    <p>A <b>D</b>ocument <b>O</b>bject <b>M</b>odel egy nyelvfüggetlen platform és objektummodel, amely lehetővé teszi a programok és szkriptek számára a dokumentum tartalmának dinamikus módosítását. A forráskód pedig az ember által megszerkesztett adat, és fügvény forrás, amely tartalmazza az összes információt a dokumentum feldolgozására. </p>
+                </dd>
+                <dt>
+                    <h3>-Mik azok a metaadatok?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>Metaadatok</strong> tartalmazzák az összes lényeges információkat a dokumentummal kapcsolatban. A kimutatásban nem szerepelnek, és nem vesznek részt, de lehetővé teszik a dokumentum értelmezését a böngésző, és az internetes keresőprogramok részére. </p>
+                </dd>
+            </dl>
+        </article>
+        <article>
+            <header>
+                <table>
+                    <tr>
+                        <td style="width: 400px;"><h1 id="htmlel">HTML elemek</h1></td>
+                        <td><a href="#trtl">(Top)</a></td>
+                    </tr>
+                </table>
+            </header>
+            <dl>
+                <dt>
+                    <h3>-Mik azok a HTML elemek?</h3>
+                </dt>
+                <dd>
+                    <p>A HTML dokumentum <strong>HTML elemekből</strong> van felépítve. Ezek olyan <em>SGML</em> elemek, amelyek eleget tesznek a HTML DTD követelményeknek. Tartalmaznak jellemzőket, és tartlamat, és lehetővé teszik a tartalom hierarchikus elrendezését.</p>
+                </dd>
+                <dt>
+                    <h3>-Mik azok a HTML tagek?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>HTML tagek</strong> olyan szemantikai jelölő elemek, amelyek a bennük lévő szövegrész, vagy adat megjelenítését, és hierarchikus elhelyezkedését adják meg a dokumentumban. Külömböző jellemzők hozzáadásával módosítani és pontosítani lehet a tartalmuk megjelenítési formáját. Legtöbbje nyitó, és záró teg-ból áll, melyek között helyezkedik el a tartalom. A nyitó teg tartalmazhatja a szövegrész azonosítására szükséges információkat, és a jellemzésre szükséges adatokat is. Az úgynevezett üres elemeknek nincsen záró tegük, mert nincsen tartalmuk, csak a nyitó teg jellemzői által utalhatnak meghatározott adatokra, vagy dokumentumokra.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az a &#60head&#62?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>Fejléc</strong> vagy <strong>&#60head&#62</strong>-teg a HTML dokumentum egyik alap összetevője, mely további olyan elemeket tartalmaz, amelyek a dokumentumról külömböző információkat adnak át a hálózatnak. Ezek az adatok magukban nem jelennek meg a kimutatásban, de elősegítik azt. Ide kerülnek többek között, a dokumentum megnevezése, az információkat tartalmazó meta adatok, és a funkciókat tartalmazó szkriptek</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az a &#60body&#62?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>&#60body&#62</strong> a HTML dokumentum trörzs része, és tartalmazza az összes elemeket, amelyek az adatok kimutatására felelősek. Ezen kívül tartalmazhatnak még szkript elemeket is, melyek nem jelennek meg, de elősegítik a tartalmak megjelenését.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi a &#60title&#62, és hova írjuk?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>&#60title&#62</strong> elem a dokumentum címét, megnevezését tartalmazza, és a fejlécben, a &#60head&#62 - tegben helyezkedik el. Nem vesz részt a kimutatásban, de megjelenik a HTML lap fül részén.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi a &#60br&#62?</h3>
+                </dt>
+                <dd>
+                    <p>A <strong>&#60br&#62</strong> - teg, "linebreak" vagyis "sortörés", egy üres elem, ami azt jelenti, hogy nincsen záró része. Hosszú szövegsor rendszerezésére alkalmas. Leginkább vers, és próza kimutatására használják, ahol a megfelelő szöveget a következő sorba kell helyezni.</p>
+                </dd>
+                <dt>
+                    <h3>-Mit jelent az, hogy egy tag páros vagy páratlan?</h3>
+                </dt>
+                <dd>
+                    <p>Az úgynevezett üres elemek olyan elemek, amelyeknek nincsen tartalmuk, csak utalnak valamire, mint az &#60img&#62 - teg amely egy kép adatra utalhat, vagy valamilyen meghatározott funkciójuk van, mint pl. a &#60br&#62 - sortörő tegnek, vagy a &#60hr&#62 - tegnek, mely vízszintes vonalat húz a képernyőn. Ezek páratlan tegek, mivel nincsen záró párjuk. A HTML elemeinek nagyobb része azonban páros, vagyis nyitó, és záró tegekből állnak. Ez azért van, hogy a tartalmuk teljesen egyértelműen meg legyen határozva.</p>
+                </dd>
+                <dt>
+                    <h3>-Mit jelent, hogy egy elem egy másiknak a gyermek?</h3>
+                </dt>
+                <dd>
+                    <p>A HTML hierarchikusan van felépítve, ami szerint léteznek kiinduló alapelemek, amelyek tartalmazhatnak további elemeket. Például a <em>&#60html&#62</em> elem az egy szülő elem, amelyik tartalmazza a <em>&#60head&#62</em> és a <em>&#60body&#62</em> elemeket, továbbá a <em>&#60head&#62</em> elem is egy szülő elem, amelyik tartalmazza többek között a <em>&#60title&#62</em> elemet mint gyermek elemet. Egy elemnek, csak egy szülő eleme lehet, de több ágazata vagyis gyermeke.</p>
+                </dd>
+                <dt>
+                    <h3>-Mi az a gyökérelem?</h3>
+                </dt>
+                <dd>
+                    <p>A HTML alap eleme, gyökér eleme, maga a <strong>&#60html&#62</strong> elem, amely, tartalmazza az összes többi elemet, azonban csak a &#60head&#62, és a &#60body&#62 elemek erednek belőle. Ezek az ő gyermek elemei.</p>
+                </dd>
+            </dl>
+        </article>
+        <article style="height: 500px;">
+            <header>
+                <table>
+                    <tr>
+                        <td style="width: 400px;"><h1 id="htmlcodedispl">HTML forráskód megjelenítése</h1></td>
+                        <td><a href="#trtl">(Top)</a></td>
+                    </tr>
+                </table>
+            </header>
+            <dl>
+                <dt>
+                    <h3>-Hogyan lehet a HTML forráskódot megjeleníteni a böngészőben?</h3>
+                </dt>
+                <dd>
+                    <p>Gyakran szükség van a teljes eredeti forráskód, vagy egy részének megjelenítésére a böngészőben. A leg elterjedtebb eljárás, a helyettesítő jelek használata, amelyek a tegek szerkezetét teljes egészében kimutatják a böngészőben, de a böngésző nem html kód ként dolgozza fel. Ilyen pl. a legelterjedtebb csúcsos zárójel "&#60" helyettesítő eleme - & # 60 - karakterek összessége. Minden HTML elem szerkezeti alkatrészeire létezik ilyen helyettesítő elem.<br>Egy egyszerűbb változata a HTML forráskód megjelenítésének egy, a HTML 2.3 - tól alkalmazott <strong>&#60xmp&#62</strong> páros elem, amelyik a tegjei kőzé zárt HTML kód részletet feldolgozás nélkül, eredeti formában jeleníti meg a böngészőben:</p>
+                    <xmp>
+                        <header>
+                            <table>
+                                <tr>
+                                    <td style="width: 400px;"><h1 id="htmlcodedispl">HTML forráskód megjelenítése</h1></td>
+                                    <td><a href="#trtl">(Top)</a></td>
+                                </tr>
+                            </table>
+                        </header>
+                    </xmp>
+                </dd>
+            </dl>
+        </article>
+        <article style="height: 500px;">
+            <header>
+                <table>
+                    <tr>
+                        <td style="width: 400px;"><h1 id="intrntflow">Internetezés folyamata</h1></td>
+                        <td><a href="#trtl">(Top)</a></td>
+                    </tr>
+                </table>
+            </header>
+            <dl>
+                <dt>
+                    <h3>-Mi történik amikor internetezünk?</h3>
+                </dt>
+                <dd>
+                    <br><br>
+                    <a href="https://www.youtube.com/watch?v=7_LPdttKXPc" target="_blank"><img src="https://thumbs.dreamstime.com/z/logo-internet-4720961.jpg" alt="Internet logo" style="width: 200px;"></a>
+                    <p>Youtube video --</p>
+                </dd>
+            </dl>
+        </article>
+        <article>
+            <header>
+                <table>
+                    <tr>
+                        <td style="width: 400px;"><h1 id="kutat">Kutatómunkák</h1></td>
+                        <td><a href="#trtl">(Top)</a></td><br><br>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><a href="aside.html" target="disp"><h4>Szekciót képző elem:&nbsp;&nbsp;&nbsp;&#60aside&#62</h4></a></li>
+                                <li><a href="span.html" target="disp"><h4>Szöveg szintű elem:&nbsp;&nbsp;&nbsp;&#60span&#62</h4></a></li>
+                                <li><a href="main.html" target="disp"><h4>Csoportosító elem:&nbsp;&nbsp;&nbsp;&#60main&#62</h4></a></li>
+                            </ul>
+                        </td>
+                        <td><iframe name="disp" width="600" height="550"></iframe></td>
+                    </tr>
+                </table>
+            </header>
+        </article>
+    </body>
+</html>
