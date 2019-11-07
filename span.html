@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Szövegszintű elem</title>
+        <style>
+            #csss{
+                background-color: deepskyblue;
+               
+            }
+        </style>
+        <script>
+            function myfunc(){
+                document.getElementById("katt").style.textTransform="uppercase";
+            }
+        </script>
+    </head>
+
+    <body>
+            <h2>A "&#60span&#62" -elem</h2>
+            <h4>
+    a szövegszerkesztésben egyike a legkedveltebb elemnek.<br><br>
+    Horgonyként használják a szövegre, vagy a szöveg egy részére.<br><br>
+    Azt a szövegrészt amelyik a nyitó és záró tegjai között helyeszkedik el, kedvünk szerint lehetséges módosítani
+    különböző atribútumokkal, CSS kódokkal, és még utólag is javascript funkciókkal.<br><br>
+    Ez a szövegrész különböző módon lett módosítva: <br><span style="color: darkorange;">beépített atribútumokkal,</span> 
+    <br><span id="csss">a dokumentumban elhelyezett CSS kóddal,</span>
+    <br><span id="katt">sőt még az alábbi gombra kattintva egy funkció futtatásával is!</span><br><br>
+    </h4>
+    <input type="button" onclick="myfunc()" value="Módosítás">
+    <br><br><br>
+            
+    </body>
+</html>
