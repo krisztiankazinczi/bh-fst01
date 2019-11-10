@@ -1,0 +1,36 @@
+section div.news {
+    background: lightcoral;
+}
+
+p span.other {
+    background: lightseagreen;
+}
+
+div > p span {
+    background: lime;
+}
+
+div > h6 span {
+    background: red;
+}
+
+div table tr.kék {
+    background: blue;
+}
+
+#fourth .red.bold {
+    color: red;
+    font-weight: bold;
+}
+#fourthsecond .left.green{
+    text-align: left;
+    color: green;
+}
+
+ul > li + li > p.bold {
+    font-weight: bold;
+}
+
+table, tr, th, td {
+    border: 1px black solid;
+}
