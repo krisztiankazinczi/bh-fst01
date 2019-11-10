@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Első Házi feladat</title>
+    </head>
+
+    <body>
+        <h1>Elméleti kérdések:</h1>
+        <section>
+            <div>
+                <h4>
+                    Mi az az URL?
+                </h4>
+                <p>
+                    Az URL, köznyelvben web cím, egyértelműen meghatároz
+                    egy adott dolgot az interneten, hogy hol található,
+                    és a módszert amivel el lehet érni.
+                    Lehet ez egy weboldal, vagy egy API stb. Példádul: http://pelda.hu/index.html, ahol a 'http' a módszer, a 'pelda.hu' a <strong>domain</strong>, az 'index.html' pedig egy fájl amit el akarunk érni. <a href="https://en.wikipedia.org/wiki/URL">Forrás</a>
+                </p>
+                
+            </div>
+            <div>
+                <h4>
+                    Mi az az IP cim?
+                </h4>
+                <p>
+                    Az IP cím egy azonosító szám, ami egy hálózatra csatlakozott számítógép vagy 
+                    részegységei azonosítására és címzésére szolgál. 
+                    <a href="https://en.wikipedia.org/wiki/IP_address">Forrás</a>
+                </p>
+                
+            </div>        
+            <div>
+                <h4>
+                    Mi az a Domain név?
+                </h4>
+                <p>
+                    A domain név egy szöveges cím, ami beazonosítja az internet egy adott részét. 
+                    A domain nevek kiosztása a <strong>DNS</strong> szabályai szerint törénik. 
+                    Jelölheti az internet adott területét, de egy konkrét az intenetre csatlakoztatott számítógépet is.
+                    <a href="https://en.wikipedia.org/wiki/Domain_name">Forrás</a>
+                </p>
+                                    
+            </div>       
+            <div>
+                <h4>
+                    Mi az az aldomain?
+                </h4>
+                <p>
+                    A domain nevek hierarchikusan rendeződnek el, a gyökér domain alatt. 
+                    Egy adott domain aldomainjének nevezzük azokat a domaineket amik hierarchikusan alatta vannak, 
+                    részegységei annak. Például: A 'pelda.hu' esetén, a 'pelda' domain a 'hu' domain aldomainje.
+                    <a href="https://en.wikipedia.org/wiki/Domain_name">Forrás</a>
+                </p>
+                                        
+            </div>
+            <div>
+                    <h4>
+                    Mi az a Domain Name Service?  
+                </h4>
+                <p>
+                    A domain name service maga a domain neveket és azok használatát leíró rendszer. 
+                    Főképp azért felel hogy könnyen megjegyezhető domain neveket a számtógép által használt Ip-címekre "fordítsa".
+                    <a href="https://en.wikipedia.org/wiki/Domain_Name_System">Forrás</a>
+                </p>
+                                            
+            </div>     
+            <div>
+                <h4>
+                    Mi az az IANA és mi a feladata?  
+                </h4>
+                <p>
+                    Az IANA ma egy egysége, feldatköre az ICANN nonprofit vállalatnak. 
+                    Feladata az IP címek és a Domain Name Service, és egyéb internethez köthető egyedi azonosító számok és címek kiosztása és ellenőrzése.
+                    <a href="https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority">Forrás</a>
+                </p>
+                                                
+            </div> 
+            <div>
+                <h4>
+                    Mi az az Internet Szolgáltatók Tanácsa és mi a feladata? 
+                </h4>
+                <p>
+                    Az ISZT a .hu domainek nyilvántartásáért és regisztrálásért felelős non-profit szervezet.
+                     Ők tudnak külső cégeknek .hu végű domainek regisztráláshoz jogot adni. 
+                    <a href="https://itf.njszt.hu/intezmeny/iszt">Forrás</a>
+                </p>
+                                                    
+            </div> 
+            <div>
+                <h4>
+                    Mi az a Budapest Internet Exchange? 
+                </h4>
+                <p>
+                    A BIX egy olyan magyaror kezelésű adatcserélő központ ami lehetőséget biztosít a magyar internetszolgáltatóknak hogy csatlakozzanak egymáshoz és az internet többi részéhez. Az ISZT tulajdonában van.
+                    <a href="https://hu.wikipedia.org/wiki/Budapest_Internet_Exchange">Forrás</a>
+                </p>                                                    
+            </div>
+        </section>
+        <section>
+            <div>
+                <h4>
+                    Mi az a HTML?
+                </h4>
+                <p>
+                    A HTML egy olyan leíró programozási nyelv ami a webböngészőben dokumentumok megjelenítésére szolgál.
+                    Legújabb verziója a HTML5, amit a WHATWG által közzétett HTML Living Standard ír le.
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Írd le a HTML dokumentum általános szerkezetét!
+                </h4>
+                <p>
+                    A html dokumentum úgynevezett tagekből épül fel. 
+                    Minden esetben egy Document type definitionnel kell kezdeni.
+                    Utána egy &lt;html&gt; tagen belül egy &lt;head&gt; és &lt;body&gt; tag.
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Mi az a Document Type Definition?
+                </h4>
+                <p>
+                    A Document type definiiton adja meg a böngészőnek,
+                    hogy a html melyik verzióját kell használja a dokumentum értelmezésére.
+                    HTML5 esetén a szintaxis: &lt;!DOCTYPE html&gt;
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Mi az a &lt;head&gt;?
+                </h4>
+                <p>
+                    A head tag tartalmazza a html dokumentumra vonatkozó metaadatokat.
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Mi az a &lt;body&gt;?
+                </h4>
+                <p>
+                    A body tartalmazza a html dokumentum megjelenítendő tartalmát, maga a szövegtörzs.
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Mik azok a metaadatok?
+                </h4>
+                <p>
+                    Olyan adatok amik nem szerves részei a dokumentum tartalmának de hozzá kapcsolódnak. 
+                    Például a fejléc tartalma, vagy az oldalunk keresőmotorok által indexálását segítő, irányító adatok.
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Mi az a &lt;title&gt; és hova írhatjuk?
+                </h4>
+                <p>
+                    A title tag tartalma fog megjelenni a böngésző fejlécében a dokumentum megnyitásakor. 
+                    A &lt;head&gt; tagon belülre kelle írni.
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Mi az a &lt;br&gt;?
+                </h4>
+                <p>
+                    A &lt;br&gt; tag sortörésként jelenik meg a böngészőben.
+                </p>
+            </div>
+            <div>
+                <h4>Mik azok a HTML elemek?</h4>
+                <p>A HTML elemek a html dokumentumot felépítő alkotórészek. Tagekkel jelöljük őket.</p>
+            </div>
+            <div>
+                <h4>Mik azok a HTML tagek?</h4>
+                <p>A tagekkel jelöljük a HTML elemeket a dokumentumunkban,
+                    ezzel különítjük el a megjelenítendő tartalmat a böngészőnek szánt utasításoktól.</p>
+            </div>
+            <div>
+                <h4>Mit jelent az, hogy egy tag páros vagy páratlan?</h4>
+                <p>Páros tagnak nevezzük az olyan taget ami rendelkezik záró taggel is.
+                    Péládul: &lt;p&gt;. Páratlan a tag ha nincsen záró tagje. Például: &lt;br&gt;.</p>
+            </div>
+            <div>
+                <h4>Mit jelent az hogy a HTML fa szerkezetű?</h4>
+                <p>A HTML elemek egymásba ágyazhatóak, így egy fa szerkezet jön létre
+                    ami szülő-gyerek és rokon viszonyokból épül fel. Minden elemnek csak egy szülője lehet, 
+                    de egy elemnek lehet több gyereke. Ugyanazon elem gyerekei egymás rokonai.</p>
+            </div>
+            <div>
+                <h4>Mi a különbség a DOM és a forráskód között?</h4>
+                <p>A DOM az gyarkolatilag már az ahogyan a böngésző a forráskódot értelmezi és megjeníti,
+                    a DOM a forráskódból "jön létre". Html oldalak esetén ez nagyon hasonló de nem szabályszerint azonos.</p>
+            </div>
+            <div>
+                <h4>Mit jelent az, hogy egy elem egy másiknak a gyermeke?</h4>
+                <p>
+                    A HTML elemek egymásba ágyazhatóak, ha egy elem egy elem a másikba van ágyazva, a gyerekének nevezzük.
+                    Gyakorlatban ez úgy néz ki, ha egy elem egy másik elem nyitó és záró tagje között van.
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Mi az a gyökérelem?
+                </h4>
+                <p>
+                    A gyökérelem az az elem aminek mindegyik másik elem a gyereke, vagyis hierarchiában a legfelső. 
+                    HTML esetén ez a &lt;html&gt; elem.
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Mi az a HTML validáció?
+                </h4>
+                <p>
+                    HTML validációnak nevezzük a folyamatot aminek során egy dokumentumról megállapítjuk hogy az valid html-e egy adott verzión.
+                </p>
+            </div>
+            <div>
+                <h4>
+                    Mi az a szemantikus HTML, miért fontos?</h4>
+                <p>
+                    A szemantikus HTML egy paradigma, ami alapján a HTML dokumentum tartalmát úgy rendezzük,
+                    hogy a jelentésük szerinti elembe kerüljenek. Tehát ha valami egy paragrafus az legyen &lt;p&gt; elemben. Stb.
+                    A weboldalak akadálymentesítésének szempontjából fontos, emellett átlátható, jól kezelhető kódot is eredményez.
+                </p>
+            </div>
+        </section>  
+        <h1>Kutatómunka:</h1>
+        <section>
+            <div>
+                <h4>Hogyan tudunk HTML kódot megjeleníti, úgy ahogy van, anélkül, hogy a böngésző feldolgozná azt, mint HTML kód?</h4>
+                <p>
+                    Alapesetben a böngésző mindent feldolgoz ami valid HTML kód. Ahhoz hogy HTML kódot tudjunk megjeleníteni,
+                    "escapelni" kell a html kód különleges karaktereit, leginkább a taget jelző &lt; és &gt; jeleket, és a &amp; jelet.
+                    Ez azt jelenti, hogy helyettesíteni kell őket a megfelelő kóddal amit a böngésző úgy értelmez, hogy a karaktereket jelenítse meg.
+                    Ez a &lt; esetén például: &amp;lt;
+                </p>
+                <p>
+                    Ezen kívül az így behelyettesített kódot, hogy megtartsa a sortöréseket és a szóközöket, egy &lt;pre&gt; elemkbe ágyazhatjuk. 
+                    Szemantikailag és későbbi formázás szepontjából pedig érdemes a &lt;code&gt; taget is használni.
+                </p>
+                <a href="https://stackoverflow.com/questions/2820453/display-html-code-in-html">Forrás</a>
+            </div>
+        </section> 
+        <section>
+            <div>
+                <h4>
+                    Mi történik amikor internetezünk: <a href="https://www.youtube.com/watch?v=OE8EvaOPkZ4">https://www.youtube.com/watch?v=OE8EvaOPkZ4</a>
+                </h4>
+            </div>
+        </section>
+        <h1>Gyakorlat</h1>
+        <section>
+            <h3>Válassz ki egy szövegszintű, egy csoportosító és egy szekciót képező elemet a HTML Living Standardból és írj egy kb. 5 mondatos összefoglalót az egyes elemekről.</h3>
+            <div>
+                <h4>Szövegszintű elem: &lt;a&gt; </h4>
+                <p>Ezt az elemet anchornak nevezzük. Más oldalakra vagy egy dokumentum más részeire ugorhatunk vele ha rákattintunk a böngészőben.
+                    Páros taggel kell leírni, a két tag közé foglalt szöveg fog kattintható elemként, 
+                    hyperlinkként megjelenni a böngészőben. Hogy hová ugrunk kattintás után azt a href attribútummal adhatjuk meg. 
+                    Ez lehet egy relatív vagy abszolút URL, de lehet egy az oldalon lévő elem ID-ja is.
+                </p>
+                <p>Példa a &lt;a&gt; elemre:</p>
+                <pre>
+                    <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Hyperlink Példák&lt;/title&gt;
+                                &lt;/head&gt;
+                            
+                                &lt;body&gt;
+                                    &lt;a href="https://hu.wikipedia.org"&gt;Click here to visit Wikipedia&lt;/a&gt;
+                                    &lt;a href="image2.html"&gt;Click here to visit Images&lt;/a&gt;
+                                    &lt;a href="#last"&gt;Jump to last section&lt;/a&gt; 
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>Csoportosító elem: &lt;ol&gt; </h4>
+                <p>
+                    Ez az elem az ordered list, egy számozott, rendezett lista létrehozására használható. 
+                    Van egy kezdőértéke amit start attribútumként lehet megadni egy számmal, innen fog kezdődi a lista számozása, ha elhagyjuk akkor 1-ről indul. 
+                    Az &lt;ol&gt; elem minden &lt;li&gt; (list item) gyermeke egy elem lesz a listában.
+                    Több lista egymásba ágyazható, tehát egy lista eleme lehet egy másik lista is.
+                    Létezik listákra más elem is, például a &lt;ul&gt; ami egy számozatlan listát hoz létre, itt a lista elemei nincsenek számozva.
+                </p>
+                <p>Példa a &lt;ol&gt; elemre:</p>
+                <pre>
+                    <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;ol Példa&lt;/title&gt;
+                                &lt;/head&gt; 
+                                &lt;body&gt;
+                                    &lt;ol&gt;
+                                        &lt;li&gt;Első elem&lt;/li&gt; 
+                                        &lt;li&gt;Második elem&lt;/li&gt; 
+                                        &lt;li&gt;Harmadik elem&lt;/li&gt; 
+                                    &lt;/ol&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>Szekciót képző elem: &lt;section&gt; </h4>
+                <p>
+                    A &lt;section&gt; egy szekciót képző elem, arra használjuk, hogy egy önmagában értelmes, összefüggő szövegrészt foglaljunk bele. 
+                    &lt;section&gt; lehet például egy hoszabb dokumentum egy fejezete, egy cikk számozott része, egy összetett
+                     weboldal részei például bemutatkozás, hírek, kapcsolat mind lehet egy &lt;section&gt;.
+                    Szemantikus HTML-ben az az ökölszabály, hogy ha valamit megjelenítenénk a dokumentumunk tartalomjegyzékében, 
+                    az legyen &lt;section&gt;, ha valamit csak a formázás miatt választunk el, az inkább legyen csak &lt;div&gt;.
+                </p>
+                <p>Példa a &lt;section&gt; elemre:</p>
+                <pre>
+                    <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Section Példák&lt;/title&gt;
+                                &lt;/head&gt;
+                            
+                                &lt;body&gt;
+                                &lt;article&gt;
+                                        &lt;hgroup&gt;
+                                         &lt;h1&gt;Apples&lt;/h1&gt;
+                                         &lt;h2&gt;Tasty, delicious fruit!&lt;/h2&gt;
+                                        &lt;/hgroup&gt;
+                                        &lt;p&gt;The apple is the pomaceous fruit of the apple tree.&lt;/p&gt;
+                                        &lt;section&gt;
+                                         &lt;h1&gt;Red Delicious&lt;/h1&gt;
+                                         &lt;p&gt;These bright red apples are the most common found in many
+                                         supermarkets.&lt;/p&gt;
+                                        &lt;/section&gt;
+                                        &lt;section&gt;
+                                         &lt;h1&gt;Granny Smith&lt;/h1&gt;
+                                         &lt;p&gt;These juicy, green apples make a great filling for
+                                         apple pies.&lt;/p&gt;
+                                        &lt;/section&gt;
+                                       &lt;/article&gt;
+                                &lt;body&gt;
+                            &lt;html&gt;
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </body>
+
+</html>
