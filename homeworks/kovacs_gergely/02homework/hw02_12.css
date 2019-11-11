@@ -1,0 +1,129 @@
+.feladatok {
+    font-size: 32px;
+    color: honeydew;
+    background: grey;
+    margin:0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main p.highlighted {
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+}
+
+nav>ul a {
+    color: green;
+    font-style: italic;
+}
+
+article section:first-child h2 {
+    color: red;
+    text-decoration: underline;
+}
+
+#intro .highlighted.right-aligned {
+    text-align: right;
+}
+
+section > h2 + p > span.strong {
+    color:gold;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+.elso {
+    color:red;
+    text-decoration: line-through;
+    font-size:20px;
+}
+
+#egyes .elso + ul > li {
+    text-decoration: overline;
+    font-size: 28px;
+}
+
+section > ul + p {
+    font-size:12px;
+    text-decoration: underline;
+}
+
+.masodik p {
+    padding:5px;
+    background-color: grey;
+    color:white;
+    width:100px;
+    display: inline-block;
+    margin:0;
+}
+
+#kettes div > div {
+    color:red;
+    padding:5px;
+    display: inline-block;
+    vertical-align: top;
+    width:100px;
+}
+
+section div div > h2 {
+    color:blue;
+    vertical-align: top;
+    margin:0;
+    width:300px;
+    
+}
+
+ul .harmadik > ul > li {
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+#harmas:hover {
+    font-weight: bold;
+    color:red;
+}
+
+div > ul > li div {
+    color:honeydew;
+    width:150px;
+    background: black;
+}
+
+.negyedik > div:first-child::after {
+    content:"fourth example";
+    color:red;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.negyedik li#negyes {
+    color:red;
+    font-weight: bold;
+}
+
+div span > a {
+    text-decoration: none;
+    color:black;
+}
+
+.none {
+    display: none;
+}
+
+#otos > p:first-child {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.otodik {
+    color:red;
+    font-size: 32px;
+}
+
+div div a {
+    font-weight: bold;
+}
