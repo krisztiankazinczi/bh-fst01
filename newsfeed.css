@@ -1,0 +1,71 @@
+html, body {
+    background: blue;
+    margin: 0;
+}
+
+.maincontainer {
+    background: white;
+    padding: 100px;
+    margin: 0px 150px;
+    height: 100%;
+}
+
+.container {
+    background: lightblue;
+    margin: 25px 50px;
+    padding: 25px 25px;
+    border: black solid 5px;
+    border-radius: 20px;
+}
+
+.maincontainer > h2 {
+    margin: 0;
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+
+.date {
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.text {
+    background: white;
+}
+
+#firstpicture {
+    display: inline-block
+}
+
+#secondpicture {
+    width: 100%;
+}
+
+.thirdpicture {
+    display: inline-block;
+    width: 282px;
+}
+
+.piccontainer {
+    text-align: center;
+
+}
+
+.text.first{
+    display: inline-block;
+    width: auto;
+    height: 300px;
+    vertical-align: top;
+    padding-left: 5px;
+    margin-left: 25px;
+}
+
+.text.second {
+    padding: 15px 0 15px 5px;
+}
+
+
+.text.third {
+padding: 15px 0 15px 5px;
+margin-bottom: 10px;
+}
