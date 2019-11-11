@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                background-color: #333;
+                color:#ccc;
+            }
+            main > p.highlighted {
+                color: palevioletred;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <p class="highlighted">
+                This text is in a p which has the class "highlighted". So it has to be pink.
+                <p class="highlighted"> This text is in a p which has the class "highlighted". So it has to be pink.</p>
+                <p> This text is in a p which is te child element of another p with the class "highlighted". However the p itself does not have the class "highlighted" . So this text is probably going to remain white.</p>
+
+            </p>
+            <p >
+                <span class="highlighted"> This text is in a span which is in a p. The span has the class "highlighted", but the p does not.
+                    So text will have this boring white color. </span>
+            </p>
+        </main>
+    </body>
+</html>

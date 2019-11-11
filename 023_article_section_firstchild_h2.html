@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                background-color: #333;
+                color:#ccc;
+            }
+            article section:first-child h2 {
+                color:palevioletred;
+            }
+
+        </style>
+    </head>
+    <body>
+        <article>
+            <section>
+                <div> this div is in the first child section of the article. So all h2 elements inside this div need to be pink
+                        <h2>First h2</h2>
+
+                        <h2>Second h2</h2>
+    
+                        <h2>Third h2</h2>
+                </div>
+                <div> this second div is also in the first child section of the article. So all h2 elements inside this div need to be pink
+                        <h2>First h2</h2>
+
+                        <h2>Second h2</h2>
+    
+                        <h2>Third h2</h2>
+                </div>
+                <h2>This h2 is a child element of the first section. So it is also going to be pink </h2>
+
+            </section>
+            <section>
+                    <div>This is the beginning of the second section. So nothing from now on will be pink.
+                            <h2>First h2</h2>
+    
+                            <h2>Second h2</h2>
+        
+                            <h2>Third h2</h2>
+                    </div>
+                    <div> Second child
+                            <h2>First h2</h2>
+    
+                            <h2>Second h2</h2>
+        
+                            <h2>Third h2</h2>
+                    </div>
+    
+                </section>
+        </article>
+    </body>
+</html>

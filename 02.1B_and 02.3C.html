@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+        h3:before{
+            content: counter(my-awesome-counter) ". "
+        }
+
+        table {
+            border-collapse: collapse
+        }
+
+        table th {
+            width: 400px;
+            background:#333;
+            color:beige;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            font-size: 14px;
+            padding: 10px;
+        }
+        table .border-top-left-radius {
+            border-top-left-radius: 8px;
+        }
+        table .border-top-right-radius {
+            border-top-right-radius: 8px;
+        }
+        table .border-bottom-left-radius {
+            border-bottom-left-radius: 8px;
+        }
+        table .border-bottom-right-radius {
+            border-bottom-right-radius: 8px;
+        }
+        td {
+            text-align: center;
+            padding: 10px
+        }
+
+        table, th, td {
+            border: none;
+        }
+        table .selector {
+            font-weight: bolder;
+        }
+
+        table .comment {
+            background: rgb(214, 214, 214);
+            color:#444;
+           
+        }
+
+        table .comment td {
+            text-align: center;
+        }
+
+        .original-selector, .original-selector-comment {
+            color: black
+        }
+        .modified-selector, .modified-selector-comment {
+            color: rgb(62, 63, 63)
+        }
+        tbody tr:hover {
+            background-color: lightblue;
+
+        }
+        </style>
+    </head>
+    <body>
+
+ <table border="1">
+     <thead>
+        <th class="border-top-left-radius">Selector with lower specificity level</th>
+        <th class="original-selector-title">Original Selector</th>
+        <th>Selector with the same specificity level</th>
+        <th class="border-top-right-radius">Selector with higher specificity level</th>
+     </thead>
+     <tbody>
+         <tr class="selector">
+             <td class="modified-selector">.highlighted</td>
+             <td class="original-selector">main p.highlighted</td>
+             <td class="modified-selector">p::first-line.red</td>
+             <td class="modified-selector">main p#non-highlighted</td>
+         </tr>
+         <!-- <tr class="specificity">
+            <td class="modified-selector-spec">10</td>
+            <td class="original-selector-spec">12</td>
+            <td class="modified-selector-spec">12</td>
+            <td class="modified-selector-spec">102</td>
+        </tr> -->
+         <tr class="comment">
+            <td class="modified-selector-comment">Egy class típusú selectort tartalmaz <br><strong> 10 </strong></td>
+            <td class="original-selector-comment">Egy class (10) és két element szintű selector (2) <br><strong> 12 </strong></td>
+            <td class="modified-selector-comment">Egy elemszintű selector (1), és pszeudo-elem selector (1) és egy class selector (10) <br><strong> 12 </strong> </td>
+            <td class="modified-selector-comment">Két elemszintű selector (2) és egy id selector (100) <br> <br><strong> 102 </strong></td>
+        </tr>
+        <tr class="selector">
+            <td class="modified-selector"> h1::before</td>
+            <td class="original-selector">nav > ul a</td>
+            <td class="modified-selector">main div + ul</td>
+            <td class="modified-selector">div > ul:first-child a</td>
+        </tr>
+        <!-- <tr class="specificity">
+            <td class="modified-selector-spec">2</td>
+            <td class="original-selector-spec">3</td>
+            <td class="modified-selector-spec">3</td>
+            <td class="modified-selector-spec">13</td>
+        </tr> -->
+        <tr class="comment">
+            <td class="modified-selector-comment"> Egy elem- és egy pszeudo elem selector<br><strong> 2 </strong> </td>
+            <td class="original-selector-comment"> 3 db elemszintű selectort tartalmaz <br><strong> 3 </strong></td>
+            <td class="modified-selector-comment"> 3 db elemszintű selector <br><strong> 3 </strong></td>
+            <td class="modified-selector-comment"> 3 db elemszintű selector (3) és egy pszeudo-class selector (10) <br><strong> 13 </strong> </td>
+        </tr>
+        <tr class="selector">
+            <td class="modified-selector">li:hover</td>
+            <td class="original-selector">article section:first-child h2</td>
+            <td class="modified-selector">div ul > li.important</td>
+            <td class="modified-selector">.important.centered::selection</td>
+        </tr>
+        <!-- <tr class="specificity">
+            <td class="modified-selector-spec">11</td>
+            <td class="original-selector-spec">13</td>
+            <td class="modified-selector-spec">13</td>
+            <td class="modified-selector-spec">20</td>
+        </tr> -->
+        <tr class="comment">
+            <td class="modified-selector-comment">Egy elem (1) és egy pseudo-class selector (10) <br><strong> 11 </strong></td>
+            <td class="original-selector-comment">3 db elemszintű selector (3) és egy pseudo-class selector (10) <br><strong> 13 </strong></td>
+            <td class="modified-selector-comment">3 db elemszintű selector (3) és egy class selector (10) <br><strong> 13 </strong></td>
+            <td class="modified-selector-comment">2 db class selector(20) és egy pszeudo-elem selector <br><strong> 20 </strong></td>
+        </tr>
+        <tr class="selector">
+            <td class="modified-selector">.reg-form input[type="text"]</td>
+            <td class="original-selector">#intro .highlighted.right-aligned</td>
+            <td class="modified-selector">#intro .highlighted > .highlighted</td>
+            <td class="modified-selector">div {color:blue !important} </td>
+        </tr>
+        <!-- <tr class="specificity">
+            <td class="modified-selector-spec">21</td>
+            <td class="original-selector-spec">120</td>
+            <td class="modified-selector-spec">120</td>
+            <td class="modified-selector-spec">1002</td>
+        </tr> -->
+        <tr class="comment">
+            <td cclass="modified-selector-comment">Egy class selector (10) egy attribútum selector (10) és egy elemszintű selector (1) <br><strong> 21 </strong></td>
+            <td class="original-selector-comment">Egy ID (100) és 2 db class selector (20) <br><strong> 120 </strong> </td>
+            <td class="modified-selector-comment">Egy ID (100) és 2 db class selector (20) <br><strong> 120 </strong></td>
+            <td class="modified-selector-comment">Egy elemszintű selector (2) és az !important megjelölés, ami minden más formázást felülír <br><strong> 1002 </strong></td>
+        </tr>
+        <tr class="selector">
+            <td class="modified-selector">h2 ~ p.subtitle</td>
+            <td class="original-selector">section > h2 + p > span.strong</td>
+            <td class="modified-selector">div ul ~ li:first-child::after </td>
+            <td class="modified-selector"> #comment, #date, #approved, #chekcout</td>
+        </tr>
+        <tr class="specificity">
+            <td class="modified-selector-spec">12</td>
+            <td class="original-selector-spec">14</td>
+            <td class="modified-selector-spec">14</td>
+            <td class="modified-selector-spec">400</td>
+        </tr>
+        <tr class="comment">
+            <td class="modified-selector-comment border-bottom-left-radius">2 db elemszint (2) és 1db class selector</td>
+            <td class="original-selector-comment">4 db elemszintű selector (4) és 1db class selector (10)</td>
+            <td class="modified-selector-comment">3 db elemszintű selector (3) egy pszeudo-elem selector és egy pszeudo-class selector (10)</td>
+            <td class="modified-selector-comment border-bottom-right-radius">4 db ID selector (400)</td>
+        </tr>
+     </tbody>
+ </table>
+</html>
