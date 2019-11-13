@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang=hu>
+
+<head>
+    <meta charset="UTF-8">
+    <title>2019 10 29 házi feladat</title>
+
+</head>
+
+<body>
+    <article>
+        <h1>Házi feladat (2019 10 29)</h1>
+        <!-- A házi feladatot szemantikus, valid HTML 5 dokumentum formájában, GitHubon küldd be, Pull Request formájában.-->
+        <article>
+            <h2>Kérdések</h2>
+            <!--Dolgozd ki az alábbi kérdéseket! A válaszod néhány mondat legyen, nem szükséges elmerülni a részletekben. Egy rövid válasz és egy-két kiegészítő mondat, ami segít elhelyezni elegendő.-->
+            <section>
+                <h3> Mi az az URL?</h3>
+                <p> Az URL az interneten elérhető adatok szabványosított címe, amely tartalmazza az kommunikációra
+                    használt protokollt (pl: http), a gép vagy tartomány nevét ahonnan az adatra szükségünk van
+                    (domainek), a hálózati port számát (ezt nem minden esetben adják meg), és a szerver adattárolóján
+                    lévő elérési
+                    utat az adott információhoz.</p>
+            </section>
+
+            <section>
+                <h3>Mi az az IP cím?</h3>
+                <p> Az IP, másnéven Internet Protokol cím egy a számítógépek megkülönböztetésére használt azonosító az
+                    interneten. Létezik belőlük statikus, amikor minden internetre csatlakozáskor ugyanazzal a
+                    azonosítóval lép fel, illetve van a dinamikus, amikor minden egyes felcsatlakozáskor egy új címet
+                    kap a
+                    számítógép.</p>
+            </section>
+
+            <section>
+                <h3> Mi az a domain név?</h3>
+                <p> A domain az URL része, amely az internet meghatározott részére mutat, például www.weboldal.hu, ahol
+                    minden egyes ponttal elválasztott karakterlánc egy domain, ami egy IP címet takar. A domain neveket
+                    a
+                    könnyebb megjegyezhetőség érdekében hozták létre, mivel ezek helyett számsorokat tartalmazó IP
+                    címeket kéne
+                    használni.</p>
+            </section>
+
+            <section>
+                <h3> Mi az az aldomain?</h3>
+                <p> A domain nevek hierarhikus rendszerben épülnek fel, amelyben az aldomainek a tartományon belüli
+                    alcsoportokra mutatnak
+                    rá. A hierarchiában a tartománynév legvégén lévő .hu vagy .org a legmagasabb, úgynevezett Top level
+                    domain. Például a valami.weboldal.hu esetében a "valami" "weboldal.hu" aldomainje.</p>
+            </section>
+
+            <section>
+                <h3> Mi az a Domain Name Service?</h3>
+                <p>A DNS-ként is hívott szolgáltatás a tartomány nevek fordítására szolgál, amely a számítógépek számára
+                    értelmezhető IP címeket ad vissza. Ezen lefordított IP címek segítségével már kapcsolatot tudnak
+                    létesíteni az internetre felcsatlakozott számítógépek egymással.
+                    Egyszerűbb fordításban az internet "telefonkönyveként" is emlegetik.</p>
+            </section>
+
+            <section>
+                <h3> Mi az az IANA és mi a feladata?</h3>
+                <p> Az IANA biztosítja, hogy minden domain név egy egyedi IP címhez legyen hozzárendelve, ezzel
+                    megelőzve a
+                    kommunikációs problémákat az internetre csatlakozott eszközök között. Eleinte az Egyesült Államok
+                    irányítása
+                    alatt állt, jelenleg viszont az ICANN nonprofit vállalat felügyeli a tevékenységüket.</p>
+            </section>
+
+            <section>
+                <h3>Mi az az Internet Szolgáltatók Tanácsának és mi a feladata? </h3>
+                <p> Az magyarországi TLD, avagy top level domain-ek alá tratozó aldomainek menedszelése, valamint a
+                    magyar DNS
+                    szerver kezelése.</p>
+            </section>
+
+            <section>
+                <h3>Mi az a Budapest Internet Exchange? </h3>
+                <p>A BIX biztosítja a kapcsolatot a magyaroroszági internetszolgáltatókhoz tartozó hálózatok kapcsolatát
+                    a a belföldi és
+                    külföldi hálózatokkal. Ez egy szolgáltató semleges szervezet, amelynek tulajdonosa az Internet
+                    szolgáltatók
+                    Tanácsa Tudományos Egyesület.</p>
+            </section>
+
+            <section>
+                <h3> Mi az a HTML?</h3>
+                <p>Hypertex Markup Language rövidítése, amely egy szöveg alapú leíró nyelvet takar. Ezen leíró nyelvet
+                    használják a böngészők az internetes tartalmak megjelenítésére.</p>
+            </section>
+
+            <section>
+                <h3> Írd le a HTML dokumentum általános szerkezetét!</h3>
+                <ol>
+                    <li>Meghatározzuk a a böngésző számára, hogy milyen HTML nyelven íródott a fájl. Beütjük a
+                        &#60;!DOCTYPE html&#62; karaktereket, majd beütünk egy nyitó a &#60;html&#62; tag-et</li>
+                    <li>Ezután a &#60;head&#62; és &#60;/head&#62; tagek-en belül megadjuk azokat az adatokat, amelyek
+                        nem a megjelenítendő tartalomra vonatkoznak,
+                        mint források, karakterkészlet st.</li>
+                    <li>A &#60;body&#62; és &#60;/body&#62;tagek-en belül megadjuk a megjelenítendő tartalmat, amit majd
+                        meg kell jeleníteni a böngészőnek.</li>
+                    <li>Az egészet lezárjuk egy záró &#60;/html&#62; tag-el</li>
+                </ol>
+
+            </section>
+
+
+            <section>
+                <h3>Mi az a Document Type Definition? </h3>
+                <p> A html fájlok első sorában megadott információ, ami a böngésző számára megadja, hogy a fájl milyen
+                    nyelven
+                    írodott. A HTML5 óta az általánosan használt kifejezés a (&#60;!DOCTYPE HTML&#62;), korábban
+                    hosszabb sorokban fejezték ki a korábbi html verziókat.</p>
+            </section>
+
+            <section>
+                <h3> Mi az a &#60;head&#62;?</h3>
+                <p> A böngésző számára hasznos információkat a &#60;head&#62; és &#60;/head&#62; közé helyezzük, mint
+                    stíluselemek,
+                    hivatkozások, szkriptek, vagy metaadatok (pl karakterkódolás)</p>
+            </section>
+
+            <section>
+                <h3>Mi az a &#60;body&#62;?</h3>
+                <p>A HTMl fájl azon fő része, ami tartalmazza a megjeleníteni kívánt adatokat, legyen az szöveg, kép
+                    vagy
+                    videó.</p>
+            </section>
+
+            <section>
+                <h3>Mik azok a metaadatok? </h3>
+                <p>A metaadatok a böngészőben megjelenítendő adatokra vonatkozóan adnak meg a tartalomra vonatkzó
+                    tulajdonságokat, mint karakterkészlet, rövid összegolaló az oldalról, illetve kulcsszavak listája.
+                </p>
+            </section>
+
+            <section>
+                <h3> Mi az a &#60;title&#62; és hova írhatjuk? </h3>
+                <p>A title tag csakis a head részben adható meg, ami a böngészőn megjelenő címben fog megjelenni.</p>
+            </section>
+
+            <section>
+                <h3>Mi az a &#60;br&#62;? </h3>
+                <p>A br tag másnéven "break" sortörést jelent. Ez a tag magában felhasználható, nincs lezáró tag</p>
+            </section>
+
+            <section>
+                <h3>Mik azok a HTML elemek? </h3>
+                <p>Html elemek azon részei a html fájloknak, amelyek lehetővé teszik a böngésző számára a
+                    megjelenítendő tartalmak hierarchikus elrendezését, ezzel könnyű értelmezhetőségét.
+                </p>
+            </section>
+
+            <section>
+                <h3>Mik azok a HTML tagek? </h3>
+                <p>Olyan &#60; és &#62; zárójelek közé írt speciális jelek amelyeket a böngésző értelmezni tud, ez
+                    alapján jelenítve meg a szöveges vagy egyéb tartalmakat.</p>
+            </section>
+
+            <section>
+                <h3>Mit jelent az, hogy egy tag páros vagy páratlan? </h3>
+                <p> A páros html tag esetében mindig van egy záró és nyitó elem, mint a body (&#60;/body&#62;) vagy p
+                    (&#60;/p&#62;) tag esetében.
+                    Páratlan html tag esetében az elem magában áll, nincs szükség nyitó vagy záró tag például
+                    &#60;br&#62;
+                    esetében.</p>
+            </section>
+
+            <section>
+                <h3>Mit jelent az, hogy a HTML dokumentum fa szerkezetű? </h3>
+                <p>A html elemeinek hierarchiája fa struktúrában írható le, ahol a html nyitó és záró elemekbe ágyazott
+                    újabb elemeket
+                    nevezzük gyereknek. Minden elemnek egy szülője lehet, de minden elemhez több gyerek elem
+                    tartozhat.</p>
+            </section>
+
+            <section>
+                <h3>Mi a különbség a DOM és a forráskód között? </h3>
+                <p> A DOM a böngésző által már feldolgozott modell, ami változtatható, módosítható a böngészőben
+                    közvetlenül. A forráskód ezzel szemben azt a fájlt jelenti, amiből elkészíti a böngésző a
+                    DOM-ot, és ez nem változtatható.</p>
+            </section>
+
+            <section>
+                <h3> Mit jelent, hogy egy elem egy másiknak a gyermeke?</h3>
+                <p> Ez egy alárendeltségi viszonyt jelöl, ahol egy elem (például p) egy div vagy section tag-be van
+                    beágyazva.</p>
+                <p>
+                    Például <br> &#60;div&#62; <br> &#60;p&#62; Szöveg &#60;/p&#62; <br> &#60;/div&#62;
+                </p>
+            </section>
+
+            <section>
+                <h3>Mi az a gyökérelem? </h3>
+                <p>A gyökérelemnek azt az elemet hívjuk, aminek leszármazottja az összes elem a html fa
+                    struktúrában. Ennek tag-je html</p>
+            </section>
+
+            <section>
+                <h3>Mi az a HTML validáció? </h3>
+                <p>Azt folyamatot nevezzük HTML validációnak, amikor megvizsgáljuk, hogy az adott fájl tartalma megfelel
+                    e egy adott szabványnak.
+                    Ennek vizsgálatára a leggyakrabban a W3C konzorcium validáló oldalát szokták alkalmazni, ami
+                    megvizsgálja a html oldalak elemeinek kapcsolatát.
+                </p>
+            </section>
+
+            <section>
+                <h3> Mi az a szemantikus HTML, miért fontos?</h3>
+                <p> A szemantikus html biztosítja az oldalon megjelenő információk értelmezését, ezzel mind a
+                    böngészők, valamint speciális fordító, és keresőprogramok számára egyaránt értelmezhető
+                    informácíiót adva.</p>
+            </section>
+
+        </article>
+
+        <article>
+            <h2> Kutatómunka</h2>
+            <section>
+                <h3>Hogyan tudunk HTML kódot megjeleníti, úgy ahogy van, anélkül, hogy a böngésző feldolgozná azt,
+                    mint HTML kód? </h3>
+                <p>Szövegszerkesztőt (notepad), vagy speciális html szerkesztő (VSCode, notepad++) használatával
+                    jeleníthetőek meg a gépen tárolt html fájlok. Ha külső weboldal forráskódját szeretnénk
+                    megtekinteni Google Chrome-ot használva, akkor esetében CTRL+U, vagy jobb klikk-->view page
+                    source.</p>
+            </section>
+
+            <section>
+                <h3>Add meg a címét egy max. 15 perces videónak arról, hogy "mi történik mikor Internetezünk".</h3>
+                <a href="https://www.youtube.com/watch?v=7_LPdttKXPc.">
+                    <p>https://www.youtube.com/watch?v=7_LPdttKXPc.</p>
+                </a>
+            </section>
+
+
+        </article>
+
+        <article>
+
+            <h2>Gyakorlat:</h2>
+            <p> Válassz ki egy szövegszintű, egy csoportosító és egy szekciót képező elemet a HTML Living Standardból és
+                írj egy kb. 5 mondatos összefoglalót az egyes elemekről.</p>
+
+
+            <section>
+                <h3> Szövegszintű elem: span</h3>
+                <p>A span elem önmagában nem értelmezhető a html fájlban, a szövegre extra tulajdonságok megadása nélkül
+                    nincs kihatással. Az
+                    elemnek akkor lesz jelentősége, ha valamilyen stíluselemet, saját stíluslapot, vagy azonosítót adunk
+                    hozzá (mint class, id stb.) amihez egy külsö stíluslap hivatkozhat.
+                    Ezen szövegszintű elem egy stíluslap használata esetén tudja megváltoztatni a megjelenítendő
+                    tartalmat, ami
+                    a span tag-eg közé zárnak.
+                    Használata elsősorban a megjelenítendő tartalmak tulajdonságainak megváltoztatásában lehet
+                    segítségünkre, akár dinamikusan is.<br>
+                    <a href="szoveg_elem.html">Példa a span elemre</a></p>
+
+            </section>
+            <section>
+                <h3> Csoportosító elem: ul</h3>
+                <p> Az ul elem egy rendezetlen, sorszám nélküli listát jelenít meg. A lista elemeit az &#60;ul&#62; és
+                    &#60;/ul&#62; tag-ek közé helyezzük. Magát a listaelem tartalmát pedig &#60;li&#62; és &#60;/li&#62;
+                    közé írjuk.
+                    Lehetőség van a lista elemen belüli lista létrehozására, ezzel komplexebb felsorolásokat
+                    létrehozására.
+                    A rendezetlen lista elsősorban olyan tartalmak listamegjelenítésre szolgál, ahol sorrend nélkül
+                    akarjuk
+                    megjeleníteni felsorolni kívánt tartalmakat,
+                    pl egy receptnél a hozzávavalók felsorolása.<br>
+                    <a href="csoport_elem.html">Példa az ul elemre</a></p>
+            </section>
+            <section>
+                <h3>Szekciót képező elem: section</h3>
+                <p> A section elem a html fáljt szakaszainak általános elválasztására alkalmas, másnéven az egy téma alá
+                    tartolzó szöveges tartalmak egy csoportba való terelésére.
+                    A section elem általában tartalmaz egy heading elemet, amely megadja a téma címsorát. A section
+                    elemeket
+                    elsősorban fejezetek-re lehet hatékonyan használni, amelynek külön alcíme
+                    van, ezzel is megkülönböztetve a szakaszakokat egymástól. <br>
+                    <a href="szekcio_elem.html">Példa az section elemre</a>
+                </p>
+            </section>
+        </article>
+    </article>
+</body>
+
+</html>
