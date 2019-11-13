@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+
+<html>
+   
+<head>
+<title> Első házi feladatom - HTML </title>
+</head>
+
+<body>
+<h1>Elméleti kérdések</h1>
+
+<p>
+    1. Mi az az URL?
+    Az URL (Uniform Resource Locator) az interneten megtalálható  bizonyos erőforrások szabványosított címe. <br>
+    A cím összefoglalja a dokumentum megtalálásához szükséges négy alapinformációt:
+        <ul>
+        <li>a protokollt, amit a célgéppel való kommunikációhoz használunk</li>
+        <li>a szóban forgó gép vagy tartomány nevét</li>
+        <li>a hálózati port számát, amin az igényelt szolgáltatás elérhető a célgépen</li>
+        <li>a fájlhoz vezető elérési utat a célgépen belül.</li>
+        </ul>
+<br>
+    2. Mi az IP cím? <br>
+    Az IP-cím egy egyedi hálózati azonosító, amelyet az internetprotokoll segítségével
+    kommunikáló számítógépek egymás azonosítására használnak.
+<br>
+<br>
+    3. Mi az a domain név? <br>
+    A domain a szerver számítógépek beazonosítására létrehozott névtartomány.
+    domain neveket – végződésük (névterük) alapján – alapvetően két nagy csoportba lehet osztani:
+    <ol>
+     <li>nemzetközi fődomainek (pl: .com, .org, .net)</li>
+     <li>nemzeti domainek (pl: .hu, de a mai napig létezik a .su amit a Szovjetuniónak hoztak létre és a mai napig érvényes.</li>
+    </ol>
+    4. Mi az az aldomain? <br>
+    A ponttal elválasztott, összetett domain név első része, amellyel lehetővé válik a domain néven belül alcsoportok
+    létrehozása. Az aldomain a fődomain-ből származik, így kizárólag a fődomain tulajdonosa tud hozzá további aldomaineket létrehozni. <br>
+    pl: ha zsofi.hu a fődomain, akkor annak aldomainje lehet pl az angol.zsofi.hu vagy a a magyar.zsofi.hu
+<br>
+<br>
+    5.Mi az a Domain Name Service? <br>
+    A Domain Name System (DNS) egy olyan directory ami emberi szemmel értelmezhető címeket (pl. www.zsofi.hu) fordít le gép 
+    által értelmezhető IP címmé. A DNS olyan mint az internet "telefonkönyve". Ha nem lenne DNS akkor a címeket csak közvetlenül az ember
+    számára nem értelmezhető IP címmel lehetne elérni. A DNS egy hierarchikus rendszer ami beazonosítja hogy az internetes oldalak hol helyezkednek el. A DNS szervereket az internetszolgáltatók üzemeltetik.
+    Az intelligens DNS service-ek meg tudják vizsgálni, hogy a legmegbízhatóbb IP címet küldjék vissza a kérésekre.
+ <br>
+<br>
+    6. Mi az az IANA és mi a feladata? <br>
+    Az IANA (Internet Assigned Numbers Authority) globálisan felügyeli az IP címek kiosztását és a DNS-t. <br>
+    Az IANA üzemelteti az .org domaint. 
+<br>
+<br>
+    7. Mi az az Internet Szolgáltatók Tanácsának és mi a feladata? <br>
+    Az ISZT üzemelteti a .hu domaint. Az egyesület célja továbbá a magyarországi internet szolgáltatók
+    szakmai koordinációs és édekvédelmi képviselete. <br>
+<br>
+    8. Mi az a Budapest Internet Exchange? <br>
+    A BIX (Budapest Internet Exchange) 1995-ben alakult és alapvető célja, hogy a különböző internetszolgáltatók közötti
+    magyarországi és regionális internet forgalom ne terhelje a szolgáltatók nemzetközi irányú kapcsolatait és platformot
+    biztosítson a szolgáltatói hálózatok IP alapú összekapcsolásához. <br>
+    A BIX üzemeltetője az ISZT. 3 telephelyen működő csomópontból áll.
+<br>
+<br>
+    <h1>HTML kérdések</h1>
+<br>
+    1. Mi az a HTML?
+    Hypertext Markup Language. leíró nyelv, melyet weboldalak
+    készítéséhez fejlesztettek ki, és mára már internetes szabvánnyá vált a W3C (World Wide Web Consortium) támogatásával.
+    Az aktuális változata a HTML5.
+<br>
+<br>
+    2. Írd le a HTML dokumentum általános szerkezetét!
+    Egy HTML állomány három fő részre bontható: <br>
+<ol>
+    <li>A Dokumentum típus definíció az állomány legelején</li>
+    <li>a HTML fejléc, ami technikai és dokumentációs adatokat tartalmaz, amelyeket az internet böngésző nem jelenít meg
+    tehát átlag felhasználó ezeket nem látja </li>
+    <li>a HTML törzs (body) amely a megjelenítendő információkat tartalmazza.</li>
+</ol>
+
+    3.Mi az a Document Type Definition?<br>
+    A dokumentum típus definíció megmutatja, hogy a HTML melyik generációjában írodott az adott HTML fájl és ez alapján
+    milyen szabályok vonatkoznak rá. Az aktuális verzió a HTML5. Segít a böngészőnek hogy hogyan jelenítse meg a tartalmat. 
+    Egyszer szerepelhet a HTML fájlban, a legelső HTML tag előtt.
+<br>
+<br>
+    4. Mi az a head?
+    Lsd 2. kérdés + <br>
+    A head elem metaadatokat (data about data) tartalmaz amit a böngésző közvetlenül nem jelenít meg (csak a bodyt). <br>
+    Tartalmazza: a titlet, a character set-et, a stílusdefiníciókat, a viewportot (információt biztosít a böngészőnek
+    hogy milyen scalinget használjon), a script elementet (a kliensoldali JavaScriptet), a base elementet.
+    <br>
+    <br>
+    5. Mi az a body? <br>
+    A bod element tartalmaz minden megjelenítendő tartalmat (szöveg, hyperlink,kép, táblázat,lista stb.)
+    <br>
+    <br>
+    6. Mik azok a metaadatok? <br>
+    A head-ben szereplő adatok. (adatok adatokról). A metaadatok tartalmazzák pl. a keresőszavakat, a szerzőt, az utolsó módosítás dátumát, a viewportot.
+    <br>
+    <br>
+    7. Mi az a title és hova írhatjuk?
+    Title-t a head elementbe írhatjuk és a html megnyitásakor a böngésző title bar-ján/tab-én szerepel és csak szöveget tartalmaz.
+    <br>
+    <br>
+    8. Mi az a br? <br>
+    Szimpla sor break.
+    <br>
+    <br>
+    9. Mik azok a HTML elemek? <br>
+    Egy HTML elem egy ún. nyitó és zárótagból áll és eközött található a tartalom. Vannak olyan tagek amiknek nincs zárótage, pl a br vagy az img . 
+    HTML elemnek hívunk mindent a kezdőtag elejétől a zárótag végéig.
+    <br>
+    <br>
+    10. Mik azok a HTML tagek? <br>
+    A HTML tag egy karakterlánc ami egy bizonyosparancsot ad a webböngészőnek. A HTML tagek konzisztensek így biztosítják a HTML dokumentum
+    értelmezhetőségét.
+    <br>
+    <br>
+    11. Mit jelent az, hogy egy tag páros vagy páratlan? <br>
+    Páros: van nyitó és záró tagje
+    Páratlan: nincs zárótagje
+    <br>
+    <br>
+    12. Mit jelent az, hogy a HTML dokumentum fa szerkezetű? <br>
+    Fa szerkezetű, mert szülő, gyermek és testvér elemekből épül fel - a struktúrája tehát hierarchikus.
+    <br>
+    <br>
+    13. Mi a különbség a DOM és a forráskód között? <br>
+    A DOM-ot a böngésző hozza létre automatikusan míg a forráskódot a fejlesztő írja.
+    <br>
+    <br>
+    14. Mit jelent, hogy egy elem egy másiknak a gyermek? <br>
+    Ha egy elem egy másiknak gyermek akkor az az elem egy szülő. Minden gyermeknek egy szülője lehet de egy szülőnek több gyermeke. A szematikus HTML alapja a gyerek-szülő kapcsolat.
+    <br>
+    <br>
+    15. Mi az a gyökérelem? <br>
+    A HTML elem (html) a legelső szülő, felette nincs elem, belőle származnak a további HTML elemek (head, body stb.)
+    <br>
+    <br>
+    16. Mi az a HTML validáció? <br>
+    A validáció során ellenőrzésre kerül, hogy a megírt HTML kódunk megfelel e a standardoknak. A böngészók ugyan bizonyos szintakszis hibákat
+    tudnak javítani, de a validáció segít abban hogy megfelelő technikai minőségű a dokumentumunk és nem fogunk ún. validációs hibákba futni.
+    <br>
+    <br>
+    17. Mi az a szemantikus HTML, miért fontos? <br>
+    A szemantikus HTML a HTML felhasználása arra, hogy a weboldalak és webalkalmazások
+    esetében biztosítsa az információ helyes szemantikáját ill. értelmezését, a megjenítési mód meghatározásán túl. Avégből fontos, hogy pl. látássérült 
+    felhasználók is értelmezni tudják a tartalmat felolvasóprogram segítségével. 
+    <br>
+    <br>
+    <h1>Kutatómunka</h1><br>
+    1. Hogyan tudunk HTML kódot megjeleníti, úgy ahogy van, anélkül, hogy a böngésző feldolgozná azt, mint HTML kód?<br>
+    Azt a megoldást találtam, hogy ha a fájl nevéből lehagyjuk azt hogy (.html) majd a fájlt egy webböngészővel nyitjuk meg,
+    akkor a forráskódot kapjuk vissza.
+    <br>
+    <br>
+    2. Add meg a címét egy max. 15 perces videónak arról, hogy "mi történik mikor Internetezünk"<br>
+    <a href="https://www.youtube.com/watch?v=x3c1ih2NJEg"> How does the Internet work?</a></a><br>
+    <br>
+    3. Válassz ki egy szövegszintű, egy csoportosító és egy szekciót képező elemet a HTML Living Standardból és írj
+     egy kb. 5 mondatos összefoglalót az egyes elemekről.
+    Írj egy-egy példát is az elemek használatáról. A példák teljesértékű HTML oldalak legyenek. <br>
+    Szövegszintű elemek - text-level semantics <br>
+    a, Cite elem
+    A cite elem arra szolgál hogy kifejezzünk a szövegben egy nevet/címet
+    (pl egy könyv címét,egy játék nevét, egy művészeti alkotás nevét).
+    A cite elem nem egyezik meg a sima dőlt betűvel, mert más a célja: kifejezni hogy adott névről/címről van szó a szövegben.
+    Kiemelendő, hogy a cite elemet nem használhatjuk idézet jelölésére! Dokumentumok tartalomjegyzékében fellelhető a cite elem, itt a hivatkozott mű címét emeljük ki vele.
+    Példa a helyes használatra: <br>
+    <p>A kedvenc könyvem az <cite>Utas és Holdvilág</cite> Szerb Antaltól.
+    A kedvenc versem <cite>Anna Örök</cite> Juhász Gyulától.</p>
+    
+    b, Csoportosító elem - Grouping content <br>
+    A hr elem
+    A hr elem célja hogy fejezetszinten, nagyobb fejezetek között vizuális választóvonalat alkosson, jelezvén a témaváltást.
+    A hr elem páratlan, nincs zárótage, hasonlóan a br elemhez.<br>
+    Példa a hr elemre a 3 különbüző feladattípust elválasztó vonal ebben a házi feladatban.
+    <br>
+    <br>
+    c, Szekcióképző elem<br>
+    Section elem<br>
+    A section elem egy dokumentumon belül tematikusan rendezi a tartalmat. Általánosságban egy új szekciót egy heading kezd.
+    Egy hírekkel foglalkozó weboldalnak 3 szekció lehet pl a bevezető rész (magunkról), maguk a hírek és a kontakt/információ rész.
+    <br>
+
+</p>
+
+</body>
+
+</html>
