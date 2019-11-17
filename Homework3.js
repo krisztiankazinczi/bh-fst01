@@ -32,6 +32,25 @@ for (let paros = 1; paros <= 100; paros++) {
 console.log(arr1)
 
 /**
+ * Vagy
+ */
+
+const arr3 = []
+for (let parosszam = 1; parosszam <= 100; parosszam++) {
+
+    if (parosszam % 2) {
+        parosszam = parosszam +1;
+        arr3.push(parosszam)
+    }
+
+    if (!(parosszam % 10)) {
+        console.log(arr3.length)
+    }
+}
+console.log(arr3)
+
+
+/**
  * Második Feladat
  */
 
