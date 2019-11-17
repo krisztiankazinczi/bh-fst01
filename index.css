@@ -1,0 +1,315 @@
+.social {
+    padding: 0;
+    padding-right: 35px;
+    float: right;
+}
+
+.social > .icons{
+    width: 25px;
+    height: 25px;
+}
+
+.hero {
+    text-align: center;
+    background: url(https://braininghub.hu/wp-content/uploads/2019/03/2402.png);
+    height: 850px;
+}
+
+.herolink {
+    margin: 50px auto;
+    background-color:#11e88d;
+    width: 370px;
+    height: 50px;
+    margin-bottom: 200px;
+    border: 1px #11e88d solid;
+    border-radius: 35px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 25px;
+    color: white !important;
+}
+
+.hero .content {
+    display: inline-block;
+    font-size: 32px;
+    color: #11e88d;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 40px;
+    margin: 420px auto;
+    width: 975px;
+    height: 200px;
+    margin-bottom: 0px;
+}
+
+.hero .contpar {
+    color:white;
+    margin:0;
+}
+
+.info {
+    background: #204778;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.info .inline {
+    text-align: left;
+    display: inline-block;
+    width: 1000px;
+    color: #11e88d;
+}
+
+.inline h2 {
+    color: #11e88d;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 45px;
+    width: 385px;
+    height: 95px;
+    display: inline-block;
+}
+
+.info .fehér {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    font-family:  'Ropa Sans', sans-serif;
+    font-size: 50px;
+    
+    
+}
+
+.aside img {
+    float: left;
+    width: 265px;
+    height: 265px;
+    padding-left: 225px;
+}
+
+.inline h3 {
+    vertical-align: middle;
+}
+.time {
+    font-family: 'Ropa Sans', sans-serif;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+
+.kedv{
+    font-family: 'Ropa Sans', sans-serif;
+    margin-top: 0;
+    color: #11e88d;
+    margin-bottom: 20px;
+}
+
+.outer {
+    position: relative;
+ }
+
+ .outer>li {
+     display: inline-block;
+     position: relative;
+     padding-right: 10px;
+ }
+
+ .outer>li:hover .inner {
+     display: block;
+ }
+
+ .inner {
+     color: #051538;;
+     position: absolute;
+     top: 3em;
+     padding: 0;
+     list-style-type: none;
+     display: none;
+     background: white;
+ }
+
+ 
+
+ .lower > nav {
+     float: right;
+     padding-right: 35px;
+ }
+
+ div.upper {
+     margin: 20px 0;
+     border-bottom: 1px solid #747474;;
+     padding-bottom: 10px;
+ }
+
+ #inficon{
+     width: 25px;
+     height: 25px;
+ }
+ div.upper >.contacts {
+     padding-left: 35px;
+     color: #747474;;
+     font-size: 20px;
+     font-family: 'Ropa Sans', sans-serif;
+     
+ }
+
+ .lower>img{
+     padding-left: 35px;
+     padding-bottom: 10px;
+ }
+
+ .inner li {
+     border-bottom: 1px solid #747474;
+     font-family: 'Ropa Sans', sans-serif;
+     font-size: 35px;
+     width: 250px;
+     display: block;
+     height: 75px;
+     padding-top: 25px;
+     top: 3em;
+ }
+
+ .outer a {
+     color: #333333;
+     font-family: 'Ropa Sans', sans-serif;
+     font-size: 25px;
+    
+ }
+
+ .infobutton {
+     text-align: center;
+    background-color:#11e88d;
+    width: 195px;
+    height: 55px;
+    border: 1px #11e88d solid;
+    border-radius: 45px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 25px;
+    padding-top: 25px;
+ }
+ .infobutton img {
+     color: white;
+     background: white;
+ }
+
+ .footer{
+    background: #0d3768;
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.footer h4 {
+    color: white;
+}
+
+aside{
+    width: 350px;
+    display: inline-block;
+    background: #0d3768;
+    margin-right: 0;
+    color: white;
+}
+main{
+    background: #0d3768;
+    width: 350px;
+    display: inline-block;
+    color: white;
+    padding-left: 10px;
+}
+
+main img{
+    width: 305px;
+    height: 75px;
+}
+
+main h5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#asideright {
+    padding-left: 10px;
+  vertical-align: top;  
+
+}
+#asideright p {
+    font-size: 13px;
+    padding-bottom: 25px;
+}
+#asideleft {
+    vertical-align: top;
+    padding-left: 250px;
+}
+#asideleft ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 14px;
+   
+}
+#asideleft ul li {
+    border-bottom: 1px solid #747474;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#asideleft ul li:hover{
+    color: #11e88d;
+}
+
+div select{
+    width: 205px;
+    height: 40px;
+}
+
+#feliratkozom {
+    width: 140px;
+    height: 40px;
+}
+
+main textarea {
+    font-family:  'Ropa Sans', sans-serif;
+    font-size: 20px;
+    background: white;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+main select {
+    font-family:  'Ropa Sans', sans-serif;
+    font-size: 20px;
+    width: 205px;
+    height: 40px;
+}
+
+.also {
+    width: 100%;
+    background: #002856;
+    display: inline-block;
+    
+}
+
+.szöveg{
+    font-family:  'Ropa Sans', sans-serif;
+    font-size: 15px;
+    color: ivory;
+    padding-left: 250px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.szöveg p {
+    margin-top: 0;
+}
+
+.anothericons {
+    float: right;
+    padding: 50px;
+}
+
+
+.anothericons .icons {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
