@@ -1,0 +1,164 @@
+<!DOCTYPE html> <!-- doctype definition: megmondja milyen verziójú a html fájl -->
+<html>
+
+<head>
+    <title> </title>
+    <style>
+        body {
+            background: #444;
+            height: 100%;
+            margin:0;
+            
+        }
+
+        #feed {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            background: #ccc;
+            height: 100%;
+            padding: 10px;
+
+        }
+
+        #feed h1 {
+            margin-left: 0px;
+            margin-top: 0;
+        }
+
+        .post {
+            margin: 10px 0px 0px 0px;
+            position: relative;
+
+        }
+
+
+        .post .date {
+            margin: 10px 0px 10px 0px;
+        }
+
+        .post .content {
+            background: #888;
+            display: block;
+            padding: 10px;
+
+        }
+
+        .post-simple .image {
+            display: inline-block;
+            width: 200px;
+        }
+
+        .post-simple .text {
+            margin-left: 10px;
+            position: relative;
+            display: inline-block;
+            width: 600px;
+            height: 200px;
+            vertical-align: top;
+            background: white;
+
+        }
+
+        .title {
+            display: block;
+            font-size: 24px;
+        }
+
+        .post-simple .title {
+            text-align: center;
+            margin-top:10px;
+        }
+
+        .post-pictures .image {
+            display: inline-block;
+            width: 33%;
+            align-content: center;
+
+        }
+
+        .post-pictures .image img {
+            margin: auto;
+            display: block;
+        }
+
+        .post-pictures .title {
+            background: white;
+            margin-top: 10px;
+        }
+
+        .post-bigpic .content .image {
+            text-align: center;
+        }
+
+        .post-bigpic .text {
+            text-align:left;
+            background: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="feed">
+
+        <h1>My Newsfeed</h1>
+        <section class="post post-simple">
+            <div class="content">
+                    <div class="date">2019.11.07</div><div class="image">
+                    <img src="https://picsum.photos/200/200">
+                </div><div class="text">
+                    <span class="title">Post title</span>
+                    <span>
+                        Donec et tortor id sapien suscipit pulvinar id eu ex.
+                        Etiam hendrerit volutpat sem et mollis.
+                        Quisque laoreet risus at nisi eleifend, vel auctor lorem mollis.
+                        Phasellus maximus urna quam, vel faucibus dui scelerisque at.
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="post post-bigpic">
+
+            <div class="content">
+                <div class="date">2019.11.03</div><div class="image">
+                        <img src="https://picsum.photos/700/400">
+                    </div><div class="text">
+                    <span class="title">Post title</span>
+                    <span> Donec et tortor id sapien suscipit pulvinar id eu ex.
+                        Etiam hendrerit volutpat sem et mollis.
+                        Quisque laoreet risus at nisi eleifend, vel auctor lorem mollis.
+                        Phasellus maximus urna quam, vel faucibus dui scelerisque at.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="post post-pictures">
+
+            <div class="content">
+                <div class="date">2019.11.05</div>
+                <div class="image-container">
+                    <div class="image">
+                        <img src="https://picsum.photos/200/200">
+                    </div>
+                    <div class="image">
+                        <img src="https://picsum.photos/200/200">
+                    </div>
+                    <div class="image">
+                        <img src="https://picsum.photos/200/200">
+                    </div>
+                </div><span class="title">Post title</span>
+            </div>
+        </section>
+    </div>
+
+
+</body>
+
+</html>
