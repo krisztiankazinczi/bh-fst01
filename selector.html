@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Homework</title>
+    <style>
+        main p.highlighted {
+            background-color: yellow;
+            color: red;
+        }
+
+        nav>ul a {
+            font-weight: bold;
+            font-style: italic;
+            color: red;
+        }
+
+        article section:first-child h2 {
+            font-size: 35px;
+            color: red;
+        }
+
+        #intro .highlighted.right-aligned {
+            text-align: right;
+            color: red;
+        }
+
+        section>h2+p>span.strong {
+            font-weight: bold;
+            color: red
+        }
+
+        header{
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+<!--
+    1. Feladat
+    Írjunk HTMLt a szelektorhoz. Ahol több is lehetséges, Írjunk kettőt. A szobanforgo elemet jelöljük HTML megjelenéssel.
+       1. main p.highlighted
+       2. nav > ul a
+       3. article section:first-child h2
+       4. #intro .highlighted.right-aligned
+       5. section > h2 + p > span.strong
+-->
+    <h1>Selectors</h1>
+
+    <header>1.</header>
+    <main>
+        <p class="highlighted">main p.highlighted</p>
+    </main>
+
+    <header>2.</header>
+    <nav>
+        <ul>
+            <li>
+                <a href="">nav > ul a</a>
+            </li>
+            <li>
+                Valami1
+            </li>
+            <li>
+                Valami2
+            </li>
+        </ul>
+    </nav>
+
+    <header>3.</header>
+    <article>
+        <section>
+            <h2>article section:first-child h2</h2>
+        </section>
+
+        <section>
+            <h2>another example</h2>
+        </section>
+    </article>
+
+    <header>4.</header>
+    <article id="intro">
+        <p class="highlighted right-aligned">
+            #intro .highlighted.right-aligned
+        </p>
+    </article>
+
+    <header>5</header>
+    <section>
+        <h2> Another heading</h2>
+        <p> <span class="strong">section > h2 + p > span.strong</span> </p>
+    </section>
+
+<!--
+    2. Feladat
+    Adjunk egy azonos specificitású, egy magasabb specificitású és egy Alacsonyabb specificitású szelektort az iménti szelektorokhoz.
+    Magyarázzuk el, hogy melyik esetben miért akkora a szelektor, amekkora
+-->
+<hr>
+<section>
+<h1>Specificity</h1>
+    <article>
+
+        <header> <b>main p.highlighted: </b> Értéke 12, Mivel egy osztály szelektort tartalmaz (értéke 10), és két típus szelektort(értéke darabonként 1-1)</header>
+        <ul>
+            <li>Azonos specificitású: .firstclass ul li<i> Ahol az (.firstclass) értéke 10 valamint ul, li értéke 1-1 ( Összesen: 12)</i></li>
+            <li>Magasabb specificitású: <b>.firstclass .secondclass :first-line a</b><i>Ahol a két osztály (.firstclass .secondclass) értéke összesen 20, valamint a típus szelektor (a), és a pszeudo elem (::first-line) értéke egyenként 1 (Összesen 22)</i> </li>
+            <li>Alacsonyabb specificitású: <b>.firstclass</b><i> Ahol az osztály értéke magában 10</i> </li>
+        </ul>
+
+        <header> <b>nav > ul a: </b> Értéke 3 mivel ebben három típus szelektor van, amelyeknek értéke darabonként 1</header>
+        <ul>
+            <li>Azonos specificitású: <b>div span a</b> <i>Amelyben három típus szelektor van</i> </li>
+            <li>Magasabb specificitású: <b>div li p span</b> <i>Amiben négy típus szelektor van, értéke darabonként 1 (Összesen 4)</i> </li>
+            <li>Alacsonyabb specificitású: <b>div > ul</b> <i> Amiben két típus szelektor van, darabja 1 (Összesen 2)</i> </li>
+        </ul>
+
+        <header> <b> article section:first-child h2 </b> Értéke 13, mivel három típus szelektort tartalmaz darabja 1 értékkel (article, section, h2), illetve egy pszeudo osztályt (:first-child), amelynek értéke 10 </header>
+        <ul>
+            <li>Azonos specificitású: <b> section a:hover p </b> <i> Három típus szelektort tartalmaz darabja 1 értékkel (a, section, p), illetve egy pszeudo osztályt (:hover), amelynek értéke 10 (Összesen 13) </i>  </li>
+            <li>Magasabb specificitású: <b>.class1.class2 > a</b> <i> Két osztál szelektort tartalmaz (.class1, .class2) melyeknek értéke összesen 20, valamint egy típus szelektort, amelynek értéke 1 (Összesen 21) </i> </li>
+            <li>Alacsonyabb specificitású: <b>.valamiclass</b> <i> Egy osztály szelektort tartalmaz, aminek az értéke 10 (Összesen 10) </i> </li>
+        </ul>
+
+        <header> <b> #intro .highlighted.right-aligned </b> Értéke 120, mivel az #intro ID értéke 100 valamint a két osztály (.highlighted, .right-aligned) értéke darabonként 10</header>
+        <ul>
+            <li>Azonos specificitású: <b> #first > .div:first-child </b> <i>Mivel egy ID-t tartalmaz (értéke 100), valamint egy osztály és egy pszeudo osztály szelektort, melyeknek értéke egyenként 10 (Összesen 120)</i> </li>
+            <li>Magasabb specificitású: <b>#first #second </b> <i> Két ID-t tartalmaz, melyeknek értéke darabonként 100 (Összesen 200) </i> </li>
+            <li>Alacsonyabb specificitású: <b>#yay > ul</b> <i> Egy ID-t tartalmaz (értéke 100) és egy típus szelektort (értéke 1) (Összesen 101)</i> </li>
+        </ul>
+
+        <header> <b> section > h2 + p > span.strong </b> Értéke 14, mivel négy típus szelektort tartalmaz (section, h2, p, span) darabja 1 értékkel, valamint egy osztály szelektort tartalmaz (.strong) 10 értékkel</header>
+        <ul>
+            <li>Azonos specificitású:  <b> article > section::first-child + p.innerclass</b> <i> Mivel három típus szelektor (article, section, p), és pszeudo elem (::first-child) értéke darabonként 1, és egy osztály szelektor (.innerclass), aminek az értéke 10 (Összesen 14)</i> </li>
+            <li>Magasabb specificitású: <b> .firstclass.secondclass.thirdclass div + p</b> <i> Mivel a három osztályszelekort tartalmaz ( .firstclass .secondclass .thirdclass értékük darabja 10-10) és két típus szelektort (div p értékük darabja 1-1) (Összesen 32)</i>  </li>
+            <li>Alacsonyabb specificitású: <b> .justclass > section + div p </b> <i> Mivel egy osztályszelektort tartalmaz (.justclass értéke 10) és három típus szelektort tartalmaz (section, div, p) (Összesen 13)</i> </li>
+            
+        </ul>
+
+    </article>
+</section>
+</body>
+
+</html>
