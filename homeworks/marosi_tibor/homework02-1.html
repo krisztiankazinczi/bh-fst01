@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        main p.highlighted {
+            background: red;
+        }
+
+        nav>ul a {
+            background: green;
+        }
+
+        article section:first-child h2 {
+            background: yellow;
+        }
+
+        #intro .highlighted.right-aligned {
+            background: blue;
+        }
+
+        section>h2+p>span.strong {
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <p class="highlighted">main p.highlighted 1</p>
+        <article>
+            <section>
+                <p class="highlighted">main p.highlighted 2</p>
+            </section>
+        </article>
+    </main>
+
+    <nav>
+        <ul>
+            <a>nav>ul a 1</a>
+            <div>
+                <a>nav>ul a 2</a>
+            </div>
+
+        </ul>
+    </nav>
+
+    <article>
+        <section>
+            <h2>article section:first-child h2 1</h2>
+        </section>
+        <div>
+            <section>
+                <h2>article section:first-child h2 2</h2>
+            </section>
+        </div>
+    </article>
+
+    <article id="intro">
+        <section>
+            <h1 class="highlighted right-aligned">
+                #intro .highlighted.right-aligned 1
+            </h1>
+            <p class="highlighted right-aligned">
+                #intro .highlighted.right-aligned 2
+            </p>
+
+        </section>
+
+    </article>
+
+    <section>
+        <h2>
+
+        </h2>
+        <p>
+            <span class="strong">
+                section>h2+p>span.strong
+            </span>
+        </p>
+    </section>
+
+</body>
+
+</html>
