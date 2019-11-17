@@ -1,0 +1,128 @@
+/*első feladat - . Írjunk HTMLt a szelektorhoz. Ahol több is lehetséges, Írjunk kettőt. A szobanforgo elemet jelöljük HTML megjelenéssel.
+*/
+
+main p.highlighted
+{
+    color: maroon;
+    background-color: mediumaquamarine;
+}
+
+nav > ul a{
+        font-family: cursive;
+}
+
+article section:first-child h2{
+    background-color: mediumvioletred;
+}
+
+#intro .highlighted.right-aligned{
+    font-style: italic;
+}
+
+section > h2 + p > span.strong{
+    background-color: olivedrab;
+}
+
+/*Második feladat - Adjunk egy azonos specificitású, egy magasabb specificitású és egy alacsonyabb specificitású szelektort az iménti szelektorokhoz. 
+Magyarázzuk el, hogy melyik esetben miért akkora a szelektor, amekkora
+1000 - style attribute
+100 - ID (#)
+10 - attribute/class/pseudo class
+1 - name/pseudo element (pl: h1)
+
+2/1.
+Eredeti
+main p.highlighted --> 1 + 1 + 10 =12
+Ugyanolyan
+section h1.firstclass --> 1 +1 +10 =12
+Alacsonyabb:
+section .highlighted --> 1 +10 =11
+Magasabb: 
+main p#highlighted --> 1 + 1 + 100=102
+
+2/2.
+Eredeti
+nav > ul a --> 1+1+1 = 3
+Ugyanolyan
+main section + ol --> 1+1+1=3
+Alacsonyabb
+p:: after --> 1+1 =2
+Magasabb
+nav .highlighted -->1+10=11
+
+2/3.
+Eredeti
+article section:first-child h2 -->1 + 1 +10 +1=13
+Ugyanolyan
+div section:last-child h5 --> 1+1+10+1=13
+Alacsonyabb
+article section::first line --> 1 + 1 + 1=3
+Magasabb
+#section --> 100
+
+2/4.
+Eredeti
+#intro .highlighted.right-aligned --> 100 + 10 +10 =120
+Ugyanolyan
+#intro .highlighted.left-aligned --> 100 + 10+ 10=120
+Alacsonyabb
+#intro .highlighted -->100+10=110
+Magasabb
+inline style: <p style="color:green">This is a paragraph.</p> 1000
+
+2/5.
+Eredeti
+section > h2 + p > span.strong --> 1 + 1 + 1 + 1 + 10= 14
+Ugyanolyan
+section > div + ul > li.strong --> 1 + 1 + 1 + 1 + 10 =14
+Alacsonyabb
+.primary-nav li -->10 + 1 =11
+Magasabb
+. strong .highlighted --> 10 + 10 = 20
+
+*/
+
+/*Harmadik feladat - . Írjunk HTMLt és CSSt az alábbi esetekre*/
+.hover a:hover{
+    font-weight: bold;
+}
+
+.backgroundimage{
+    background-image: url(https://afar-production.imgix.net/uploads/images/afar_post_headers/images/s6P1cWj2kE/original_hawaii_202019.jpg?auto=compress,format,enhance&fit=crop&crop=top&lossless=true&w=1600&h=700);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 50px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+}
+
+.table{
+    width: 600px;
+    border: 2px solid lavender;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 2px solid lavender;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+tbody tr:hover{
+background-color: lightskyblue;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+  }
+
+tr:nth-child(even) {
+   background-color: #fff;
+  }
+
+th {
+    background-color: navy;
+    color: white;
+  }
