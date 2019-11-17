@@ -1,0 +1,48 @@
+ul {
+    max-width: 120px;
+
+}
+
+ul:hover {
+    font-weight: bold;
+}
+
+.secondpart {
+    margin: 10px;
+    background: url(https://picsum.photos/id/101/300/300);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: center;
+}
+
+.secondpart p {
+    padding-top: 150px;
+    height: 300px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+#Fejléc {
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+.páratlan {
+    background: white;
+    color: black;
+}
+
+.páros {
+    background: lightgrey;
+    color: black;
+}
+
+.páratlan:hover,
+.páros:hover {
+    background: lightblue;
+}
+
+table, tr, th, td {
+    border: 1px black solid;
+}

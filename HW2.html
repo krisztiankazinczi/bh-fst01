@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Homework 1-2task</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="1-2task.css">
+</head>
+
+<body>
+
+    <!--First selector-->
+    <section>
+        <h2>First Task</h2>
+        <div class="news">
+            A main p.highlited-hez hasonló ennek a résznek a szelektora = section div.news
+        </div>
+    </section>
+    <p>
+        Vagy például <span class="other">ennek a szelektora = p span.other </span>
+    </p>
+    <hr>
+    <!--Second selector-->
+    <div>
+        <p>
+            A nav > ul a-hoz hasonló ez a szelektor <span> div > p span</span>.
+        </p>
+    </div>
+    <div>
+        <h6>
+            A nav > ul a-hoz hasonló még ez a szelektor <span> div > h6 span</span>.
+        </h6>
+    </div>
+    <hr>
+    <!--Third selector-->
+    <div>
+        <table>
+            <tr>
+                <td>Placeholder so to example makes sense</td>
+            </tr>
+            <tr>
+                <td>Placeholder so to example makes sense</td>
+            </tr>
+            <tr class="kék">
+                <td>Az article section:first-child h2 hasonló szelektor a div table tr.kék</td>
+            </tr>
+        </table>
+    </div>
+    <!--Fourth selector-->
+    <hr>
+    <div id="fourth">
+        <div class="red">
+            A #intro .highlighted.right-aligned-hoz hasonló selector a <span class="red bold"> #fourth .red.bold</span>
+        </div>
+    </div>
+    <p id="fourthsecond">
+        <span class="left">Vagy még a
+            <span class="left green"> #fourthsecond .left.green</span>
+        </span>
+    </p>
+    <!--Fifth selector-->
+    <hr>
+    <ul>
+        <li>Placeholder so the example makes sense</li>
+        <li>
+            <p class="bold"> A section > h2 + p > span.strong szelektorhoz hasonló a ul > li + li > p.bold szelektor</p>
+        </li>
+    </ul>
+    <hr>
+    <h2>Second Task</h2>
+    <table>
+        <tr>
+            <td>Eredeti</td>
+            <td>Azonos</td>
+            <td>Nagyobb</td>
+            <td>Kissebb</td>
+        </tr>
+        <tr>
+            <td> main p.highlighted</td>
+            <td>section div.news</td>
+            <td>#fourth span</td>
+            <td>body h2</td>
+        </tr>
+        <tr>
+            <td>nav > ul a</td>
+            <td>div > p span</td>
+            <td>ul > li +li > p</td>
+            <td>li p</td>
+        </tr>
+        <tr>
+            <td>article section:first-child h2</td>
+            <td>div table tr.kék</td>
+            <td>.left.green</td>
+            <td>span.other</td>
+        </tr>
+        <tr>
+            <td>#intro .highlighted.right-aligned</td>
+            <td>#fourth .red.bold</td>
+            <td>p#fourthsecond > span.left > span.left.green</td>
+            <td>.left.green</td>
+        </tr>
+        <tr>
+            <td>section > h2 + p > span.strong</td>
+            <td>ul > li + li > p.bold</td>
+            <td>#fourthsecond</td>
+            <td>div > p > span</td>
+        </tr>
+    </table>
+
+
+
+
+
+</body>
+
+</html>
