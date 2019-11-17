@@ -1,0 +1,137 @@
+
+body{
+    text-align: left;
+    background-color: lightsteelblue;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+    justify-items: center;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.container {
+    width: 800px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+   
+}
+
+.boxes{
+    
+    margin: 50px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.date{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+#elso-box{
+    background-color: lightgrey;
+    border: 1px solid black;
+    margin: 20px;
+    width: 650px;
+}
+
+.titlefirstbox{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image1{
+    width:200px;
+    margin: 40px;
+
+}
+
+.rightbox{
+    display: inline-block;
+    width: 280px;
+    border: 2px solid white  ;
+    vertical-align: top;
+    margin-top: 38px;
+    padding: 10px;
+    margin-right: 40px;
+    background-color: white;
+}
+
+#masodik-box{
+    background-color: lightgrey;
+    border: 1px solid black;
+    width: 650px;
+    margin: 20px;
+    
+}
+.titlesecondbox{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image2{
+    width: 570px;
+    margin: 40px;
+
+}
+
+.bottombox{
+    display: inline-block;
+    width: 550px;
+    border: 2px solid white  ;
+    vertical-align: top;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+#harmadik-box{
+    background-color: lightgrey;
+    border: 1px solid black;
+    width: 650px;
+    margin: 20px;  
+}
+.titlethirdbox{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imageleft{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+
+}
+
+.imagemiddle{
+    margin-top: 40x;
+    margin-right:40px;
+    margin-bottom: 40px;
+
+}
+
+.imageright{
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+
+.onlytitlebox{
+    display: inline-block;
+    width: 550px;
+    border: 2px solid white  ;
+    vertical-align: top;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: white;
+    
+}
