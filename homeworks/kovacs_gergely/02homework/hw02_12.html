@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='hu'>
+
+<head>
+    <title>02 Homework</title>
+    <link type="text/css" rel="stylesheet" href="hw02_12.css">
+</head>
+
+<body>
+    <header><h1>Second Homework, use the selectors and combinators</h1></header>
+    <div class="feladatok">First task</div>
+    <main>
+        <p class="highlighted">Ez a második házifeladatom a Braininghub oktatásán.</p>
+    </main>
+    <nav>
+        <ul>
+            <li><a href="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/26/3c/87.jpg">Pandamaciról
+                    kép</a></li>
+            <li><a href="https://www.abc.net.au/news/image/11546806-3x2-940x627.jpg">Koalamaciról kép</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section>
+            <h2>Ebben a háziban már leginkább a CSS-el való feladatokon van a hangsúly. A :first-child pseudo osztály selector miatt értéke: 13</h2>
+        </section>
+    </article>
+    <div id="intro">
+        <p class="highlighted right-aligned">
+            Szóval ez egy kettős classal rendelkező formázás id felhasználásával. Mivel
+            van egy szóköz a CSS forráskódban így egy id-vel ellátott szülő elembe kellett raknom a class-al ellátott
+            elemet.
+        </p>
+    </div>
+    <section>
+        <h2>
+            A sectionon belül a gyermek elem a h2 melynek a testvére, közvetlenül követő eleme:
+        </h2>
+        <p>
+            <span class="strong">
+                Egy p elem, melynek van egy span gyermeke, melynek a class neve strong.
+            </span>
+        </p>
+    </section>
+
+    <div class="feladatok">Second task</div>
+    <section id="egyes">
+        <h2 class="none">Just for valid</h2>
+        <div class="elso">
+            10es értékű specificitás.
+        </div>
+        <ul>
+            <li>
+                Ez már egy 112es értékű specificitás, mert az ID szelektor nagyobb mint a class selector és után van 2
+                element selector.
+            </li>
+        </ul>
+        <p>Ő a legalacsonyabb értékű, 003 mivel csak elem selectorról van szó.</p>
+    </section>
+
+    <hr>
+
+    <section id="kettes">
+        <h2 class="none">Just for valid</h2>
+        <div class="masodik">
+            <p>11es értékű specificitás, mert közvetlenül class-ra használom a selectort.</p>
+            <div>102es értékű specificitás, az ID 1 nincs benne class vagy pseudo és az elem selctorok a 2-esek.</div>
+            <div>
+                <h2>4es értékű specificitású selector: section div div > h2 element selectort használva.</h2>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <div>
+        <ul>
+            <li class=harmadik>
+                <ul>
+                    <li>12es értékű specificitás a class 1 és az ul elem 01.</li>
+                </ul>
+                <ul id="harmas">
+                    <li>120as értékű specificitás</li>
+                </ul>
+                <div>04 specificitású elem, a kizárólag element selectorok miatt</div>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="negyedik">
+        <div>
+            Szóval ez egy 11es értékű specificitás a pseudo elem értéke 1 a classé 10. És a mögöttes tartalom:
+        </div>
+        <div>
+            <ul>
+                <li id="negyes">
+                    Ez meg egy valami.... 111-es értékű, van benne class,id és element selector is.
+                </li>
+            </ul>
+        </div>
+        <span>
+            <a href="https://google.co.hu"> 3 értékű specificitás és a google a jóbarátod:) </a>
+        </span>
+    </div>
+
+    <hr>
+
+    <div>
+        <div id="otos">
+            <p>Ez egy 111es értékű specificitású elem: az #otos > p:first-child #id 1 , :first-child 1, p 1.</p>
+            <p class="otodik">Ez egy 10es specificitás elem, sima class selectorral.</p>
+            <a href="#">Utolsó specificitási szelektorhoz, aminek az értéke 3</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

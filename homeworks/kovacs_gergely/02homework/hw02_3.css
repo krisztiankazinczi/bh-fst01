@@ -1,0 +1,56 @@
+.feladatok {
+    font-size: 32px;
+    color: honeydew;
+    background: grey;
+    margin:0;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+}
+
+.task_a {
+    display: inline-block;
+}
+
+.task_a li:hover{
+    font-weight: bold;
+}
+.tasktwo {
+    background-image: url(http://zoozoo.hu/wp-content/uploads/2017/06/moka004.jpg);
+    height:300px;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.twocontent {
+    background-color:rgba(5, 1, 1, 0.5);
+    color:rgba(0,0,0,0.5);
+    width:300px;
+    height: 300px;
+    text-align: center;
+    margin:auto;
+    
+}
+
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+.fejlec {
+    background-color:black;
+    color:white;
+    padding:0;
+}
+.sor {
+    text-align: center;
+}
+
+.sor:nth-child(odd) {
+    background-color:lightgrey;
+}
+
+.sor:hover{
+    background-color:lightblue;
+}
