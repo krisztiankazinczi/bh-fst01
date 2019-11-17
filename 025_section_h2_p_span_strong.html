@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                background-color: #333;
+                color:#ccc;
+            }
+            section > h2 + p > span.strong {
+                color:palevioletred;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <section>
+                <h2>
+                    This is a h2
+                </h2>
+                <p>
+                    <span class="strong">  This text should be highlighted, because it is in a span which has the class "strong"
+                        AND this span is in a p which is immediately after a h2 in the html </span>
+                    <span>  This text should NOT be highlighted </span> 
+                </p>
+                <h2>
+                    This is a h2
+                </h2>
+                <div>
+                    this is a div bt a h2 and a p. so the next p is not gonna be highlighted
+                </div>
+                <p>
+                    <span class="strong">  This text should NOT be highlighted, because even though it is in a span which has the class "strong"
+                       the p element, which this span in inside of is NOT immediately after a h2 in the html. There is a div bw the two </span>
+                </p>                
+                <p>
+                    <h2>
+                       This is another h2 inside a p <br>
+                    </h2>
+                    <p>
+                        <span class="strong">  This text is in a p which is inside another p and it should be highlighted, 
+                            because the class of the span it is in is "strong" and there is a h2 just before the inner p </span>
+                    </p>
+                </p>
+               
+            </section>
+        </article>
+    </body>
+</html>
