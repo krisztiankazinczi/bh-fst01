@@ -43,11 +43,13 @@ html, body {
 
 .thirdpicture {
     display: inline-block;
-    width: 282px;
+    width: 32.9%;
 }
 
 .piccontainer {
-    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+    height: 300px;
 
 }
 
