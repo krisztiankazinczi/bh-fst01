@@ -1,0 +1,86 @@
+
+main p.highlighted { 
+    /* original */
+}
+
+span.myclass a {
+    /* equal */
+}
+
+#footer ul li {
+    /* higher */
+} 
+
+a .headerLinks {
+    /* lower */
+}
+
+
+nav>ul a {
+    /* original */
+}
+
+article>header+section {
+    /* equal */
+}
+
+div.container {
+    /* higher */
+}
+
+div>span {
+    /* lower */
+}
+
+
+article section:first-child h2 {
+    /* originak */
+}
+
+body aside>div.menu {
+    /* equal */
+}
+
+#sidebar ul>li>a {
+    /* higher */
+}
+
+section p span {
+    /* lower */
+}
+
+
+
+#intro .highlighted.right-aligned {
+    /* original */
+}
+
+
+#header .container:first-child {
+    /* equal */
+}
+
+#footer .faq tr:nth-child(even) {
+    /* higher */
+}
+
+h2 .primary-color {
+    /* lower */
+}
+section>h2+p>span.strong {
+    /* original */
+}
+
+table>tr>td>a:visited {
+    /* equal */
+}
+
+.postContainer.postText {
+    /* higher */
+}
+
+article section div{
+    /* lower */
+}
+
+

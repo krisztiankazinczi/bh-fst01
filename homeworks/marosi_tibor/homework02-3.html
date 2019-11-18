@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .first ul li:hover {
+        font-weight: bold;
+      }
+
+      .second div {
+        background: url("https://picsum.photos/300/300");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+      }
+
+      .third table tr:nth-child(even) {
+        background: #ccc;
+      }
+
+      .third table tr:first-child {
+        background: #444;
+        color: white;
+        font-weight: bold;
+      }
+
+      .third table tr:not(:first-child):hover {
+        background: lightblue;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      3. Írjunk HTMLt és CSSt az alábbi esetekre
+    </h1>
+    <h2>
+      A) Lista elemei váljanak felkoverre, ha folejuk visszük az egeret
+    </h2>
+    <section class="first">
+      <ul>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+      </ul>
+    </section>
+    <h2>
+      B) félig áttetsző tartalom, mögötte egy fix pozícióban lévő háttérkép. A kép legyen 300x300 méretű, és legyen középre rendezve a háttérben
+    </h2>
+    <section class="second">
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero enim, porta eget suscipit et, vehicula vel libero. Phasellus porttitor, metus feugiat consectetur venenatis, nulla leo convallis leo, ut hendrerit massa mi congue justo. Curabitur vehicula vulputate tempor. Aliquam dolor turpis, aliquam quis porta in, suscipit nec mi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero enim, porta eget suscipit et, vehicula vel libero. Phasellus porttitor, metus feugiat consectetur venenatis, nulla leo convallis leo, ut hendrerit massa mi congue justo. Curabitur vehicula vulputate tempor. Aliquam dolor turpis, aliquam quis porta in, suscipit nec mi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero enim, porta eget suscipit et, vehicula vel libero. Phasellus porttitor, metus feugiat consectetur venenatis, nulla leo convallis leo, ut hendrerit massa mi congue justo. Curabitur vehicula vulputate tempor. Aliquam dolor turpis, aliquam quis porta in, suscipit nec mi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero enim, porta eget suscipit et, vehicula vel libero. Phasellus porttitor, metus feugiat consectetur venenatis, nulla leo convallis leo, ut hendrerit massa mi congue justo. Curabitur vehicula vulputate tempor. Aliquam dolor turpis, aliquam quis porta in, suscipit nec mi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero enim, porta eget suscipit et, vehicula vel libero. Phasellus porttitor, metus feugiat consectetur venenatis, nulla leo convallis leo, ut hendrerit massa mi congue justo. Curabitur vehicula vulputate tempor. Aliquam dolor turpis, aliquam quis porta in, suscipit nec mi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero enim, porta eget suscipit et, vehicula vel libero. Phasellus porttitor, metus feugiat consectetur venenatis, nulla leo convallis leo, ut hendrerit massa mi congue justo. Curabitur vehicula vulputate tempor. Aliquam dolor turpis, aliquam quis porta in, suscipit nec mi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero enim, porta eget suscipit et, vehicula vel libero. Phasellus porttitor, metus feugiat consectetur venenatis, nulla leo convallis leo, ut hendrerit massa mi congue justo. Curabitur vehicula vulputate tempor. Aliquam dolor turpis, aliquam quis porta in, suscipit nec mi.
+      </div>
+    </section>
+    <h2>
+      C) Táblázat minden második sora legyen világos szürke, a páratlan sorok fehérek. Az első sor (az oszlopok fejlecei) legyen sötét hátterű és fehér színű felkover legyen a betű. Minden sor, ha az egérmutatot fölé visszük, változzon világoskékre, kivéve a táblázat fejlécet.
+    </h2>
+    <section class="third">
+      <table>
+        <tr>
+          <td>content</td>
+          <td>content</td>
+          <td>content</td>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>content</td>
+          <td>content</td>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>content</td>
+          <td>content</td>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>content</td>
+          <td>content</td>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>content</td>
+          <td>content</td>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>content</td>
+          <td>content</td>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>content</td>
+          <td>content</td>
+        </tr>
+      </table>
+
+    </section>
+  </body>
+</html>
