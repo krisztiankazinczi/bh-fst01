@@ -1,0 +1,61 @@
+html{
+    background-color: darkgray;
+}
+
+body{
+    position: relative;
+    background-color: white;
+    margin: auto;
+    width: 800px;
+    padding: 15px;
+}
+
+h2{
+    margin: 0;
+}
+
+section {
+    background-color: lightgray;
+    padding: 0 20px 20px 20px;
+    border: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+section .text{
+    display: block;
+    background-color: whitesmoke;
+    padding: 15px 15px 15px 15px;
+}
+
+.first_section .text{
+    display: inline-block;
+    vertical-align: top;
+    height: 270px;
+    width: 54%;
+}
+
+.text p{
+    margin-bottom: 0;
+}
+
+.smallpic{
+    margin: 0 15px 0px 0;
+}
+
+.second_section img{
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.second_section .text{
+    padding-bottom: 15px;
+}
+
+.three_pictures .smallpic{
+    width: 235px;
+    margin-bottom: 15px;
+}
+
+.third_section .text{
+    padding-left: 15px;
+}
