@@ -138,7 +138,8 @@ font-family: DINregular;
 
 footer{
     background: #0d3768;
-    padding: 50px
+    padding: 50px;
+    height: 600px;
 }
 
 footer header{
