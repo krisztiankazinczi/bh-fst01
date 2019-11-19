@@ -11,6 +11,8 @@
 .new-classes{
     background: #204778;
     padding-top: 25px;
+    height: 555px;
+    color: whitesmoke;
 }
 
 .new-classes header{
@@ -41,12 +43,6 @@
 
 .alapozo-kep{
   display: inline-block;
-}
-
-
-.new-classes{
-  height: 630px;
-  color: whitesmoke;
 }
 
 .advertisement > div{
