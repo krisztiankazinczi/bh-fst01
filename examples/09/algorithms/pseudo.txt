@@ -1,0 +1,31 @@
+
+// sum from 1..10
+input: n
+
+s = 0
+for i = 1 .. n
+  s = s + i
+
+Ha n = 1, akkor output = 1
+Ha n = 2, akkor output = 3
+Ha n = 3, akkor output = 6
+
+// counter
+
+input: n
+command line arg: t
+
+Ha
+  n = 1
+  t = 1 1 2
+akkor output = 2
+
+Ha
+  n = 2
+  t = 1 1 2
+akkor output = 1
+
+c = 0
+for i = 0 .. t.length
+  if t[i] == n
+    c++

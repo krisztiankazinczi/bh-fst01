@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+        <style>
+            body {
+                background: #444;
+            }
+
+            .flex-container {
+                background: #464;
+                color: #222;
+                display: flex;
+                justify-content: flex-start; /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+                flex-direction: row /* row | row-reverse | column | column-reverse */;
+                
+                flex-wrap: nowrap; /* nowrap | wrap | wrap-reverse */
+                /* flex-flow: row wrap */
+
+            }
+
+            .flex-item:nth-child(even) {
+                background: #777;
+            }
+
+            .flex-item:nth-child(odd) {
+                background: #999;
+            }
+
+            .flex-item {
+                width: 200px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item">
+                A
+            </div>
+            <div class="flex-item">
+                B
+            </div>
+            <div class="flex-item">
+                C
+            </div>
+            <div class="flex-item">
+                D
+            </div>
+            <div class="flex-item">
+                E
+            </div>
+            <div class="flex-item">
+                E
+            </div>
+            <div class="flex-item">
+                E
+            </div>
+            <div class="flex-item">
+                E
+            </div>
+            <div class="flex-item">
+                E
+            </div>
+            <div class="flex-item">
+                E
+            </div>
+            <div class="flex-item">
+                E
+            </div>
+            <div class="flex-item">
+                E
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+.hero {
+    height: 695px;
+    background: url("img/coderguy.png");
+    text-align: center;
+}
+
+.hero .content {
+    display: inline-block;
+    font-size: 32px;
+    color: #11e88d;
+    background: rgba(0,0,0,0.5);
+    width: 400px;
+}
+
+.ribbon {
+    background: #11e88d;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ribbon p {
+    margin: 0;
+}

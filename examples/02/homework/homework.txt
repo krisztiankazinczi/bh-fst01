@@ -1,0 +1,33 @@
+Elméleti kérdések
+
+HTML
+
+CSS
+
+Mi az a CSS? Mire való?
+Hova és hogyan lehet CSS-t írni?
+Milyen szintjei vannak a stíluslapoknak?
+Mi az a CSS kaszkád?
+Milyen szintaktikai elemekből épül fel egy CSS szabály?
+Mi az a CSS szelektor?
+Mi az a deklarációs blokk?
+
+Kutatómunka
+
+1. Milyen böngészőbe épített űrlap validációs attribútumok állnak rendelkezésünkre HTML-ben?
+
+2. Mi a különbség, ha egy űrlap method="GET" és method="POST"
+
+Gyakorlat
+
+Írjunk kapcsolatfelvételi űrlapot, validációval!
+
+Kötelező mezők:
+- név: legfeljebb 30 karakter hosszú egysoros szövegmező
+- email cím: legfeljebb 50 karakter hosszú egysoros szövegmező
+- telefonszám
+
+
+
+
+

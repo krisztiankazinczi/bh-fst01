@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>forms HTML example</title>
+        <link type="text/css" rel="stylesheet" href="first.css">
+    </head>
+    <body>
+        <form action="image.html" method="POST">
+
+            <p>
+                <label>Your name: </label>
+                <input type="text" name="username">
+            </p>
+
+            <p>
+                <label>Your password: </label>
+                <input type="password" name="password">
+            </p>
+
+            <p>
+                <label>Your age: </label>
+                <input type="number" name="age">
+            </p>
+
+            <p>
+                <label>Your introduction: </label>
+                <textarea cols="20" rows="10" name="intro"></textarea>
+            </p>
+
+            <p>
+                Your t-shirt size<br>
+                
+                <label>S</label>
+                <input type="radio" name="tshirt" value="s">
+                
+                <label>M</label>
+                <input type="radio" name="tshirt" value="m">
+                
+                <label>L</label>
+                <input type="radio" name="tshirt" value="l">
+            </p>
+
+            <p>
+                    Bonus:<br>
+                    
+                    <label>S</label>
+                    <input type="checkbox" name="bonus" value="s">
+                    
+                    <label>M</label>
+                    <input type="checkbox" name="bonus" value="m">
+                    
+                    <label>L</label>
+                    <input type="checkbox" name="bonus" value="l">
+                </p>
+
+                <p>
+                    Your t-shirt size...again:<br>
+                    <select multiple name="other">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                </p>
+                <p>
+
+                    <input type="submit" value="Elkuldes">
+                </p>
+
+        </form>
+    </body>
+
+</html>

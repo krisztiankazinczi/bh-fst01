@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+        <style>
+            body {
+                background: #444;
+                color: #ccc;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 50px 50px 50px;
+                /* grid-template-rows: 50px 50px 50px; */
+                /* grid-template-columns: repeat(3, 1fr); */
+            }
+
+            .grid > div {
+                border: 1px solid black;
+            }
+
+            .grid > :nth-child(even) {
+                background: #777;
+            }
+
+            .grid > :nth-child(odd) {
+                background: #999;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+            <div>I</div>
+
+        </div>
+    </body>
+
+</html>

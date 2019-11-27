@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>selectors</title>
+        <style>
+        #favorite {
+            color: red;
+        }
+
+        p.important-stuff  {
+            font-weight: bold;
+
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .important-stuff.red {
+            color: white;
+        }
+
+        a[href="https://google.com"] {
+            color: green;
+            font-weight: bold;
+        }
+
+        :first-letter {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        
+
+        a:visited {
+            color: grey !important;
+            font-size: 32px;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        input:focus {
+            border: 2px solid red
+        }
+
+        #css_combinators > ul > li:first-child,
+        #css_combinators > ul > li:last-child {
+            color: green;
+        }
+
+        #css_combinators li:nth-child(2) {
+            color: blue;
+        }
+
+        #next_sibling_combinator h2 + p  {
+            font-weight: bold;
+        }
+
+        h2:before {
+            font-size: 32px;
+        }
+
+        h2:after {
+            content: "..."
+        }
+        
+
+        </style>
+    </head>
+    <body>
+        <p id="favorite" class="red">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis metus leo, luctus in nulla vitae, aliquet tempor ipsum.
+                
+        </p>
+        <p class="important-stuff red">
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Vestibulum urna arcu, elementum non
+                nisi placerat, bibendum aliquam dui. Nunc nunc.
+        </p>
+
+        <ul>
+            <li>buy bread</li>
+            <li class="important-stuff">buy beer</li>
+            <li>
+                do homework
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </li>
+        </ul>
+
+        <a href="https://google.hu">irany a google</a>
+        <a>irany az oldal teteje</a>
+
+        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis metus leo, luctus in nulla vitae, aliquet tempor ipsum.
+                
+        </p>
+
+        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis metus leo, luctus in nulla vitae, aliquet tempor ipsum.
+                
+        </p>
+
+        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis metus leo, luctus in nulla vitae, aliquet tempor ipsum.
+                
+        </p>
+
+        <input type="text" value="valami">
+
+        <section id="css_combinators">
+                <ul>
+                    <li>buy bread</li>
+                    <li class="important-stuff">buy beer</li>
+                    <li>
+                        do homework
+                        <ul>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>javascript</li>
+                        </ul>
+                    </li>
+                </ul>
+        </section>
+
+        <section id="next_sibling_combinator">
+            <h2>section title</h2>
+            <ul>
+                <li>sdasdf</li>
+                <li>sdasdf</li>
+            </ul>
+            <p>askdjf ahsfdi usahf iashdfo </p>
+            <p>dfsdgsd fg<br>fasdfasdfsadf</p>
+        </section>
+
+        <h2>some title</h2>
+        <h2>some title</h2>
+        <h2>some title</h2>
+        <h2>some title</h2>
+        <h2>some title</h2>
+
+    </body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+        <style>
+            body {
+                background: #444;
+                color: #ccc;
+            }
+
+            .outer {
+                position: relative;
+            }
+
+            .outer li {
+                display: inline-block;
+                position: relative;
+            }
+
+            .outer > li:hover .inner {
+                display: block;
+            }
+
+            .inner > li:hover > .nested {
+                display: block;
+            }
+
+            .nested > li:hover > .nested {
+                position: absolute;
+                top: 0;
+                display: block;
+            }
+
+            .nested, .inner {
+                padding: 0;
+                list-style-type: none;
+                display: none;
+                width: 68px;
+            }
+
+            .inner {
+                position: absolute;
+                top: 1em;
+                background: red;
+            }
+
+            .nested {
+                position: absolute;
+                top: 0;
+                left: 68px;
+                background: blue;
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <ul class="outer">
+            <li>
+                menu item
+                <ul class="inner">
+                    <li>asdf</li>
+                    <li>
+                        menu item
+                        <ul class="nested">
+                            <li>
+                                menu item
+                                
+                            </li>
+                            <li>
+                                menu item
+                                <ul class="nested" style="background: red">
+                                        <li>menu item</li>
+                                        <li>
+                                        menu item
+                                        <ul class="nested" style="background: yellow">
+                                                <li>menu item</li>
+                                                <li>menu item</li>
+                                                <li>menu item</li>
+                                            </ul>
+
+                                        </li>
+                                        <li>menu item</li>
+                                    </ul>
+                            </li>
+                            <li>menu item</li>
+                        </ul>
+                    </li>
+                    <li><a>menu item</a></li>
+                    <li><a>menu item</a></li>
+                </ul>
+                
+            </li>
+            <li><a>menu item</a></li>
+            <li><a>menu item</a></li>
+        </ul>
+    </body>
+
+</html>

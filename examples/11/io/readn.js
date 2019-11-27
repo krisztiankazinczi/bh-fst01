@@ -1,0 +1,40 @@
+const readline = require('readline');
+
+const reader = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+// function readNumber() {
+//     reader.question("please provide a number: ", function(answer) {
+//         let num = parseInt(answer, 10);
+    
+//         if (isNaN(num)) {
+//             console.log("I said, please provide a NUMBER!");
+//             readNumber();
+//         } else {
+//             console.log(`Thank you for the number. The number was ${num} `);
+//             reader.close();
+//         }
+//     });
+// }
+
+function readNum() {
+    let futureValue = {
+      value: null,
+      received: function(doSomething) {
+          doSomething(this.value)
+        }
+    }  
+  
+    reader.question("number: ", function(answer) {
+      futureValue.value = answer;
+      reader.close();
+    });
+  
+    return futureValue;
+  }
+  
+  let num = readNum();
+  num.received(function(n){ console.log("i got the number " + n); });
+

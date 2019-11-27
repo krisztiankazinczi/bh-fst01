@@ -1,0 +1,38 @@
+Student.apply(course: Course)
+
+beteszi a student objektumot a course.students listajaba
+
+
+
+Lecturer.teach(course: Course)
+
+beteszi az oktatot a kurzus oktatojanak
+
+forgatokonyv:
+- ket hallgato jelentkezik egy junior programozo kepzesre
+- oktato elvallalja a kepzest
+
+// 1. student, course, lecturer
+// 2. min hallgato, start
+// 3. maximum hallgato, lecturer, autostart
+// 4. no apply if pont keves
+
+1. Student, Course, Lecturer osztályok
+
+Student
+-------
+  name: string
+
+  apply(course: Course)
+
+Course
+------
+  name: string
+
+Lecturer
+--------
+  name: string
+
+  teach(course: Course)
+
+========================

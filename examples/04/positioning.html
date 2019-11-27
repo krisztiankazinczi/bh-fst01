@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+        <style>
+            body {
+                background: #444;
+                color: #ccc;
+            }
+
+            div {
+                border: 2px solid black
+            }
+
+            #relative {
+                background:blue
+            }
+
+            #absolute {
+                background: red
+            }
+
+            .positioned, .floated {
+                background: yellow;
+            }
+
+            #relative .positioned {
+                position: relative;
+                left: 300px;
+            }
+
+            #absolute .positioned {
+                position: absolute;
+                left: 300px;
+            }
+
+            #float .floated {
+                float: left;
+                width: 100px;
+                height: 100px;
+            }
+
+            #zindex {
+                position: relative;
+            }
+
+            #proximal {
+                position: absolute;
+                left: 25px;
+                top: 25px;
+                z-index: 100;
+                width: 100px;
+                height: 100px;
+                background: red;
+            }
+
+            #distal {
+                position: absolute;
+                left: 50px;
+                top: 50px;
+                z-index: 99;
+                width: 100px;
+                height: 100px;
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="relative">
+
+            <div class="positioned">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis metus leo, luctus in nulla vitae, aliquet tempor ipsum.
+            </div>
+            <div>
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Vestibulum urna arcu, elementum non
+                nisi placerat, bibendum aliquam dui. Nunc nunc.
+            </div>
+
+        </div>
+
+        <div id="absolute">
+
+            <div class="positioned">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis metus leo, luctus in nulla vitae, aliquet tempor ipsum.
+            </div>
+            <div>
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Vestibulum urna arcu, elementum non
+                nisi placerat, bibendum aliquam dui. Nunc nunc.
+            </div>
+
+        </div>
+
+        <div id="float">
+
+            <img src="img.jpg" class="floated">
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Vestibulum urna arcu, elementum non
+            nisi placerat, bibendum aliquam dui. Nunc nunc.
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Vestibulum urna arcu, elementum non
+            nisi placerat, bibendum aliquam dui. Nunc nunc.
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Vestibulum urna arcu, elementum non
+            nisi placerat, bibendum aliquam dui. Nunc nunc.
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Vestibulum urna arcu, elementum non
+            nisi placerat, bibendum aliquam dui. Nunc nunc.
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Vestibulum urna arcu, elementum non
+            nisi placerat, bibendum aliquam dui. Nunc nunc.
+
+        </div>
+
+        <div id="zindex">
+            <div id="distal"></div>
+            <div id="proximal"></div>
+        </div>
+    </body>
+
+</html>

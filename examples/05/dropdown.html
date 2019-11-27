@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+        <style>
+            body {
+                background: #444;
+                color: #ccc;
+            }
+
+            .outer {
+                position: relative;
+            }
+
+            .outer > li {
+                display: inline-block
+            }
+
+            .outer > li:hover .inner {
+                display: block;
+            }
+
+            .inner {
+                position: absolute;
+                top: 1em;
+                padding: 0;
+                list-style-type: none;
+                display: none
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <ul class="outer">
+            <li>
+                menu item
+                <ul class="inner">
+                    <li><a>menu item</a></li>
+                    <li><a>menu item</a></li>
+                    <li><a>menu item</a></li>
+                </ul>
+                
+            </li>
+            <li><a>menu item</a></li>
+            <li><a>menu item</a></li>
+        </ul>
+    </body>
+
+</html>

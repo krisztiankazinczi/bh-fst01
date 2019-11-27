@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>holy grail with flexbox</title>
+        <style>
+            body {
+                background: #444;
+                color: #ccc;
+                width: 800px;
+                margin: auto;
+            }
+
+            header, footer {
+                background: #222;
+            }
+
+            aside {
+                background: #333;
+                width: 150px;
+                flex: 1;
+            }
+
+            main {
+                background: #ddd;
+                color: #222;
+                width: auto;
+                flex: 2;
+            }
+
+            .flex-container {
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            header
+        </header>
+        <div class="flex-container">
+            <aside>
+                left
+            </aside>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis metus leo, luctus in nulla vitae, aliquet tempor ipsum.
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Vestibulum urna arcu, elementum non
+                nisi placerat, bibendum aliquam dui. Nunc nunc.
+    
+            </main>
+            <aside>
+                right
+            </aside>
+        </div>
+        <footer>
+            footer
+        </footer>
+    </body>
+
+</html>

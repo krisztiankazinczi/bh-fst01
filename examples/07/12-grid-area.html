@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+        <style>
+            body {
+                background: #444;
+                color: #ccc;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 50px 50px 50px;
+                column-gap: 10px;
+                row-gap: 10px;
+            }
+
+
+            .grid > div {
+                border: 1px solid black;
+            }
+
+            .grid > :nth-child(even) {
+                background: #777;
+            }
+
+            .grid > :nth-child(odd) {
+                background: #999;
+            }
+
+            .grid-area {
+                grid-column-start: 1; 
+                grid-column-end: 3; 
+                grid-row-start: 1; 
+                grid-row-end: 3;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="">A</div>
+            <div>B</div>
+            <div>C</div>
+            <div class="grid-area">D</div>
+            <div>E</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+            <div>I</div>
+
+        </div>
+    </body>
+
+</html>

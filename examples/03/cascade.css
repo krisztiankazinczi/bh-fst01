@@ -1,0 +1,29 @@
+body {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+#outer {
+    width: 800px;
+    background-color: yellow;
+}
+
+#inner {
+    width: 50%;
+    background-color: red;
+}
+
+#nice {
+    font-style:normal
+}
+
+.interesting {
+    font-style: italic
+}
+
+ul {
+    font-style: normal
+}
