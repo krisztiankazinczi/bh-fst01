@@ -1,5 +1,8 @@
 # 2019. november 26., kedd
 
+[előző alkalom](../20191123)
+[következő alkalom](../20191128)
+
 ## OOP rávezetés
 
 ### Objektum, osztály, példány
