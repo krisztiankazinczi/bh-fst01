@@ -1,5 +1,8 @@
 # 2019. november 19., kedd
 
+[előző alkalom](../20191116)
+[következő alkalom](../20191121)
+
 ## Függvények (ismétlés)
 - deklaráció vs hívás
 - paraméterek
