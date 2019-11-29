@@ -1,5 +1,8 @@
 # 2019. november 23., szombat
 
+[előző alkalom](../20191121)
+[következő alkalom](../20191126)
+
 ## Függvények
 
 - globális vs. lokális változók
