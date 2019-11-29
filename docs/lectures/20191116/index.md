@@ -1,5 +1,7 @@
 # 2019. november 16., szombat
 
+[következő alkalom](../20191119)
+
 ## CSS grid
 
 ## Programok futtatása, és számítógépes alapismeretek
