@@ -1,6 +1,6 @@
 # 2019. november 21., csütörtök
 
-[előző alkalom](../20191121)
+[előző alkalom](../20191119)
 [következő alkalom](../20191123)
 
 ## Gyakorlatok
