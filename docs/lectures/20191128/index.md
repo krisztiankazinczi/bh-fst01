@@ -1,5 +1,8 @@
 # 2019. november 28, csütörtök
 
+[előző alkalom](../20191126)
+[következő alkalom](../20191129)
+
 ## OOP rávezetés (ismétlés)
 
 ### Objektum literálok
