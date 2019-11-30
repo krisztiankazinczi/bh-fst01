@@ -1,0 +1,108 @@
+header .upper .contacts,
+header .upper .social {
+    display: inline-block;
+}
+
+header .upper .social div {
+    display: inline-block;
+}
+
+header nav {
+    float:right;
+    
+}
+header nav li {
+    display: inline;
+    padding-right:12px;
+}
+
+.upper {
+    height:40px;
+    border-bottom:solid 1px grey;
+    padding-top:20px;
+    border-top:solid 3px #11e88d;
+    padding-left:30px;
+    padding-right:30px;
+    font-family: 'Ropa Sans', sans-serif;
+    color:lightgrey;
+}
+
+.social {
+    float:right;
+}
+
+.social div img {
+    height:25px;
+    width:25x;
+    padding-right: 20px;
+    
+}
+
+.logo {
+    margin-top:5px;
+}
+
+.lower {
+    margin-left:15px;
+    margin-right:15px;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.outer {
+    position:relative;
+    margin-top:0;
+}
+
+.outer > li {
+    display:inline-block;
+    padding-bottom:40px;
+    padding-top:40px;
+}
+
+.inner {
+    position:absolute;
+    padding:0;
+    list-style-type: none;
+    display:block;
+    background-color:white;
+    margin-top:40px;
+}
+
+.outer a {
+    text-decoration:none;
+    color:black;
+    font-weight: 700;
+}
+
+.outer > li > a:after {
+    content:'\2193';
+}
+
+.outer > li > .noneafter:after {
+    content:none;
+}
+
+.lower nav .outer > li:hover > .inner > li{
+    display:block;
+}
+
+.inner > li:hover {
+    background-color:#11e88d;
+}
+.inner > li {
+    display:none;
+    border-top:solid 1px black;
+    font-size:22px;
+    padding:10px;
+    padding-right: 40px;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+.inner > li:first-child {
+    border-top: solid 3px black;
+}
+
+.search {
+    width:15px;
+}

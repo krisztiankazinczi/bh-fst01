@@ -1,0 +1,279 @@
+.hero {
+    padding-top:350px;
+    height: 450px;
+    background: url('../img/background.png');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero .content {
+    font-family: 'Ropa Sans', sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    font-size:40px;
+    color: #11e88d;
+    background:rgba(0,0,0,0.5);
+    width: 950px;
+    height:200px;
+    margin-bottom:100px;
+}
+
+.hero a {
+    background:#11e88d;
+    color:white;
+    font-size:20px;
+    padding:20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:'Ropa Sans', sans-serif;
+}
+
+.content p {
+    margin:0;
+    color:white;
+}
+
+.ribbon {
+    background:#11e88d;
+    color:white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ribbon p {
+    margin:0;
+}
+
+.holygral {
+    background:url('../img/main_page4.png');
+    background-repeat:no-repeat;
+    background-position-x: right;
+    display:block;
+    padding-top:100px;
+    padding-bottom:300px;
+    margin-left: 10%;
+}
+
+.holygral aside,
+.holygral main {
+    display:inline-block;
+    width:300px;
+    vertical-align:top;
+    padding-right:0;
+    margin-right:15px;
+    font-size:20px;
+}
+
+.holygral aside h2:hover {
+    color:lightgreen;
+}
+
+.holygral main h2:hover {
+    color:lightgreen;
+}
+
+.secondribbon {
+    background:#204778;
+    color:white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.secondribbon p {
+    margin: 0;
+    font-size:42px;
+    font-family:'Ropa Sans', sans-serif;
+}
+
+.javastarter {
+    background-color: #204778;
+    background-image:url('../img/icon_alapozo2.png');
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+    background-size: 250px;
+    padding-top:100px;
+    padding-bottom:100px;
+    height:400px;
+}
+
+.javstartercontent {
+    margin:auto;
+    width:500px;
+    font-family:'Ropa Sans', sans-serif;
+}
+
+.javstartercontent div a {
+    margin-top:50px;
+    position: absolute;
+    background-color:#11e88d;
+    padding:30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family:'Ropa Sans', sans-serif;
+    color:white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.thirdribbon {
+    background:#11e88d;
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:36px;
+    
+}
+.thirdribbon a {
+    text-decoration: none;
+}
+
+.trsmaller {
+    color:white;
+    margin:5px;
+}
+
+.trbigger {
+    font-size: 42px;
+    color:#fefe98;
+    margin:5px;
+}
+
+.p1 {
+    font-size:42px;
+    color:#11e88d;
+    font-weight: bold;
+}
+
+.p2 {
+    font-size:26px;
+    color:white;
+    padding-top:30px;
+}
+
+.p3 {
+    font-size:26px;
+    color:#11e88d;
+    padding-top:30px;
+}
+
+footer {
+    background-color:#204778;
+}
+.upperfoot {
+    
+    color:white;
+    display:block;
+    padding-top:100px;
+    width:1000px;
+    margin:auto;
+}
+
+.upperfoot h3 {
+    margin-bottom:30px;
+}
+
+.upperfoot aside,
+main {
+    display:inline-block;
+    width:300px;
+    vertical-align:top;
+    padding-right:30px;
+}
+
+.footlist {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.footlist li {
+    margin-bottom:10px;
+    border-bottom:solid 1px white;
+    font-size: 12px;
+    padding-bottom:5px;
+}
+
+.footlist li:before {
+    content: '\2192';
+}
+
+.upperfoot main .smallinput input {
+    width: 122px;
+    padding:10px;
+}
+
+.biginput input {
+    width: 272px;
+    padding: 10px;
+}
+
+.opciok {
+    width:100%;
+    padding:10px;
+}
+
+.upperfoot main a {
+    text-decoration: none;
+    color:white;
+}
+
+.feliratkozas {
+    padding:10px;
+    font-size:20px;
+}
+
+.upperfoot hr {
+    border:#204778;
+}
+
+.lowerfoot {
+    background-color: #002856;
+    color:white;
+}
+
+.lowerback {
+    width:1000px;
+    margin:auto;
+}
+
+.footsocial img{
+    height:25px;
+    width:25x;
+    padding-right: 20px;
+}
+
+.footsocial div {
+    float:right;
+}
+
+.lowerback .footcont,
+.lowerback .footsocial{
+    display:inline-block;
+}
+
+.footsocial {
+    float:right;
+    margin-top:50px;
+}
+
+.footcont {
+    font-size:12px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 198px;
+    width: 346px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 198px;
+    width: 346px;
+}
