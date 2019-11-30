@@ -1,0 +1,290 @@
+@font-face {
+    font-family: DINregular;
+    src: url(dinr.TTF);
+  }
+
+  @font-face {
+    font-family: DINbold;
+    src: url(dinb.ttf);
+  }
+
+body{
+    margin: 0;
+    border-top: solid 2px lightgreen;
+    border-bottom: solid 2px lightgreen;
+}
+
+.clear{
+    clear: both;
+}
+
+/*menu and contacts--------------------------------------------------------------*/
+
+.upper{
+    border-bottom: solid 1px lightgrey;
+    height: 58px;
+    vertical-align: middle;
+    padding: 0 30px 0 30px;
+}
+
+.contacts{
+float: left;
+font-family: DINregular;
+}
+
+.social{
+    float: right;
+}
+
+.social img{
+    width: 30px;
+}
+
+.social div, .contacts{
+    margin-top: 20px;
+}
+
+.social div{
+    
+    display: inline-block;
+}
+
+.arrow{
+    width: 12px;
+    margin-left: 10px;
+
+}
+
+.heart{
+    width: 18px;
+}
+
+.search{
+    width: 15px;
+}
+
+.lower{
+    padding: 0 30px 0 30px;
+    height: 104px;
+}
+
+.lower > img{
+    float: left;
+    margin-top: 5px;
+}
+
+.lower nav > ul > li{
+    display: inline-block;
+    height: 104px;
+    margin-right: 12px;
+}
+
+.menu-list > li > a{
+    font-family: DINbold;
+    color:#333333;
+    font-size: 18px;
+    position: relative;
+    display: block;
+    padding-top: 37px;
+    height: 67px;
+    text-decoration: none;
+}
+
+
+
+.menu-list{
+    float: right;
+    margin:0;
+}
+
+.nested{
+    font-family: DINregular;
+    font-size: 22px;
+    color: #333333;
+    position: absolute;
+    list-style-type: none;
+    transform: translate(-41px, 0px);
+    display: none;
+
+
+}
+
+.nested li{
+    background: white;
+    border-bottom: solid 1px darkgray;
+    width: 200px;
+}
+
+.nested li a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration:none;
+    color:#333333;
+}
+
+.menu-list > li > a:hover .nested{
+    display:block;
+}
+
+.menu-list > li:hover .nested{
+    display: block;
+}
+
+.nested > li:hover {
+    background: #b4f8db;
+}
+
+/*footer--------------------------------------------------------------*/
+
+footer{
+    background: #0d3768;
+    padding: 50px;
+    height: 600px;
+}
+
+footer header{
+    color: white;
+    font-family: DINbold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.columns{
+    width: 60%;
+    height: 615px;
+    margin: auto;
+    position: relative;
+    text-align: left;
+}
+
+.first-column .content ,.second-column .form{
+    position: absolute;
+}
+
+.first-column ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.right-arrow{
+    display: inline-block;
+    width: 7px;
+    margin-left: -12px;
+    margin-right: 3px;
+}
+
+.first-column ul li a{
+    font-family: DINregular;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+.first-column, .second-column, .third-column{
+    display: inline-block;
+    width: 346px;
+    height: 100%;
+    position: relative;
+}
+
+
+.first-column .content{
+    margin-top: 25px;
+}
+
+.list li div{
+    padding: 6px 0 6px 0;
+    width: 297px;
+    display: inline-block;
+    border-bottom: solid 1px #45658b;
+    text-align: left;
+}
+
+.list li:hover a{
+    color: #11e88d;
+}
+
+.second-column{
+    font-family: DINregular;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+
+.form a:hover{
+    color: #11e88d;
+}
+
+.form{
+    margin-top: 25px;
+}
+
+.form a{
+    color: white;
+    text-decoration: none;
+}
+
+.form input{
+    padding: 6px 10px;
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    font-size: 16px;
+}
+
+.select p{
+    font-family: DINbold;
+}
+
+.select select{
+    font-size: 16px;
+}
+
+.names{
+    width: 346px;
+}
+
+.names input{
+    width: 144px;
+    margin-bottom: 15px
+}
+
+#first-name{
+    margin-left: 10px;
+}
+
+#email{
+    width: 324px;
+}
+.select select{
+    padding: 6px 10px;
+}
+
+.checkboxes{
+    line-height: 22px;
+    margin: 15px 0 15px 0;
+}
+
+.third-column{
+    padding-left: 25px;
+}
+
+.adress-and-contact{
+    position: absolute;
+    font-family: DINregular;
+    color: white;
+}
+
+.adress-and-contact .contact{
+    margin-top: 25px;
+}
+
+.maps{
+    position: absolute;
+    top: 175px;
+}
+
+.adress-and-contact img{
+    margin-right: 3px;
+}
