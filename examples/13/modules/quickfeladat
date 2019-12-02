@@ -1,0 +1,21 @@
+legyen egy counter modul
+
+a counter modul exportaljon egy count fuggvenyt
+
+a count fuggveny egy a modulban lokalis valtozo erteket noveli eggyel
+minden hivas soran
+
+a counter modul lokalis count valtozoja kezdetben zero
+
+a lokalis count valtozo erteke lekerheto egy exportalt getCount fuggvennyel
+
+a counter modult egy tetszoleges masik modulbol hivjuk meg
+
+
+main.js
+
+let counter  = require('counter');
+
+counter.count()
+counter.count()
+console.log(counter.getCount()) // 2
