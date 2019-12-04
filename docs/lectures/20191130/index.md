@@ -1,6 +1,6 @@
 # 2019. november 30., szombat
 
-[előző alkalom](../20191128)
+[előző alkalom](../20191128) [következő alkalom](../20191203)
 
 ## Gyakorlás
 
