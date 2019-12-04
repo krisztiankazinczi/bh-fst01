@@ -5,6 +5,8 @@
 - [2019. november 23., szombat](lectures/20191123)
 - [2019. november 26., kedd](lectures/20191126)
 - [2019. november 28., csütörtök](lectures/20191128)
+- [2019. november 30., szombat](lectures/20191130)
+- [2019. december 03., kedd](lectures/20191203)
 
 # gyakorló feladatsorok
 
