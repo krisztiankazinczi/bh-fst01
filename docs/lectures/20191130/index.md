@@ -14,3 +14,5 @@
 ## Öröklődés
 
 [feladatsor](https://docs.google.com/document/d/1tjLSvfqJz-hJTB0XUCV6ckqoTWlXbbxYqfU4BR8igiE/edit?usp=sharing)
+
+[Object-oriented JavaScript for beginners](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
