@@ -14,3 +14,18 @@
 - [függvények](https://drive.google.com/open?id=1HYQFhbqwSxTqHu1hzW1UhDCKpNI_d5VQSiCyVArN_Lc)
 - [algoritmizálás, sztring műveletek](https://drive.google.com/open?id=19GZIN49jqxfSDsNxY3JlKmTy0DSO2Vc-Na6ur6PZNqM)
 - [algoritmizálás, tömbre](https://drive.google.com/open?id=19GZIN49jqxfSDsNxY3JlKmTy0DSO2Vc-Na6ur6PZNqM)
+
+# elméleti kérdések, segédanyagok
+
+- [szintaxis](theory/syntax)
+- [értékek, típusok](theory/values)
+- [operátorok](theory/operators)
+
+## segédanyagok beküldése kérdéshez
+
+```
+Mik azok a literálok?
+
+- [Tömb literálokról egyszerűen](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+```
