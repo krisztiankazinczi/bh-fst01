@@ -21,7 +21,20 @@
 - [értékek, típusok](theory/values)
 - [operátorok](theory/operators)
 
-## segédanyagok beküldése kérdéshez
+## segédanyagok beküldése kérdése
+
+1. Forkold a repót
+1. Vidd fel a segédanyag linkjeit a kérdés alá
+1. Nyiss pull requestet az eredeti repóba
+
+A linket markdown formátumban kell felvidd
+
+- [Markdown project home](https://daringfireball.net/projects/markdown/)
+- [Basic writing and formatting syntax](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+
+Példa markdown
 
 ```
 Mik azok a literálok?
