@@ -1,3 +1,13 @@
+# Elméleti kérdések
+
+[főoldal](../..)
+
+- [szintaxis](theory/syntax)
+- [értékek, típusok](theory/values)
+- [operátorok](theory/operators)
+
+## Operátorok
+
 Mik azok az operátorok? 
 
 Mi történik a referencia típusokkal, amikor egy operátor kötésében jelennek meg (pl. [1, 2] + [3, 4])?

@@ -1,3 +1,13 @@
+# Elméleti kérdések
+
+[főoldal](../..)
+
+- [szintaxis](theory/syntax)
+- [értékek, típusok](theory/values)
+- [operátorok](theory/operators)
+
+## Értékek
+
 Milyen adattípusokat ismer a JavaScript?
 
 Mit jelent az, hogy egy nyelv statikusan típusos?

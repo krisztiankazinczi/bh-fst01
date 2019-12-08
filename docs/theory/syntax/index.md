@@ -1,3 +1,13 @@
+# Elméleti kérdések
+
+[főoldal](../..)
+
+- [szintaxis](theory/syntax)
+- [értékek, típusok](theory/values)
+- [operátorok](theory/operators)
+
+## Szintaxis
+
 Mik azok a literálok? 
 
 Hogy néz ki egy string literál? 
