@@ -27,6 +27,8 @@
 1. Vidd fel a segédanyag linkjeit a kérdés alá
 1. Nyiss pull requestet az eredeti repóba
 
+Ay anyagok a repó `docs/theory` mappájában vannak.
+
 A linket markdown formátumban kell felvidd
 
 - [Markdown project home](https://daringfireball.net/projects/markdown/)
