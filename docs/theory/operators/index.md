@@ -2,9 +2,9 @@
 
 [főoldal](../..)
 
-- [szintaxis](theory/syntax)
-- [értékek, típusok](theory/values)
-- [operátorok](theory/operators)
+- [szintaxis](../syntax)
+- [értékek, típusok](../values)
+- [operátorok](../operators)
 
 ## Operátorok
 
