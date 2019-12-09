@@ -1,6 +1,6 @@
 # 2019. december 03., kedd
 
-[előző alkalom](../20191130) [következő alkalom](#)
+[előző alkalom](../20191130) [következő alkalom](../20191210)
 
 ## Gyakorlás
 
