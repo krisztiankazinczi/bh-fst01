@@ -44,30 +44,6 @@ webserver/
     webserver.js
 ```
 
-Példa `main.js`:
-
-```
-let resp;
-
- // hello.html tartalmát adja vissza stringként
-resp = webserver.get('http://example.com/hello.html')
-if (resp.status === 200) {
-    console.log(`success, status: ${resp.status}, response: ${resp.body}`)
-}
-
- // nem létező oldal (az example.com alatt)
-resp = webserver.get('http://example.com/tech.html')
-if (resp.status !== 200) {
-    console.log(`error, status: ${resp.status}, response: ${resp.body}`);
-}
-
- // a news.com alatt már létező oldal
-resp = webserver.get('http://news.com/tech.html')
-if (resp.status === 200) {
-    console.log(`success, status: ${resp.status}, response: ${resp.body}`)
-}
-```
-
 #### A `WebServer` osztály
 
 Felvezetés:
@@ -94,6 +70,32 @@ A program indítása: `$ node main.js "http://example.com/hello.html"`
 - a felolvasott tartalmat kiírja
 
 A kiírás a főprogramban történjen, az összes többi logika a `webserver` modulban.
+
+
+
+Példa `main.js`:
+
+```
+let resp;
+
+ // hello.html tartalmát adja vissza stringként
+resp = webserver.get('http://example.com/hello.html')
+if (resp.status === 200) {
+    console.log(`success, status: ${resp.status}, response: ${resp.body}`)
+}
+
+ // nem létező oldal (az example.com alatt)
+resp = webserver.get('http://example.com/tech.html')
+if (resp.status !== 200) {
+    console.log(`error, status: ${resp.status}, response: ${resp.body}`);
+}
+
+ // a news.com alatt már létező oldal
+resp = webserver.get('http://news.com/tech.html')
+if (resp.status === 200) {
+    console.log(`success, status: ${resp.status}, response: ${resp.body}`)
+}
+```
 
 Tippek:
 1. kezdjük azzal, hogy a main modulból egy argumentumban kapott fájlt meg tudunk nyitni és a tartalmát kiírjuk. Írjuk meg a szükséges kivételkezelési kódot, arra az esetre, ha a fájl nem létezik!
