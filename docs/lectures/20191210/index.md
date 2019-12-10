@@ -103,7 +103,49 @@ Tippek:
 1. használjuk a Node.js url modulját arra, hogy fájl elérési útvonal helyett egy URLlel dolgozhassunk
 1. egészítsük ki a kódot, hogy a HttpResponse osztályt használja az eredmény kommunikálására
 
+### Adatbázis
 
+Írjuk egy egyszerű adatbázist!
+
+A main modul egy paramétert vár, egy műveletet.
+
+```
+$ node main listStudents
+```
+
+A művelet alapján a database modul megfelelő függvénye végrehajtódik és a fájlokban tárolt adatok alapján
+visszaadja az eredményt.
+
+```
+let database = require('database');
+let result;
+switch(process.argv[2]) {
+    case 'listStudents':
+        result = database.listStudents();
+        break;
+}
+console.log(result);
+```
+
+fájlstruktúra:
+```
+main.js
+database.js
+tables/
+    students.json
+    courses.json
+    teachers.json
+```
+
+students.json
+```
+[
+    {name: 'Steve Strong'},
+    {name: 'Anna Sweet'},
+    {name: 'Hairy Otter'},
+    {name: 'Fermione Stranger'}
+]
+```
 
 
 
