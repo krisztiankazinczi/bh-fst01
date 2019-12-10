@@ -19,6 +19,167 @@
 - [Writing files with Node.js](https://nodejs.dev/writing-files-with-nodejs)
 - [Node.js fs modul doksi](https://nodejs.org/dist/latest-v12.x/docs/api/fs.html#fs_fs_readfilesync_path_options)
 
+## Házi feladat
+
+### Adatbázis
+
+Írjuk egy egyszerű adatbázist!
+
+A main modul egy paramétert vár, egy műveletet.
+
+```
+$ node main listStudents
+```
+
+A művelet alapján egy `database` modul megfelelő függvénye végrehajtódik és a fájlokban tárolt adatok alapján
+visszaadja az eredményt.
+
+```
+// main.js
+let database = require('database');
+let result;
+switch(process.argv[2]) {
+    case 'listStudents':
+        result = database.listStudents();
+        console.log(result) // <-- ehelyett rendes, formázott kimenet
+        break;
+    // ...
+}
+console.log(result);
+```
+
+Írjuk meg az alábbi műveleteket!
+
+1. listStudents: kiírja a hallgatók neveit
+1. maxPoints: kiírja annak a hallgatónak a nevét, aki a legtöbb pontot szerezte a vizsgán
+1. failedStudents: a megbukott hallgatók neveit írja ki
+
+fájlstruktúra:
+```
+main.js
+database.js
+tables/
+    students.json
+    courses.json
+    teachers.json
+    exams.json
+```
+
+[students.json](./students.json)
+```
+[
+    {
+        "name": "Steve Strong",
+         "id": 1
+    },
+    {
+        "name": "Anna Sweet",
+         "id": 2
+    },  
+    {
+        "name": "Hairy Otter", 
+        "id": 3
+    },
+    {
+        "name": "Fermione Stranger",
+         "id": 4
+    },
+    {
+        "name": "Yevgeny Kissin",
+         "id": 5
+    },
+    {
+        "name": "Russian Sandra", 
+        "id": 6
+    },
+    {
+        "name": "Janicka Supernica", 
+        "id": 7
+    },
+    {
+        "name": "Clark Kent", 
+        "id": 8
+    }
+]
+```
+
+[courses.json](./courses.json)
+```
+[
+    {
+        "name": "junior web developer",
+        "students": [1, 2, 3, 4],
+        "maxPoints": 100
+    },
+    {
+        "name": "junior java developer",
+        "students": [5, 6, 7, 8],
+        "maxPoints": 100
+    }
+]
+```
+
+[teachers.json](./teachers.json)
+```
+[
+    {
+        "name" : "Paul Maurat",
+        "id" : 1
+    },
+    {
+        "name" : "Luke Kelly",
+        "id" : 2
+    }
+]
+```
+
+[exams.json](./exams.json)
+```
+[
+    {
+        "courseId":1,
+        "points":[
+            {
+                "studentId":1,
+                "points": 70
+            },
+            {
+                "studentId":2,
+                "points": 98
+            },
+            {
+                "studentId":3,
+                "points": 76
+            },
+            {
+                "studentId":4,
+                "points": 63
+            }
+        ]
+    },
+    {
+        "courseId":2,
+        "points":[
+            {
+                "studentId":5,
+                "points": 35
+            },
+            {
+                "studentId":6,
+                "points": 60
+            },
+            {
+                "studentId":7,
+                "points": 55
+            },
+            {
+                "studentId":8,
+                "points": 89
+            }
+        ]
+    }
+]
+```
 
 
 ## Gyakorlatok
@@ -116,165 +277,6 @@ Tippek:
 1. használjuk a Node.js url modulját arra, hogy fájl elérési útvonal helyett egy URLlel dolgozhassunk
 1. egészítsük ki a kódot, hogy a HttpResponse osztályt használja az eredmény kommunikálására
 
-### Adatbázis
-
-Írjuk egy egyszerű adatbázist!
-
-A main modul egy paramétert vár, egy műveletet.
-
-```
-$ node main listStudents
-```
-
-A művelet alapján egy `database` modul megfelelő függvénye végrehajtódik és a fájlokban tárolt adatok alapján
-visszaadja az eredményt.
-
-```
-// main.js
-let database = require('database');
-let result;
-switch(process.argv[2]) {
-    case 'listStudents':
-        result = database.listStudents();
-        console.log(result) // <-- ehelyett rendes, formázott kimenet
-        break;
-    // ...
-}
-console.log(result);
-```
-
-Írjuk meg az alábbi műveleteket!
-
-1. listStudents: kiírja a hallgatók neveit
-1. maxPoints: kiírja annak a hallgatónak a nevét, aki a legtöbb pontot szerezte a vizsgán
-1. failedStudents: a megbukott hallgatók neveit írja ki
-
-fájlstruktúra:
-```
-main.js
-database.js
-tables/
-    students.json
-    courses.json
-    teachers.json
-    exams.json
-```
-
-students.json
-```
-[
-    {
-        "name": "Steve Strong",
-         "id": 1
-    },
-    {
-        "name": "Anna Sweet",
-         "id": 2
-    },  
-    {
-        "name": "Hairy Otter", 
-        "id": 3
-    },
-    {
-        "name": "Fermione Stranger",
-         "id": 4
-    },
-    {
-        "name": "Yevgeny Kissin",
-         "id": 5
-    },
-    {
-        "name": "Russian Sandra", 
-        "id": 6
-    },
-    {
-        "name": "Janicka Supernica", 
-        "id": 7
-    },
-    {
-        "name": "Clark Kent", 
-        "id": 8
-    }
-]
-```
-
-courses.json
-```
-[
-    {
-        "name": "junior web developer",
-        "students": [1, 2, 3, 4],
-        "maxPoints": 100
-    },
-    {
-        "name": "junior java developer",
-        "students": [5, 6, 7, 8],
-        "maxPoints": 100
-    }
-]
-```
-
-teachers.json
-```
-[
-    {
-        "name" : "Paul Maurat",
-        "id" : 1
-    },
-    {
-        "name" : "Luke Kelly",
-        "id" : 2
-    }
-]
-```
-
-exams.json
-```
-[
-    {
-        "courseId":1,
-        "points":[
-            {
-                "studentId":1,
-                "points": 70
-            },
-            {
-                "studentId":2,
-                "points": 98
-            },
-            {
-                "studentId":3,
-                "points": 76
-            },
-            {
-                "studentId":4,
-                "points": 63
-            }
-        ]
-    },
-    {
-        "courseId":2,
-        "points":[
-            {
-                "studentId":5,
-                "points": 35
-            },
-            {
-                "studentId":6,
-                "points": 60
-            },
-            {
-                "studentId":7,
-                "points": 55
-            },
-            {
-                "studentId":8,
-                "points": 89
-            }
-        ]
-    }
-]
-```
 
 
 
