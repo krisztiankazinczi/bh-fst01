@@ -70,6 +70,10 @@ if (resp.status === 200) {
 
 #### A `WebServer` osztály
 
+Felvezetés:
+- HTTP alapok ismétlése: kliens, szerver, kérés, válasz, státusz kód
+- Node.js url modul: https://nodejs.org/docs/latest-v12.x/api/url.html
+
 ![](webserver.png)
 
 A `let resp = webserver.get(url)` egy `HttpResponse` objektumot eredményez.
@@ -90,6 +94,13 @@ A program indítása: `$ node main.js "http://example.com/hello.html"`
 - a felolvasott tartalmat kiírja
 
 A kiírás a főprogramban történjen, az összes többi logika a `webserver` modulban.
+
+Tippek:
+1. kezdjük azzal, hogy a main modulból egy argumentumban kapott fájlt meg tudunk nyitni és a tartalmát kiírjuk. Írjuk meg a szükséges kivételkezelési kódot, arra az esetre, ha a fájl nem létezik!
+1. alakítsuk át, hogy a WebServer osztály get metódusa csinálja a megnyitást és a kivételkezelést -- a get ekkor még egy fájl útvonalat kap, visszatérési értéke pedig egy string. Ha nem sikerült a fájl felolvasása, üres sztringet adjunk vissza. 
+1. használjuk a Node.js url modulját arra, hogy fájl elérési útvonal helyett egy URLlel dolgozhassunk
+1. egészítsük ki a kódot, hogy a HttpResponse osztályt használja az eredmény kommunikálására
+
 
 
 
