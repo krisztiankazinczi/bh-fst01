@@ -157,6 +157,7 @@ tables/
     students.json
     courses.json
     teachers.json
+    exams.json
 ```
 
 students.json
