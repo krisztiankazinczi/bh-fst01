@@ -238,10 +238,7 @@ function padWithRight(padding, str, times) { ... }
 // +===========+
 // | Keyboards |
 // +===========+
-function header(title)
-
-
-
+function header(title) { ... }
 ```
 
 ```js
@@ -256,8 +253,7 @@ console.log(header(maxLength))
 for(let i = 0; i < prodNames.length; i++) {
     ...
 }
-
-
+```
 
 
 
