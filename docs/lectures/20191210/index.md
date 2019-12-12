@@ -1,6 +1,6 @@
 # 2019. december 10., kedd
 
-[előző alkalom](../20191203) [következő alkalom](#)
+[előző alkalom](../20191203) [következő alkalom](../20191212)
 
 ## Órai anyag
 
