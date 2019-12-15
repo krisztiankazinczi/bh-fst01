@@ -50,9 +50,9 @@ console.log(result);
 
 Írjuk meg az alábbi műveleteket!
 
-1. listStudents: kiírja a hallgatók neveit
-1. maxPoints: kiírja annak a hallgatónak a nevét, aki a legtöbb pontot szerezte a vizsgán
-1. failedStudents: a megbukott hallgatók neveit írja ki
+1. listStudents: kiírja a hallgatók neveit, csoportonként
+1. maxPoints: kiírja a legtöbb pontot elért hallgatók neveit, csoportonként
+1. failedStudents: a megbukott hallgatók neveit írja ki, csoportonként. Aki 60 pont alatt teljesat, az bukik meg.
 
 fájlstruktúra:
 ```
