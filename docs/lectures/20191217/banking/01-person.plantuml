@@ -1,0 +1,12 @@
+@startuml
+class Person {
+    id: string
+    name: string
+    accounts: map
+    cash: number
+
+    deposit(accountId: string, amount: number)
+    withdraw(accountId: string, amount: number)
+    totalValue(): number
+}
+@enduml

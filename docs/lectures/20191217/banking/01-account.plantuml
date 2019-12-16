@@ -1,0 +1,8 @@
+@startuml
+class Account {
+    id: string
+    owner: Person
+    bank: Bank
+    balance: number
+}
+@enduml

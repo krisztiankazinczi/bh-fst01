@@ -1,0 +1,7 @@
+@startuml
+class Bank {
+    accounts: accounts
+    createAccount(p: Person)
+    listAccounts(): Account[]
+}
+@enduml
