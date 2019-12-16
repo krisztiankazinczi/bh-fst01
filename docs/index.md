@@ -9,6 +9,7 @@
 - [2019. december 03., kedd](lectures/20191203)
 - [2019. december 10., kedd](lectures/20191210)
 - [2019. december 12., csütörtök](lectures/20191212)
+- [2019. december 17., kedd](lectures/20191217)
 
 # gyakorló feladatsorok
 

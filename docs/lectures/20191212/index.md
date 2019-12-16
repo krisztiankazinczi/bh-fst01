@@ -1,6 +1,6 @@
 # 2019. december 12., csütörtök
 
-[előző alkalom](../20191210) [következő alkalom](#)
+[előző alkalom](../20191210) [következő alkalom](../20191212)
 
 ## Órai anyag
 
