@@ -1,8 +1,11 @@
 @startuml
 class Account {
-    id: string
-    owner: Person
-    bank: Bank
-    balance: number
+    - id: string
+    - owner: Person
+    - balance: number
+
+    + deposit(p: Person, amount: number): bool
+    + withdraw(p: Person, amount: number): bool
+
 }
 @enduml

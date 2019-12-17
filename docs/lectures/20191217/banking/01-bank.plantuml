@@ -1,7 +1,9 @@
 @startuml
 class Bank {
-    accounts: accounts
-    createAccount(p: Person)
-    listAccounts(): Account[]
+    - accounts: Map<string,Account>
+
+    + createAccount(p: Person): string
+    + listAccounts(): Account[]
+    + getAccountById(id: string): Account
 }
 @enduml

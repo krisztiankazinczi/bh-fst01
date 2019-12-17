@@ -1,0 +1,12 @@
+@startuml
+class App {
+    counter: number
+    path: string
+    max: number
+
+    constructor(configPath: string)
+    write()
+    count(): number
+    reset()
+}
+@enduml
