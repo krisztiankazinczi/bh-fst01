@@ -41,3 +41,9 @@ Ha a JSDOC-ot szepen irjuk, akkor a VSCode rengeteget tud nekunk segiteni kodola
  - vagy torolni lehet meg ha kitoroljuk a dependencies propertybol a modulet es ujra futtatjuk az `npm i` parancsot
  - dependencies property egy kulcs ertek par, kulcs a module neve, erteke pedig a feltelepitett module verzioja
  - `package.lock` file, egyenlore ne foglalkozzunk vele, feladata, hogy minden fejlesztonel aki a projekten dolgozik, ugyan az a verzio legyen minden packagebol
+
+## abstract osztaly
+ - metodusokat fogalmaz meg, amiket minden leszarmazottnak felul kell irnia, vagy adhatunk meg default implementaciot is
+ - abstract osztalyt nem peldanyositunk, csak orolunk belole
+ - ha nem irunk felul minden metodust az oroklott osztalyban, akkor az oroklott osztaly maga is abstract osztaly lesz
+ - lasd pelda az index.js fileban
