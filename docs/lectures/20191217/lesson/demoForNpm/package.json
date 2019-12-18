@@ -1,0 +1,17 @@
+{
+  "name": "demofornpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "valami": "echo \"valamit csinaltam\" ",
+    "test": "karma"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {}
+}
