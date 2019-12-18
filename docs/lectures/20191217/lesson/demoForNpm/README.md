@@ -7,7 +7,7 @@ milyen parameterei vannak, azoknak mi a tipusa, milyen tipusu ertekkel terunk vi
 Ha a JSDOC-ot szepen irjuk, akkor a VSCode rengeteget tud nekunk segiteni kodolas kozben.
 
 ## object literal
-```javascript let a = {}; ```
+ - ` let a = {}; `
  - tetszoleges szamu kulcs ertek part tartalmaz, barmikor hozzaadhatoak elemek, es eltavolithatoak.
  - a literal atomi erteket jelent
  - konstans idoben tudjuk elerni a tarolt ertekeket a kulcs alapjan
@@ -15,7 +15,7 @@ Ha a JSDOC-ot szepen irjuk, akkor a VSCode rengeteget tud nekunk segiteni kodola
  - hatrany, maceras a bejaras
   
 ## Map
- - ```javascript let a = new Map([[kulcs1, ertek1], [kulcs2, ertek2]]); ```
+ - `let a = new Map([[kulcs1, ertek1], [kulcs2, ertek2]]); `
  - Hasonlo a json literalhoz, `set` es `get` metodusokkal tudjuk berakni es elerni az elemeket
  - barmi lehet a kulcs, akar NaN is, vagy egy fuggveny
  - bejaras joval egyszerubb
@@ -23,7 +23,7 @@ Ha a JSDOC-ot szepen irjuk, akkor a VSCode rengeteget tud nekunk segiteni kodola
  - konstans ideju elemeleres
 
 ## Array
- - ```javascript let a = []; ```
+ - `let a = [];`
  - konstans ideju elem eleres az indexek alapjan
  - egyszeru bejaras
  - bovitheto es elemek kivehetoek belole, bar az utobbi picit maceras (`splice`, `slice`)
@@ -33,7 +33,7 @@ Ha a JSDOC-ot szepen irjuk, akkor a VSCode rengeteget tud nekunk segiteni kodola
  - init utan lehet uj packaget felrakni a globalis npm repositorybol pelda `npm install uuid`
  - install utan a dependencies es devDependencies nevu propertyje a package.json filenak frissul
  - node_modules mappa letrejon, ahova telepulnek a packagek
- - ```javascript const uuidv4 = require('uuid/v4');```
+ - `const uuidv4 = require('uuid/v4');`
  - npx parancs a localis node_modules mappaban keresi a megadott modulet
  - script propertyben lehet megadni elore osszeallitott parancsokat a package.json fileban
  - pelda: `"scripts": { "start": "node index.js"}` amely az index.js filunkat fogja futtatni a `npm start` parancs kiadasakor
