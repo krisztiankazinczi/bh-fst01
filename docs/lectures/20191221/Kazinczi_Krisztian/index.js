@@ -14,3 +14,7 @@ function oddLines(path) {
     }
     return newArr;
 }
+
+module.exports = {
+    oddLines: oddLines
+}
