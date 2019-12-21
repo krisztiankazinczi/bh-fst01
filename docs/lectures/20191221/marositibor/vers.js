@@ -7,10 +7,6 @@ function oddLines(path) {
 	return oddLines.filter((line, idx) => idx % 2===0);
 }
 
-
-console.log(oddLines("../vers.txt"));
-
-
 function evenLines(path) {
 	const poem2 = fs.readFileSync(path).toString();
 	const evenLines = poem2.split('\n');
@@ -18,4 +14,14 @@ function evenLines(path) {
 	return evenLines.filter((line, idx) => !(idx % 2===0));
 }
 
-console.log(evenLines('../vers.txt'));
+function printLines(path) {
+	let oddArray = oddLines(path);
+	let evenArray = evenLines(path);
+	oddArray.forEach((element,idx) => {
+		console.log(element);
+		console.log(evenArray[idx]);
+	});
+
+}
+
+printLines('../vers.txt');
