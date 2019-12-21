@@ -4,17 +4,26 @@ const poemLines = require('./index.js');
 const oddPoem = poemLines.oddLines(pathhh);
 const evenPoem = poemLines.evenLines(pathhh);
 
-console.log(oddPoem);
-
 function everyLines (odd,even){
     let segedArr = [];
-    for(let i = 0; i < odd.length || even.length;i++){
-        segedArr.push(odd[i]);
+    let a = even.length;
+    let b = odd.length;
+    let c;
+    if(a < b){
+        c = b;
+    }
+    if(a > b){
+        c = a;
+    }
+    for(let i = 0; i < c;i++){
         segedArr.push(even[i]);
+        segedArr.push(odd[i]);
     }
     return segedArr;
 }
 
+
 console.log(everyLines(oddPoem,evenPoem));
+
 
 
