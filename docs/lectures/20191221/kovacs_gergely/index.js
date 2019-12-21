@@ -31,7 +31,6 @@ let vers = '../vers.txt';
 
 module.exports = {
     oddLines: oddLines,
-    evenLines: evenLines
+    evenLines: evenLines,
+    path: vers
 }
-
-
