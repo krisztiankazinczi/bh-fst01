@@ -7,9 +7,7 @@ function oddLines(path) {
 
     let newArr = [];
 
-    console.log(lines);
-
-    for (let i = 0; i < lines.length; i++) {
+    for (let i = 0; i < lines.length - 1; i++) {
         if(i%2) {newArr.push(lines[i]);}
     }
     return newArr;
