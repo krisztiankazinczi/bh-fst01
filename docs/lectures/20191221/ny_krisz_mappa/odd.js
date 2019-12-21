@@ -18,4 +18,14 @@ function evenLines(path) {
 	return poemArray.filter((line, idx) => idx % 2);
 }
 
-oddLines('../vers.txt');
+odd = oddLines('../vers.txt');
+even = evenLines('../vers.txt');
+
+function fullVers(odd, even){
+    for (let i = 0; i < even.length; i++) {
+            console.log(odd[i])
+            console.log(even[i])
+    }
+}
+
+fullVers(odd, even)
