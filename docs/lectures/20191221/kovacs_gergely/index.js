@@ -4,14 +4,14 @@ function oddLines(path) {
     const fileBuffer = fs.readFileSync(path);
     const poem = fileBuffer.toString();
     let oddpoem = poem.split('\n');
-    for(let i = 0; i < oddpoem.length; i++){
+    let arr2 = [];
+    for(let i = 0; i < oddpoem.length-1; i++){
         if(i%2 !==0){
-            console.log(oddpoem[i]);
+            arr2.push(oddpoem[i]);
         }
     }
+    return arr2;
 }
-
-let vers = '../vers.txt';
 
 function evenLines(path) {
     const fileBuffer = fs.readFileSync(path);
@@ -26,7 +26,6 @@ function evenLines(path) {
     return arr;
 }
 
-let result = evenLines(vers);
-console.log(result);
+let vers = '../vers.txt';
 
 
