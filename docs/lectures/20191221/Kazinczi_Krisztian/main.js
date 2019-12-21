@@ -13,7 +13,7 @@ function forLoop (arr) {
 }
 
 
-function writePoemOut(odd, even) {
+function writePoemOut() {
     if (oddLines.length <= evenLines.length) {
         forLoop(evenLines);
     } else {
