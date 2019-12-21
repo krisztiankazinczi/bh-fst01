@@ -26,6 +26,12 @@ function evenLines(path) {
     return arr;
 }
 
+
 let vers = '../vers.txt';
+
+module.exports = {
+    oddLines: oddLines,
+    evenLines: evenLines
+}
 
 
