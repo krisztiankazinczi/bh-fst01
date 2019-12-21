@@ -32,8 +32,16 @@ function eventLines(path){
     return arrOdd;
 }
 
-console.log(addLines(path));
-console.log(eventLines(path));
+let odd = addLines(path);
+let even = eventLines(path);
 
+function fullVers(odd, even){
+    for (let i = 0; i < even.length; i++) {
+        console.log(odd[i])
+        console.log(even[i])
+    }
+}
+
+fullVers(odd, even);
 
 
