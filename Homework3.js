@@ -19,11 +19,8 @@
 
 const arr1 = []
 
-for (let paros = 1; paros <= 100; paros++) {
-
-    if (!(paros % 2)) {
+for (let paros = 2; paros <= 100; paros=paros+2) {
         arr1.push(paros)
-    }
 
     if (!(paros % 10)) {
         console.log(arr1.length)
