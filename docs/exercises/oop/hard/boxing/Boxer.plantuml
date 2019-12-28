@@ -1,0 +1,8 @@
+@startuml
+class Boxer {
+    - weight: number
+
+    + constructor(weight: number)
+    + weightClass(): number
+}
+@enduml

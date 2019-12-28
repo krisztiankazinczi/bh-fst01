@@ -1,0 +1,10 @@
+@startuml
+class Person {
+    - name: string
+    - age: number
+
+    + constructor(name, age)
+    + sayHi(): string
+    + growOlder()
+}
+@enduml
