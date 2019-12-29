@@ -22,9 +22,11 @@ class BoxClub {
 
     breakUp(boxer) {
         const idx = this._boxers.findIndex(b => b === boxer);
-        if (idx === undefined) return null;
+        if (idx === -1) throw new IllegalState();
 
-        return this._boxers.splice(idx, 1).pop();
+        this._boxers.splice(idx, 1);
+
+        return this._boxers;
     }
 }
 

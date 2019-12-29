@@ -1,18 +1,20 @@
-const LIGHTWEIGHT_START = 50;
-const MIDDLEWEIGHT_START = 65;
-const HEAVYWEIGHT_START = 90;
+const IllegalState = require('./errors/IllegalState');
+
+const LIGHTWEIGHT_START = 48;
+const MIDDLEWEIGHT_START = 61;
+const HEAVYWEIGHT_START = 91;
 
 const LIGHTWEIGHT = 1;
 const MIDDLEWEIGHT = 2;
 const HEAVYWEIGHT = 3;
 
 class Boxer {
-    constructor(id, weight, club) {
+    constructor(weight, club) {
+        if (weight === undefined) throw new IllegalState();
         if (weight < LIGHTWEIGHT_START) throw new RangeError();
 
-        this._id = id;
         this._weight = weight;
-        this._club = club;
+        this._club = club || null;
     }
 
     weightClass() {
@@ -27,7 +29,7 @@ class Boxer {
     }
 
     sign(club) {
-        if (this._club && this._club !== club) throw new SigningBeforeLeaving();
+        if (this._club && this._club !== club) throw new IllegalState();
 
         this._club = club;
     }
