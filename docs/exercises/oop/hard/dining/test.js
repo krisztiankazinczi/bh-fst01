@@ -1,11 +1,22 @@
 const assert = require('chai').assert;
 
-const solutionDir = 'laszlo_szucs'
+const solutionDir = 'solution_oop'
 
 const Dish = require(`./${solutionDir}/Dish`);
 const Restaurant = require(`./${solutionDir}/Restaurant`);
 const Guest = require(`./${solutionDir}/Guest`);
 const Dining = require(`./${solutionDir}/Dining`);
+
+describe('Guest', () => {
+    describe('dispreferences', () => {
+        it('should return the list of ingredients the guest wont eat', () => {
+            const dispreferences = ['meat', 'dairy'];
+            const guest = new Guest(dispreferences);
+            
+            assert.deepEqual(guest.dispreferences(), dispreferences);
+        });
+    })
+});
 
 describe('Dish', () => {
 
@@ -27,7 +38,7 @@ describe('Dish', () => {
 });
 
 describe('Restaurant', () => {
-    describe('recommend', () => {
+    describe('recommendations', () => {
         it('should return list of dishes not containing any of the provided ingredients', () => {
             const peanutSugar = new Dish(['peanut', 'sugar']);
             const peanut = new Dish(['peanut']);

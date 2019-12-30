@@ -23,17 +23,17 @@ azaz 48 kg és 60 kg is könnyűsúly.
 
 Inicializálja a propertyket.
 
-Ha a weight nincs megadva IllegalState hibát dob.
+Ha a `weight` nincs megadva `IllegalState` hibát dob.
 
 - `should throw IllegalState when weight is missing`
 
-Ha a weight kisebb, mint 48 kg RangeError hibát dob.
+Ha a `weight` kisebb, mint 48 `RangeError` hibát dob.
 
 - `should throw RangeError when weight is lower than lightweight lower bound`
 
-A club property nem kötelező, alapértelmezett értéke null.
+A `club` paraméter nem kötelező, a property alapértelmezett értéke `null`.
 
-## weightClass(): number | undefined
+## weightClass(): number
 
 A bokszoló súlycsoportját jelölő számmal tér vissza. 
 
@@ -52,15 +52,16 @@ Ha nincs klubja, null.
 
 Szerződi a bokszolót a megadott bokszklubhoz.
 
-Ha a bokszolónak
-már van szerződése a klubnál vagy egy másiknál, IllegalState hibát dob.
+Beállítja a klubot a club paraméterben érkező értékre.
 
-- `should throw IllegalState error when boxer is already associated with club`
+Ha a bokszolónak
+már van szerződése egy másik klubnál, IllegalState hibát dob.
+
 -  `should throw IllegalState error when boxer is associated with another club`)
 
 ## leave()
 
-Kilépteti a bokszolót az aktuális klubjából a klub referencia `null` értékre állításával.
+Kilépteti a bokszolót az aktuális klubból.
 
 - `should nullify the boxers club`
 
