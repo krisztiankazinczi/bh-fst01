@@ -1,10 +1,14 @@
 class Person {
     constructor(name, age) {
-        if (name === '') throw new RangeError('name must not be empty string');
-        if (age < 0) throw new RangeError('age must be non-negative');
+        if (!name) throw new Error();
+        if (age === undefined || age < 0) throw new Error();
 
         this._name = name;
         this._age = age;
+    }
+
+    age() {
+        return this._age;
     }
 
     sayHi() {

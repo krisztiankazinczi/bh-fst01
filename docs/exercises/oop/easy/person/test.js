@@ -3,30 +3,48 @@ const Person = require('./solution/Person');
 
 describe('Person', () => {
     describe('constructor', () => {
-        it('should throw RangeError if name is empty', () => {
+        it('should throw error if name is missing', () => {
+            assert.throws(() => new Person(undefined, 33));
+        });
+        it('should throw error if name is empty', () => {
             assert.throws(() => new Person('', 33));
         });
-        it('should throw RangeError if age is negative', () => {
-            assert.throws(() => new Person('Rosenkrantz', -33));
+        it('should throw error if age is missing', () => {
+            assert.throws(() => new Person('John Doe'));
+        });
+        it('should throw error if age is negative', () => {
+            assert.throws(() => new Person('John Doe', -33));
         });
     });
 
-    describe('sayHi', () => {
-        it('should return an introduction string', () => {
-            const p = new Person('Guildenstern', 32);
-            
-            assert.equal(p.sayHi(), "Hi, my name is Guildenstern and I'm 32 years old.");
+    describe('age', () => {
+        it('should return the age of the person', () => {
+            const p = personWithAge(33);
+
+            assert.strictEqual(p.age(), 33);
         });
     });
     
     describe('growOlder', () => {
         it('should increment the person age by one', () => {
-            const p = new Person('Lemmy', 60);
+            const p = personWithAge(32);
 
             p.growOlder();
 
-            assert.equal(p._age, 61);
+            assert.equal(p.age(), 33);
 
         })
     })
+
+    describe('sayHi', () => {
+        it('should return an introduction string', () => {
+            const p = new Person('John Doe', 33);
+            
+            assert.equal(p.sayHi(), "Hi, my name is John Doe and I'm 33 years old.");
+        });
+    });
 });
+
+function personWithAge(age) {
+    return new Person('John Doe', age);
+}

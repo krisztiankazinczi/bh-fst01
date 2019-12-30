@@ -6,15 +6,42 @@ Tekintsük az alábbi, személyt leíró `Person` osztályt.
 
 A `name` és `age` private propertyk a személy neve és életkora.
 
-## constructor(name, age)
+## constructor(name: string, age: number)
 
-Inicializálja a name és age propertyket. `RangeError`-t dob, ha a `name` üres vagy, ha az `age` negatív.
+Ha a `name` nincs megadva, hibát dob.
 
-## sayHi(): string
+- `should throw error if name is missing`
 
-Egy rövid bemutatkozó szöveget vissza erre a mintára: "Hi, my name is Steve and I'm 33 years old."
+Ha a `name` üres, hibát dob.
+
+- `should throw error if name is empty`
+
+Ha az `age` nincs megadva, hibát dob.
+
+- `should throw error if age is missing`
+
+Ha az `age` negatív, hibát dob.
+
+- `should throw error if age is negative`
+
+## age(): number
+
+A személy életkorával tér vissza.
+
+- `should return the age of the person`
+
 
 ## growOlder()
 
 Eggyel növeli az életkort.
+
+- `should increment the person age by one`
+
+## sayHi(): string
+
+Egy rövid bemutatkozó szöveggel tér vissza.
+
+Minta: `"Hi, my name is John Doe and I'm 33 years old."`
+
+- `should return an introduction string`
 

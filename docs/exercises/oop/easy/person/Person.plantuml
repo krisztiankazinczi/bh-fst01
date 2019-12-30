@@ -3,7 +3,8 @@ class Person {
     - name: string
     - age: number
 
-    + constructor(name, age)
+    + constructor(name: string, age: number)
+    + age(): number
     + sayHi(): string
     + growOlder()
 }
