@@ -10,6 +10,12 @@ describe('Lecturer', () => {
 
             assert.deepEqual(new Lecturer(skills)._skills, skills);
         })
+
+        it('should initialize skills with empty array if parameter is missing', () => {
+            const skills = ['frontend']
+
+            assert.deepEqual(new Lecturer(skills)._skills, skills);
+        })
     })
 
     describe('skills', () => {
@@ -22,7 +28,7 @@ describe('Lecturer', () => {
     })
 
     describe('matchTopics', () => {
-        it('sss', () => {
+        it('should return number of how many skills match the provided topics', () => {
             const lecturer = createLecturer(['topic1', 'topic2'])
     
             assert.strictEqual(lecturer.matchTopics(['topic1', 'topic2', 'topic3']), 2)
@@ -31,7 +37,7 @@ describe('Lecturer', () => {
 })
 
 describe('Student', () => {
-    describe('constructor(skill)', () => {
+    describe('constructor(skillLevel)', () => {
         it('should initialize the instance', () => {
             assert.strictEqual(new Student(1)._skillLevel, 1)
         })
@@ -94,7 +100,7 @@ describe('Course', () => {
     });
 
     describe('addLecturer', () => {
-        it('should add lecturer to the course when lecturer matches 2/3 of topics', () => {
+        it('should add lecturer to the course when lecturer skills match 2/3 of topics', () => {
             const course = createCourse({topics: ['topic1', 'topic2', 'topic3']})
             const lecturer = createLecturer(['topic1', 'topic2'])
 
@@ -103,7 +109,7 @@ describe('Course', () => {
             assert.strictEqual(course._lecturer, lecturer)
         })
 
-        it('should not add lecturer to the course when lecturer does not match 2/3 of topics', () => {
+        it('should not add lecturer to the course when lecturer do not match 2/3 of topics', () => {
             const course = createCourse({topics: ['topic1', 'topic2', 'topic3']})
             const lecturer = createLecturer(['topic1'])
 
