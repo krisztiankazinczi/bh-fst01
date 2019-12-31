@@ -1,5 +1,21 @@
-const Person = require('./Person');
+class Lecturer {
+    constructor(skills) {
+        this._skills = skills || []
+    }
 
-class Lecturer extends Person {}
+    skills() {
+        return this._skills
+    }
 
-module.exports = Lecturer;
+    matchTopics(topics) {
+        let count = 0
+        for (let i = 0; i < topics.length; i++) {
+            if (this._skills.includes(topics[i])) {
+                count++
+            }
+        }
+        return count;
+    }
+}
+
+module.exports = Lecturer

@@ -1,20 +1,21 @@
-const IllegalState = require('./errors/IllegalState');
 
 class Course {
-    constructor(students, lecturer, minStudentsCount) {
+    constructor(students, lecturer, minStudentsCount, topics) {
         this._students = students || [];
         this._lecturer = lecturer || null;
         this._minStudentCount = minStudentsCount || 0;
+        this._topics = topics;
     }
 
     addStudent(student) {
-        if (this.studentById(student.id())) throw new IllegalState(`student id (${student.id()}) already registered`);
+        if (this._students.includes(student)) throw new Error();
         
         this._students.push(student);
     }
 
     addLecturer(lecturer) {
-        if (this._lecturer) throw new IllegalState(`a lecturer (${this._lecturer.name()}) already exists for the course (${this._title})`);
+        if (this._lecturer) throw new Error();
+        if (lecturer.matchTopics(this._topics) < (2 * this._topics.length / 3)) return
 
         this._lecturer = lecturer;
     }
@@ -25,10 +26,6 @@ class Course {
 
     students() {
         return this._students;
-    }
-
-    studentById(id) {
-        return this._students.find(student => student.id() === id);
     }
 
     canStart() {

@@ -1,5 +1,11 @@
-const Person = require('./Person');
+class Student {
+    constructor(skillLevel) {
+        this._skillLevel = skillLevel || 0
+    }
 
-class Student extends Person {}
+    skillLevel() {
+        return this._skillLevel
+    }
+}
 
 module.exports = Student;
