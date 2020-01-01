@@ -2,10 +2,10 @@ const assert = require('chai').assert;
 
 const solutionDir = 'solution_oop'
 
-const Dish = require(`./${solutionDir}/Dish`);
-const Restaurant = require(`./${solutionDir}/Restaurant`);
-const Guest = require(`./${solutionDir}/Guest`);
-const Dining = require(`./${solutionDir}/Dining`);
+const Dish = require(`./solution/Dish`);
+const Restaurant = require(`./solution/Restaurant`);
+const Guest = require(`./solution/Guest`);
+const Dining = require(`./solution/Dining`);
 
 describe('Guest', () => {
     describe('dispreferences', () => {
