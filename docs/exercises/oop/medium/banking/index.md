@@ -4,86 +4,107 @@ Modellezzünk személyi pénzügyeket! Tekintsük az alábbi osztályokat.
 
 # Account
 
-Egy bankszámlát ír le. A számla jellemzői a tulajdonosa (holder) és a rajta végrehajtott tranzakciók (transactions).
+Egy bankszámlát ír le. A számla jellemzője a rajta végrehajtott tranzakciók listája.
 
-Egy tranzakciót egy szám jelöl. A jóváírást pozítív számmal, a leemelést negatív számmal jelöljük. Egy tranzakció vagy jóváírást vagy leemelést kell jelöljön.
+Egy tranzakciót egy szám jelöl. A jóváírást pozítív számmal, a leemelést negatív számmal jelöljük. Egy tranzakció vagy jóváírást vagy leemelést kell jelöljön, nem létezik nulla értékű tranzakció.
 
-## constructor(initialDeposit: number, holder: Person)
+![](./Account.png)
 
-Az initialDeposit a folyószámla létrehozásakor egy esetleges betéti tranzakció értéke. Ha megadtunk egy initialDeposit értéket, a számla tranzakció listáján megjelenik a betét.
+## constructor(initialDeposit: number)
 
-- `should initialize the transaction list with a deposit when initialDeposit is provided`
+Az `initialDeposit` a folyószámla létrehozásakor egy esetleges betéti tranzakció értéke. Ha megadtunk egy `initialDeposit` értéket, a számla tranzakció listáján megjelenik a betét.
 
-Ha az initialDeposit nincs megadva, a tranzakció lista kezdetben üres.
+- `should initialize with a deposit transaction when initialDeposit is provided`
 
-- `should initialize the transaction list with an empty list when initialDeposit is not provided`
+Ha az `initialDeposit` nincs megadva, a tranzakció lista kezdetben üres.
 
-Ha az initialDeposit negatív, hibát dob.
+- `should initialize with empty transaction list when initialDeposit is not provided`
+
+Ha az `initialDeposit` nulla, a tranzakció lista kezdetben üres.
+
+- `should initialize with an empty transaction list when initialDeposit is zero`
+
+Ha az `initialDeposit` negatív, hibát dob.
 
 - `should throw error when initialDeposit is negative`
-
-Ha az initialDeposit nulla, a tranzakció lista kezdetben üres.
-
-- `should initialize the transaction list with an empty list when initialDeposit is zero`
-
-Ha a holder nincs megadva, hibát dob
-
-- `should throw error when holder is missing`
 
 ## balance(): number
 
 A számla aktuális egyenlegével tér vissza. Az egyenleg a tranzakciók összege.
 
-## deposit(amount: number)
+- `should return the sum of the transactions`
 
-Elhelyezi a megadott összeget a számlán. Feltételezzük, hogy mindig a számla tulajdonosa fizet be.
+## deposit(amount: number, person: Person)
 
-Az elhelyezés során egy betéti tranzakció jön létre a megadott összeggel.
+Elhelyezi a megadott összeget a számlán.
+
+Az elhelyezés során ha a személynek volt elegendő készpénze, egy betéti tranzakció jön létre a megadott összeggel.
 
 - `should create a deposit transaction`
+- `should not create transaction if person does not have enough cash`
 
-Az elhelyezés során az összeg levonódik a számla tulajdonosának készpénz állományából.
+Az elhelyezés során, ha a személynek volt elegendő készpénze, az összeg levonódik a személy készpénz állományából.
 
-- `should decrease the account holder cash by amount`
+- `should decrease the person cash by amount`
+- `should not modify person cash if person does not have enough cash`
 
-Ha nincs elegendő készpénz, nem csinálunk semmit
-
-- `should do nothing if account holder does not have enough cash`
-
-Ha amount nem pozitív szám, hibát dob
+Ha `amount` nem pozitív szám, hibát dob
 
 - `should throw error when amount is not a positive number`
 
-## withdraw(amount: number)
+## withdraw(amount: number, person: Person)
+
+Leemeli a megadott összeget a számláról és hozzáadja a személy készpénzéhez, ha van fedezet.
+
+- `should increase person cash if person has enough cash`
+- `should not modify person cash if account balance is insufficient`
+
+A leemelés egy `amount` mértékű negatív előjelű tranzakciót hoz létre, ha a számlán van fedezet.
+
+- `should create a withdraw transaction`
+- `should not create a withdraw transaction if account balance is insufficient`
+
+Ha az `amount` negatív, hibát dob.
+
+- `should throw error when amount is not a positive number`
 
 ## transfer(amount: number, to: Account)
 
-Átvezeti a megadott összeget (amount) a megadott számlára (to).
+Átvezeti az amount összeget a toAccount számlára to.
 
-Az átvezetés során a küldő számlán létrejön egy leemelési tranzakció.
+Az átvezetés során a küldő számlán létrejön egy leemelési tranzakció, ha a küldő számlán van fedezet.
 
-- 
+- `should create a withdraw transaction on the origin account`
+- `should not create withdraw transaction when there is not enough money`
 
 Az átvezetés során a fogadó számlán létrejön egy jóváírás tranzakció.
 
-Ha nincs fedezet, nem jönnek létre tranzakciók
+- `should create a deposit transaction on the target account`
+- `should not create a deposit transaction when there is not enough money `
 
-Ha amount nem pozitív, hibát dob
+Ha `amount` nem pozitív, hibát dob
 
-Ha to nincs megadva, hibát dob
+- `should throw error when amount is not a positive number`
 
+Ha `toAccount` nincs megadva, hibát dob
+
+- `should throw error when toAccount is not provided`
 
 
 # Person
 
-![]()
+![](./Person.png)
 
-A Person osztály egy személyt ír le. Egy személynek készpénze (cash) és bankszámlái (accounts) lehetnek.
-A cash nemnegatív szám, az accounts egy bankszámlákat (Account) tartalmazó tömb.
+Egy személyt ír le. Egy személynek készpénze és bankszámlái lehetnek.
+A `_cash` nemnegatív szám, az `_accounts` egy bankszámlákat tartalmazó tömb.
 
 ## constructor(cash, accounts)
 
-Inicializálja a propertyket. RangeError-t dob, ha a cash negatív, TypeError-t, ha az accounts meg van adva,
+Inicializálja a propertyket.
+
+Ha a cash negatív, hibát dob.
+
+, ha az accounts meg van adva,
 de nem tömb.
 
 Ha a cash nincs megadva, a property kezdőértéke 0. Ha az accounts nincs megadva, a property értéke egy üres tömb.

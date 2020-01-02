@@ -1,40 +1,40 @@
 class Account {
-    constructor(initialDeposit, owner) {
+    constructor(initialDeposit) {
 
-        if (initialDeposit < 0) throw new Error();
-        if (!owner) throw new Error();
+        if (initialDeposit < 0) throw new Error('initialDeposit cannot be negative');
 
         this._transactions = initialDeposit? [initialDeposit] : [];
-        this._owner = owner;
     }
 
     balance() {
         let balance = 0;
 
         for(let i = 0; i < this._transactions.length; i++) {
-            balance += this._transactions[i]
+            balance += this._transactions[i];
         }
 
         return balance;
     }
 
-    deposit(amount) {
-        if (amount <= 0) throw new Error();
-        if (this._owner.cash() < amount) return;
+    deposit(amount, person) {
+        if (amount <= 0) throw new Error('amount must be positive');
+        if (person.cash() < amount) return;
 
+        person.useCash(amount);
         this._transactions.push(amount);
     }
 
-    withdraw(amount) {
-        if (amount <= this.balance()) {
-            this._owner.receiveCash(amount);
-            this._transactions.push(-amount);
-        }
+    withdraw(amount, person) {
+        if (amount <= 0) throw new Error('amount must be positive');
+        if (amount > this.balance()) return;
+
+        person.receiveCash(amount);
+        this._transactions.push(-amount);
     }
 
     transfer(amount, toAccount) {
-        if (amount <= 0) throw new Error();
-        if (!(toAccount instanceof Account)) throw new Error();
+        if (amount <= 0) throw new Error('amount must be positive');
+        if (!(toAccount instanceof Account)) throw new Error('toAccount must be instance of Account');
         if (this.balance() < amount) return;
 
         this._transactions.push(-amount);

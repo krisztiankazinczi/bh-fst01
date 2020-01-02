@@ -1,7 +1,21 @@
 class Person {
     constructor(cash, accounts) {
-        this._cash = cash;
-        this._accounts = accounts;
+        if (cash < 0) throw new Error('cash must not be negative')
+        this._cash = cash || 0;
+        this._accounts = accounts || [];
+    }
+
+    cash() {
+        return this._cash;
+    }
+
+    useCash(amount) {
+        if (amount > this._cash) return;        
+        this._cash -= amount;
+    }
+
+    receiveCash(amount) {
+        this._cash += amount;
     }
 
     totalAssets() {
@@ -17,7 +31,6 @@ class Person {
         }
 
         return sum;
-        // return this._accounts.reduce((accumulator, account) => accumulator + account.balance(), 0);
     }
 }
 
