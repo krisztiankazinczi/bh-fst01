@@ -225,14 +225,14 @@ Hogyan tudunk egyszerre több változót deklarálni?
 
 Mi az az utasítás blokk (block statement)?
 
-Mi történik az alábbi kódrészletben?
+Mi történik, ha az alábbi kódrészletből elhagyjuk a kapcsos zárójeleket?
 
 ```
 let i = 0;
-while(i < 10)
+while(i < 10) {
     console.log(i);
     i++;
-console.log(i);
+}
 ```
 
 Hogy viselkedik a `break` és `continue` egy ciklusban?
@@ -245,8 +245,111 @@ Mit ír le a `for(;;)` szerkezet?
 
 Mire használható a `for-in` ciklus?
 
+Mire való a `Object.prototype.hasOwnProperty` metódus?
+
+Mire kell figyelni, ha egy objektum kulcsait a `for-in` ciklussal járjuk be?
+
 Miért nem ajánlott `for-in` ciklussal bejárni egy tömböt?
 
-Mire való a `Object.prototype.hasOwnProperty` metódus?
+Hány else if ágat írhatunk egy elágazásba?
+
+Melyik else melyik ifhez tartozik az alábbi példában?
+
+```js
+if (condition1) if (condition2) else console.log('tricky!');
+
+if (condition1)
+    if (condition2)
+else console.log('tricky!');
+```
+
+Mire való a switch?
+
+Miért kell a break utasítást a switch ágainak a végére?
+
+Mikor nem kell break a switch végére?
+
+Hogy működik a switch default ága? Mi történik, ha nem adtunk meg default ágat?
+
+
+Melyik switch szabályos szintaktialag?
+
+```js
+// 1)
+switch(true) {
+    case false: console.log('false')
+}
+
+// 2)
+switch(false) {
+    case false: break; console.log('false')
+}
+
+// 3)
+const n = 5;
+switch(n) {
+    case 5:
+        console.log(5);
+        break;
+    default:
+        console.log('default');
+        break;
+}
+```
+## 14. Exception handling
+
+# Exploring ES6
+
+## 8. Template literals
+
+Mik azok a template literálok? 
+
+Mi a különbség egy sztring és egy template literál között?
+
+Mi az a (sztring) interpoláció?
+
+Hogyan tudok ` karaktert írni egy template literálba?
+
+## 9. Variables and scoping
+
+Mi a különbség a let a const és a var között?
+
+Mit jelent az, hogy a let és a const blokk szinten láthatóak, míg a var függvény szinten?
+
+Hozzáadhatunk-e egy elemet egy consttal deklarált tömb?
+
+Mire való az Object.freeze?
+
+Miért szabálytalan az const használata első ciklusban és miért szabályos a másodikban?
+
+```js
+for (const i = 0; i < arr.length; i++) {
+    // ...
+}
+
+for (const i in arr) {
+    // ..
+}
+```
+
+Mi az a temporal dead zone?
+
+Mire jó és hogyan működik az alábbi kódrészlet?
+
+```js
+if (someCondition) {
+    var someVar = 42;
+}
+
+console.log(someVar);
+```
+
+
+
+
+
+
+
+
 
 
