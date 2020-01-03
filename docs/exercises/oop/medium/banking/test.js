@@ -138,7 +138,7 @@ describe('Account', () => {
     });
 
     describe('transfer(amount, toAccount)', () => {
-        it('should create a deposit transaction on the target account', () => {
+        it('should create a deposit transaction on toAccount', () => {
             const acc1 = account(10000);
             const acc2 = account();
 
@@ -154,7 +154,7 @@ describe('Account', () => {
 
             assert.deepEqual(acc2._transactions, [10000]);
         });
-        it('should create a withdraw transaction on the origin account', () => {
+        it('should create a withdraw transaction on the account', () => {
             const acc1 = account(10000);
             const acc2 = account();
 
@@ -188,8 +188,52 @@ describe('Account', () => {
 });
 
 describe('Person', () => {
+    describe('constructor(cash, accounts)', () => {
+        it('should throw error when cash is negative', () => {
+            assert.throws(() => new Person(-5000));
+        })
+        it('should initialize _cash with zero when cash is undefined', () => {
+            assert.strictEqual(new Person()._cash, 0)
+        })
+        it('should initialize _accounts with empty array if accounts is undefined', () => {
+            assert.deepEqual(new Person()._accounts, [])
+        })
+    });
+    
+    describe('cash()', () => {
+        it('should return the amount of cash', () => {
+            const p = new Person(5000);
+
+            assert.strictEqual(p.cash(), 5000);
+        });
+    });
+    describe('receiveCash(amount)', () => {
+        it('should increase _cash by amount', () => {
+            const p = new Person(5000);
+
+            p.receiveCash(5000)
+
+            assert.strictEqual(p._cash, 10000);
+        });
+    });
+    describe('useCash(amount)', () => {
+        it('should decrease _cash by amount', () => {
+            const p = new Person(5000);
+
+            p.useCash(5000)
+
+            assert.strictEqual(p._cash, 0);
+        });
+        it("should do nothing if there isn't enough cash to use", () => {
+            const p = new Person(5000);
+
+            p.useCash(7500)
+
+            assert.strictEqual(p._cash, 5000);
+        });
+    });
     describe('totalAssets', () => {
-        it('should return the sum of cash and sum of balances over all accounts owned', () => {
+        it('should return the sum of cash and sum of balances over all accounts', () => {
             const acc1 = account(10000);
             const acc2 = account(20000);
             const p = new Person(5000, [acc1, acc2]);

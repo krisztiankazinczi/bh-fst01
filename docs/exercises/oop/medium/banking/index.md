@@ -68,7 +68,7 @@ Ha az `amount` negatív, hibát dob.
 
 - `should throw error when amount is not a positive number`
 
-## transfer(amount: number, to: Account)
+## transfer(amount: number, toAccount: Account)
 
 Átvezeti az amount összeget a toAccount számlára to.
 
@@ -104,13 +104,45 @@ Inicializálja a propertyket.
 
 Ha a cash negatív, hibát dob.
 
-, ha az accounts meg van adva,
-de nem tömb.
+- `should throw error when cash is negative`
 
-Ha a cash nincs megadva, a property kezdőértéke 0. Ha az accounts nincs megadva, a property értéke egy üres tömb.
+Ha a cash nincs megadva, a property kezdőértéke 0. 
+
+- `should initialize _cash with zero when cash is undefined`
+
+Ha az accounts nincs megadva, a property értéke egy üres tömb.
+
+- `should initialize _accounts with empty array if accounts is undefined`
+
+## cash()
+
+A rendelkezésre álló készpénz mennyiségével tér vissza
+
+- `should return the amount of cash`
+
+## receiveCash(amount)
+
+Készpémnz elfogadását írja le.
+
+Megnöveli a készpénz mennyiségét.
+
+- `should increase _cash by amount`
+
+## useCash(amount)
+
+Készpénz felhasználást jelenti.
+
+Csökkenti a készpénz mennyiségét.
+
+- `should decrease _cash by amount`
+
+Ha nincs elegendő készpénz, nem módosítja a készpénz mennyiséget.
+
+- `should not decrease _cash if there isn't enough cash to use`
 
 ## totalAssets
 
-A személy összes vagyona, a készpénz és a folyószámlák egyenlegeinek összege, nemnegatív szám.
+A személy összes vagyonával, a készpénz és a folyószámlák egyenlegeinek összegével tér vissza.
 
+- `should return the sum of cash and sum of balances over all accounts`
 
