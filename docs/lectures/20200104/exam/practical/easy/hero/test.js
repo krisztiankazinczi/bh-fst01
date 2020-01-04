@@ -22,7 +22,7 @@ describe("Hero", () => {
     });
   });
 
-  describe("age", () => {
+  describe("details", () => {
     it("should return the hero details", () => {
       const n = 'goku'
       const pl = 110

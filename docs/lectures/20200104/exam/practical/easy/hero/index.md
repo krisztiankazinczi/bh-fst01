@@ -1,4 +1,4 @@
-# Person
+# Hero
 
 
 Csinaljunk egy `hero` osztalyt.
@@ -28,14 +28,14 @@ Ha az `life` kevesebb mint 100, hibat dob.
 
 - `should throw error if life < 100`
 
-## getDetails()
+## getHeroDetails()
 
-Egy olyan objecttel ter vissza amiben visszaadjuk a kovetkezokat: hero, powerLevel, life
+Egy olyan objecttel ter vissza amiben visszaadjuk a kovetkezokat: name, powerLevel, life
 
 - `should return the hero details`
 
 
-## attact()
+## attack()
 
 Visszaadja a powerLevelt.
 
@@ -44,8 +44,6 @@ Visszaadja a powerLevelt.
 ## getHit(attackLevel: number)
 
 Egy olyan method, amely var egy szamot (attackLevel) argumentkent, majd a megadott erteket kivonja a hero lifebol.
-
-Minta: `"Hi, my name is John Doe and I'm 33 years old."`
 
 - `should argument must be a number`
 - `should decrease the life`
