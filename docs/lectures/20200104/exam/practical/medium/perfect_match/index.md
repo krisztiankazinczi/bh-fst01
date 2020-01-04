@@ -6,21 +6,21 @@ Modellezzük egy randi oldal ajánló algoritmusát.
 
 Személyiségjegyeket leíró osztály.
 
-Két személyiségjegy van, kedves és vicces.
+Két személyiségjegy van, kedves (nice) és vicces (funny).
 
 ## constructor(nice: bool, funny: bool)
 
-Inicializálja az objektumot. Ha egy paraméter nincs megadva, a property false.
+Inicializálja az objektumot.
+
+Ha egy paraméter nincs megadva, a property false.
 
 ## match(other: Trait): bool
 
-Megmondja, hogy valakinek a  személyiségjegyei egyeznek-e valaki másével.
-
-Pontosabban, hogy valakinek a preferenciáival egyezik-e.
+Megmondja, hogy valakinek a  személyiségjegyei egyeznek-e valaki máséval, azaz, hogy mind a két Trait nice és funny propertyje megegyezik.
 
 # Person
 
-Egy személynek vannak saját személyiségjegyei és személyiségjegyek, amiket másban keres.
+Egy személynek vannak saját személyiségjegyei (traits) és személyiségjegyek, amiket másban keres (preferences).
 
 ## recommendations(persons: Person[]): Person[]
 

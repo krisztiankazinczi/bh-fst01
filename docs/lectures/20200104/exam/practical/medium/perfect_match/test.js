@@ -9,7 +9,7 @@ const DEFAULT_PERSON_TRAITS = {funny: false, nice: false}
 const DEFAULT_PERSON_PREFERENCES = {funny: false, nice: false}
 
 describe('Traits', () => {
-    describe('constructor(open, conscientious, extravert, agreeable, neurotic)', () => {
+    describe('constructor(nice, funny)', () => {
         it('should initialize the properties', () => {
             const t = new Traits(false, false)
 
@@ -33,11 +33,17 @@ describe('Traits', () => {
 
     describe('match(other)', () => {
         it('should return true if trait properties matches other traits', () => {
-            
+            const t = createTraits({nice: true, funny: false})
+            const other = createTraits({nice: true, funny: false})
+
+            assert.isTrue(t.match(other))
         })
 
         it('should return false if any trait properties differ from other trait', () => {
+            const t = createTraits({nice: true, funny: true})
+            const other = createTraits({nice: false, funny: false})
 
+            assert.isFalse(t.match(other))
         })
     })
 })
