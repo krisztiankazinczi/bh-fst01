@@ -22,7 +22,7 @@ Megmondja, hogy valakinek a  személyiségjegyei egyeznek-e valaki máséval, az
 
 Egy személynek vannak saját személyiségjegyei (traits) és személyiségjegyek, amiket másban keres (preferences).
 
-## constructor(traits: Traits, preferences: Trait)
+## constructor(traits: Traits, preferences: Traits)
 
 Inicializálja a személy objektumot a saját tulajdonságaival (traits) és a másokban keresett preferenciáival (preferences).
 
