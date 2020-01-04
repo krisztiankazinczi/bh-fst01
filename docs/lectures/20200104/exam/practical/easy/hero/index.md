@@ -6,7 +6,7 @@ Csinaljunk egy `hero` osztalyt.
 A `name`, `powerLevel` es `life` private propertyk ami, az adott hero neve, tamadoereje es eletereje.
 
 
-## constructor(name: string, age: number)
+## constructor(name: string, powerLevel: number, life: number)
 
 Ha a `name` nincs megadva, vagy falsy ertek, hibát dob.
 
