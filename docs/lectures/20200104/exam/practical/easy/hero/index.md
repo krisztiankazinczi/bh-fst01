@@ -35,7 +35,7 @@ Egy olyan objecttel ter vissza amiben visszaadjuk a kovetkezokat: name, powerLev
 - `should return the hero details`
 
 
-## attact()
+## attack()
 
 Visszaadja a powerLevelt.
 
