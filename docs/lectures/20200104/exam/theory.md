@@ -99,6 +99,7 @@ for(const i = 0; i < 10; i++) {
 ## Javítás
 ---
 
+```js
 let eredmeny
 for(let i = 0; i < 10; i + 1) {
   eredmeny = i;
@@ -447,6 +448,9 @@ function f() {
 let eredmeny = a
 f()
 ```
+
+1. 5
+1. 10
 
 ## Indoklás
 
