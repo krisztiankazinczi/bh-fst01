@@ -8,7 +8,7 @@ Egy házikedvencet leíró osztály.
 
 A házikedvenceket a nevük és fajtájuk jellemzi.
 
-## constructor(name, species)
+## constructor(name: string, species: string)
 
 Inicializálja a házikedvencet. Hibakezeléstől és alapértékektől eltekintünk.
 
@@ -32,7 +32,7 @@ Ha nincs megadva a species, az összes állatot visszaadja.
 
 - `should return list of all pets when species is missing`
 
-## buy(name): Pet
+## buy(name: string): Pet
 
 Megvásárol egy kedvencet. 
 
