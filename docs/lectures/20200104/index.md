@@ -3,8 +3,6 @@
 
 [előző alkalom](../20191221) [következő alkalom](../20200107)
 
-Óraadó: Kázmér
-
 # Modern JavaScript
 
 <!--
@@ -55,7 +53,7 @@ Statikus kód analizáló eszköz, ún. linter, amely programozási hibákat hiv
 Statikus, mert nem szükséges futtatni a kódot az elemzéshez.
 
 
-📜Scotch: [https://scotch.io/tutorials/linting-and-formatting-with-eslint-in-vs-code](https://scotch.io/tutorials/linting-and-formatting-with-eslint-in-vs-code)
+📜❕Scotch: [https://scotch.io/tutorials/linting-and-formatting-with-eslint-in-vs-code](https://scotch.io/tutorials/linting-and-formatting-with-eslint-in-vs-code)
 
 📜freeCodeCamp: [https://www.youtube.com/watch?v=qhuFviJn-es](https://www.youtube.com/watch?v=qhuFviJn-es)
 
@@ -65,9 +63,12 @@ Statikus, mert nem szükséges futtatni a kódot az elemzéshez.
 
 # Arrow function: `() => {}`
 
-📜MDN: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+📜❕MDN: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
-📜Mozilla Hacks: [https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
+📜❕Mozilla Hacks: [https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
+
+📘Exploring ES6: [https://exploringjs.com/es6/ch_arrow-functions.html](https://exploringjs.com/es6/ch_arrow-functions.html)
+
 
 📹Tyler McGinnis: [https://www.youtube.com/watch?v=dB1KA-yz65s](https://www.youtube.com/watch?v=dB1KA-yz65s)
 
@@ -82,6 +83,8 @@ Statikus, mert nem szükséges futtatni a kódot az elemzéshez.
 📹Colt Steele: [https://www.youtube.com/watch?v=pYI-UuZVtHI](https://www.youtube.com/watch?v=pYI-UuZVtHI)
 
 📹freeCodeCamp: [https://www.youtube.com/watch?v=iLx4ma8ZqvQ](https://www.youtube.com/watch?v=iLx4ma8ZqvQ)
+
+📜David Walsh: [https://davidwalsh.name/spread-operator](https://davidwalsh.name/spread-operator)
 
 📜🧠Wikipedia: [https://en.wikipedia.org/wiki/Variadic_function](https://en.wikipedia.org/wiki/Variadic_function)
 
