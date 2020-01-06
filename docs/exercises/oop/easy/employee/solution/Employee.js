@@ -1,41 +1,45 @@
+const minimumWage = 47000;
+
 class Employee {
     constructor(name, salary) {
 
-        try {
-            if (name === undefined) {
-                throw "Employee is not defined !";
-            }
-            if (name === "") {
-                throw "Enter the name of employee !";
-            }
-            if (salary < 0) {
-                throw "The amount cannot be negative !";
-            }
-            if (salary < 47000) {
-                throw "Inapropriate salary !";
-            }
-        } catch (e) {
-            console.log(e);
+        if (name === undefined) {
+            throw new Error("Employee is not defined !");
+        }
+        if (name === "") {
+            throw new Error("Enter the name of employee !");
+        }
+        if (salary < 0) {
+            throw new Error("The amount cannot be negative !");
+        }
+        if (salary < minimumWage) {
+            throw new Error("Inapropriate salary !");
         }
 
         if (salary === undefined) {
-            salary = 47000;
+            salary = minimumWage;
         }
 
-        this.name = name;
-        this.salary = salary;
+        this._name = name;
+        this._salary = salary;
     }
 
     raiseSalary(percent) {
-        let newSalary = this.salary / ((percent / 100) * this.salary);
+        if (percent < 0) {
+            throw new Error("Positive number required!");
+        }
+        let newSalary = this._salary / (percent / 100 * this._salary);
         return newSalary;
     }
 
     annualSalary() {
-        return this.salary * 12;
+        return this._salary * 12;
     }
 
     toString() {
-        return this.name + "," + this.salary;
+        return `Employee[_name=${this._name},_salary=${this._salary}]`;
     }
 }
+
+module.exports = Employee;
+
