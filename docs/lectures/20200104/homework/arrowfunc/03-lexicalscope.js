@@ -5,40 +5,62 @@
 
 // (1)
 
+// let steve = {
+//     name: 'Steve',
+//     intro: function() { return `My name is ${this.name}` },
+//     mood: function(weather) {
+//         switch(weather) {
+//             case 'rainy': return this.rainy()
+//             case 'sunny': return this.sunny()
+//             default: return this.default()
+//         }
+//     },
+//     rainy: function() {
+//         return 'coding'
+//     },
+//     sunny: function() {
+//         return 'swimmimg'
+//     },
+//     default: function() {
+
+//     }
+
+// }
+// console.log(steve.intro())
+// console.log(steve.mood()) // == 'coding'
+
+
 let steve = {
     name: 'Steve',
     intro: function() { return `My name is ${this.name}` },
     mood: function(weather) {
-        switch(weather) {
-            case 'rainy': return this.rainy()
-            case 'sunny': return this.sunny()
-            default: return this.default()
-        }
+        return (weather === 'rainy') ? this.rainy() : (weather === 'sunny') ? this.sunny() : this.default();
     },
-    rainy: function() {
-        return 'coding'
-    },
-    sunny: function() {
-        return 'swimmimg'
-    },
-    default: function() {
-
-    }
+    rainy: () => 'coding',
+    sunny: () => 'swimming',
+    default: () => {}
 
 }
 console.log(steve.intro())
-console.log(steve.mood('rainy')) // == 'coding'
+console.log(steve.mood('sunny'))
+
 
 // (2)
 
 const factory = {
     manufacturer: 'Fjord',
+    // mechanic: function() {
+    //     let that = this
+    //     return {
+    //         canFix: function(car) {
+    //             return car.manufacturer === that.manufacturer
+    //         }
+    //     }
+    // }
     mechanic: function() {
         let that = this
         return {
-            canFix: function(car) {
-                return car.manufacturer === that.manufacturer
-            }
+            canFix: car => car.manufacturer === that.manufacturer
         }
     }
 }
