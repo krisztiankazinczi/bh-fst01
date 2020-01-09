@@ -27,7 +27,7 @@ A fuggveny encodolja az osszes parameterkent kapott file tartalmat, es mentese e
 Ha nem letezik a file neve, akkor az objektumban legyen a filenevhez tartozo ertek ures string.
 Visszateresi ertek legyen ez az objektum.
 
-`
+```
 /**
  * Parameterkent egy stringekbol allo tombot kap, amelyek file path-ok
  * visszateresi ertek pedig egy objektum, aminek a kulcsa a parameterbol kibontott file path, erteke pedig az encodolt tartalom
@@ -35,7 +35,7 @@ Visszateresi ertek legyen ez az objektum.
  * @param  {String[]} fileNames 
  * @returns {Object<String, String>}
  */
-`
+```
 
 ## decodeAll
 
@@ -44,10 +44,10 @@ A fuggveny decodolja az osszes parameterben kapott file tartalmat es mentese el 
 Ha nem letezik a file neve, akkor az objektumban legyen a filenevhez tartozo ertek ures string.
 Visszateresi erteke legyen ez az objektum.
 
-`
+```
 /**
  * 
  * @param  {String[]} fileNames
  * @returns {Object<String, String>} 
  */
-`
+```
