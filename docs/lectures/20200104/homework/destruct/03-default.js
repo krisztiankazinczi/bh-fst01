@@ -36,6 +36,6 @@ const productData = {
 // products.bathroom = productData.appliances === undefined? [] : productData.appliances.bathroom === undefined? [] : productData.appliances.bathroom
 // products.other = productData.appliances === undefined? [] : productData.appliances.other === undefined? [] : productData.appliances.other
 
-const {products}
+const { phones = [], tablets = [], appliances: {kitchen = [], bathroom = [], other = []} = {} } = productData
 
 console.log(products)
