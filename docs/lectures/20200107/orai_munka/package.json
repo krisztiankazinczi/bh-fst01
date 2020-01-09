@@ -8,7 +8,8 @@
     "ismetles": "node ismetles.js",
     "callback": "node callback.js",
     "modules": "node --experimental-modules modules.js",
-    "secret": "node --experimental-modules secret/index.js"
+    "secret": "node --experimental-modules secret/index.js",
+    "test": "node --experimental-modules test/index.js"
   },
   "author": "",
   "license": "ISC",
