@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('/Users/laszlo/Desktop/fst01/bh-fst01/docs/lectures/20200111/dbnode/dataloader/mydb');
+const db = new sqlite3.Database('mydb');
 
 const fs = require('fs')
 
