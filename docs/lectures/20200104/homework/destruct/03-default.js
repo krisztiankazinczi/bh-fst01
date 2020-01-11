@@ -37,6 +37,14 @@ products.bathroom = productData.appliances === undefined? [] : productData.appli
 products.other = productData.appliances === undefined? [] : productData.appliances.other === undefined? [] : productData.appliances.other
 
 //Megoldás
-const products = { phones = [], tablets = [], appliances: {kitchen = [], bathroom = ['b','a'], other = []} = {} } = productData
+({ 
+    phones: products.phones = [], 
+    tablets: products.tablets = [], 
+    appliances: {
+        kitchen: products.kitchen = [], 
+        bathroom: products.bathroom = ['b','a'], 
+        other: products.other = []
+    } = {} 
+});
 
 console.log(products)
