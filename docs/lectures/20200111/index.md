@@ -3,11 +3,20 @@
 
 [előző alkalom](../20200107) [következő alkalom](../20200111)
 
+# Házi feladatok
+
+Határidő: 2020. január 19.
+
+Funkcionális JS: [homework/funcprog.md](homework/funcprog.md)
+
+SQL: [homework/sql.md](homework/sql.md)
+
 # Funkcionális JavaScript gyakorlatok
 
 
 
 # SQL
+
 
 # Mi az az SQL?
 
@@ -245,23 +254,33 @@ WHERE
 
 ## 1.2. Írjunk bele adatokat
 
+```
 Employee
 
-1, Gizella, gizella@armani.hu, 400000, 1
+1, Gizella, gizella@example.com, 400000, 1
 
-2, Eufrozina, eufrozina@armani.hu, 300000, 1
+2, Eufrozina, eufrozina@example.com, 300000, 1
 
-3, Jozsef, jozsef@armani.hu, 300000, 1
+3, Jozsef, jozsef@example.com, 300000, 1
 
-4, Bela, bela@armani.hu, 750000, 2
+4, Bela, bela@example.com, 750000, 2
 
-5, Richard, richard@armani.hu, NULL, NULL
+5, Richard, richard@example.com, NULL, NULL
+```
 
-INSERT INTO employee VALUES (1, 'Gizella', 'gizella@armani.hu', 400000, 1);
-INSERT INTO employee VALUES (2, 'Eufrozie', 'eufrozina@armani.hu', 300000, 1);
-INSERT INTO employee VALUES (3, 'Jozsef', 'jozsef@armani.hu', 300000, 1);
-INSERT INTO employee VALUES (4, 'Bela', 'bela@armani.hu', 7500000, 2);
-INSERT INTO employee VALUES (5, 'Richard', 'richard@armani.hu', NULL, NULL);
+---
+
+```sql
+INSERT INTO employee VALUES (1, 'Gizella', 'gizella@example.com', 400000, 1);
+
+INSERT INTO employee VALUES (2, 'Eufrozie', 'eufrozina@example.com', 300000, 1);
+
+INSERT INTO employee VALUES (3, 'Jozsef', 'jozsef@example.com', 300000, 1);
+
+INSERT INTO employee VALUES (4, 'Bela', 'bela@example.com', 7500000, 2);
+
+INSERT INTO employee VALUES (5, 'Richard', 'richard@example.com', NULL, NULL);
+```
 
 
 
@@ -275,36 +294,60 @@ Department
 
 3, New Department, NULL
 
-
 INSERT INTO department VALUES (1, 'Marketing', 2);
 INSERT INTO department VALUES (2, 'Board of dirs', 4);
 INSERT INTO department VALUES (3, 'New Department', NULL);
-
----
-
-1. Kinek ki a menedzsere?
-
-2. Keressük azokat a dolgozókat, akiknek a keresete megegyezik a menedzserük keresetével
-
----
-
 
 
 ## 1.3. Csalakozzunk 
 
 ## 1.4 Kérjük le és írjuk az alábbi adatokat
 
+1. Kinek ki a menedzsere?
+
+2. Keressük azokat a dolgozókat, akiknek a keresete megegyezik a menedzserük keresetével
 
 # WHERE
 
+Eredményhalmaz szűrése megadott feltétel szerint
+
 # JOIN
 
-## 2. gyakorlat
-
-## 2.1 hozzuk létre a következő sémát
-
-## 2.2 töltsük be az adatokat fájlból
-
-## 2.3 
+Táblák összekapcsolása
 
 ## LEFT JOIN, RIGHT JOIN
+
+# Otthoni anyagok
+
+📜❕ https://mariadb.com/kb/en/introduction-to-relational-databases/
+
+📜❕ https://mariadb.com/kb/en/relational-databases-basic-terms/
+
+- Mik azok az entityk?
+- Mik azok az attribútumok (mezők)?
+- Mik azok a rekordok?
+- Mit nevezünk kulcsnak? Mire való a kulcs?
+
+📹❕ https://www.youtube.com/watch?v=ztHopE5Wnpc
+
+📜❕https://www.sqlite.org/lang_createtable.html
+
+- Mi az a rowid?
+- Miért érdemes a rowid-t használni saját primary key helyett?
+
+📜❕ https://www.sqlite.org/datatype3.html
+
+- Milyen storage classokat ismer az SQLite?
+- Mi a különbség a storage class és a datatype között?
+- Mi az a type affinity?
+
+
+---
+
+📜🧠 https://mariadb.com/kb/en/exploring-early-database-models/
+
+📜🧠 https://mariadb.com/kb/en/understanding-the-hierarchical-database-model/
+
+📜🧠 https://mariadb.com/kb/en/understanding-the-network-database-model/
+
+
