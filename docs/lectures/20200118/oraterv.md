@@ -134,3 +134,97 @@ webszerver kiírja, hogy hányszor hívtuk meg az endpointot
 
 string interpolation hasnálatával
 
+## Frontend ízelítő: űrlap elküldése
+
+
+
+```html
+<!-- legegyszerűbb eset: üres űrlap  -->
+<form action="localhost:3000/hello" method="GET">
+  <input type="submit"></input>>
+</form>
+```
+
+```html
+<!-- figyeljük meg az URLt az űrlap elküldése után -->
+<form action="localhost:3000/hello" method="GET">
+  <input type="firstname" >
+  <input type="lastname" >
+  <input type="submit"></input>>
+</form>
+```
+
+- query string, URL form encoding
+
+> localhost:3000/hello?**foo=1&bar=2=baz=3**
+
+
+## HTTP kérés feldolgozása
+
+```js
+app.get('/user/:id', function (req, res) {
+  res.send('user ' + req.params.id)
+})
+```
+
+Ismerkedés az Express doksival: https://expressjs.com/en/4x/api.html#req
+
+query string: https://expressjs.com/en/4x/api.html#req.query
+
+meghívott endpoint: https://expressjs.com/en/4x/api.html#req.route
+
+HTTP method: https://expressjs.com/en/4x/api.html#req.method
+
+**HTTP üzenet törzsének feldolgozása**
+
+https://expressjs.com/en/4x/api.html#req.body
+
+> figyelem: req.body alapból undefined, csak middlewarek használatával tudunk hozzáférni a HTTP üzenet törzséhez
+
+```js
+var express = require('express')
+
+var app = express()
+
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+
+app.post('/profile', function (req, res, next) {
+  console.log(req.body)
+  res.json(req.body)
+})
+```
+
+# 4. gyakorlat: calculator api
+
+árlapról kiválasztjuk dropdownban, hogy mi legyen a művelet, megadunk két számot inputban, a bakend visszaküldi az eredményt
+
+# 5. gyakorlat: perzisztens counter
+
+probléma: counter mindig újraindul, ha a node processz leáll.
+
+counter adatokat mentsük le dbbe
+
+# 6. gyakorlat: user adatok beszúrása dbbe
+
+username, password, password egyelőre cleartext
+
+# 7. gyakorlat: login form
+
+sütizés most nem kell, csak egy login oldal, ami lekezeli a user/pass egyezést
+
+# 8. egy-egy sor adatainak lekérése ID alapján
+
+<!-- 
+
+- rowid automatikus inkrement ID sqliteban
+- nem látszik a sémában, de ki tudjuk választani
+- frontenden kiprinteljük
+- 
+
+
+>
+
+# 9. gyakorlat: search input és keresés LIKE-kal SQL-ben
+
+# 10. gyakorlat: paging query string paraméterek és LIMIT, OFFSET segtségével
