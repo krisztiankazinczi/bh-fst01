@@ -95,7 +95,7 @@ webszerver kiírja, hogy hányszor hívtuk meg az endpointot
 
 /hello/:username endpoint visszaad egy testreszabott köszöntést
 
-## Controller
+## Controller  (nem tudom itt mire gondolsz)
 
 - Bejövő HTTP kérést kiszolgáló komponense
 - Bonyolultabb route handling esetén: a handler függvény helyett egy controller objektum vagy egy controller metódusa
