@@ -49,7 +49,9 @@ select year_award, nominee from awards where year_award = 1950 group by nominee 
 **Tipp**: ne féljük JOIN-t használni
 
 > például: ha Meryl Streepet 1960-ban jelölték, de nem nyert, majd 1961-ben is jelölték és akkor nyert, akkor 1961 benne lesz az eredményhalmazban
-
+--
+select distinct a1.nominee, a2.year_award, a2.win from awards as a1 join awards as a2 on a1.nominee = 'Meryl Streep' where a1.nominee = a2.nominee and a2.year_award = a1.year_award + 1 and a1.win = 'False' and a2.win = 'True';
+--
 
 
 
