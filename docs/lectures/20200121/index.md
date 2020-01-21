@@ -13,6 +13,8 @@ https://hackersandslackers.com/handlebars-templates-expressjs/
 
 # Fetch API
 
+https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
+
 - Mi az az API?
   - Nem csak egy webszerver endpointjai!
   - Bármilyen szoftver publikusan elérhető, "hívható felülete"
@@ -22,21 +24,50 @@ https://hackersandslackers.com/handlebars-templates-expressjs/
   - használata: a globálisan elérhető `fetch` függvény segítségével
     - böngészőbe épített függvény, de nem a JS nyelv része!
     - külön specifikáció: https://fetch.spec.whatwg.org/
+- then, catch
+  - speciális műveletek, hamarosan kitárgyaljuk őket részletesen
+  - ezekkel tudunk reagálni a HTTP válasz megérkezésére
 
 ## Példák
+
+- hello world webszerver + fetch
+- json response + fetch
+- POST request
+- DELETE request
+
 
 
 # Promise
 
 - Mi az a Promise?
+  - egy jövőbeli érték reprezentációja
+    - DB lekérés eredménye, HTTP válasz, lejárt timer, stb...
   - Promise API: ES6 spec része
   - https://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects
 
-## Példák
+A Fetch API Promiseokat használ
 
 ```js
 
+const p = fetch(...) // p egy Promise, a HTTP válaszra vonatkozó "ígéret"
+p.then(...) // then egy Promise művelet -- megadjuk a végrehajtandó kódot, ha az ígéret teljesült
+
+p.catch() // catch szintén Promise művelet -- megadjuk a végrehajtandó kódot, ha az ígéret NEM teljesült
 ```
+
+
+
+- Promise három állapota: pending, rejected, resolved
+- Promise konstruktor: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+- resolve: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve
+- reject: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject
+- then: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+- catch: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch
+
+
+## Példák
+
+
 
 # ngrok
 
@@ -52,8 +83,7 @@ https://hackersandslackers.com/handlebars-templates-expressjs/
 - csomagoljuk ki egy könnyen elérhető helyre (ideálisan: a PATH-ra)
 - indítsuk el a publikálni kívánt servicet (adjunk jogot a hálózati kommunikációra -- **figyelem:potenciálisan veszélyes művelet, ha így hagyjuk a hálózati beállításokat**)
 
-```js
-```
+
 
 - indítsuk el az ngrokot (adjunk jogot a hálózati kommunikációra -- **figyelem:potenciálisan veszélyes művelet, ha így hagyjuk a hálózati beállításokat**)
 - az ngrok kiírja a konzolra, hogy mely publikus URL-en lehet elérni a lokális webszerverünket!
@@ -110,8 +140,12 @@ A `GET /whois` endpoint továbbhív az ngrok ID-val bíró hoszt
 
 # RESTful APIK
 
+Roy Fielding eredeti dolgozata: https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+
 - Mi az a REST?
-- Mi az a RESTful?
+  - architekturális stílus
+  - 
+- Mi az a RESTful? Minden JSON API RESTful? 
 - Miért jó mindez? Milyen API-k voltak ezelőtt? (XML, RPC, egyebek...)
 
 # 4. gyakorlat: RESTful CRUD
