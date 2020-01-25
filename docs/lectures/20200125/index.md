@@ -258,3 +258,106 @@ document.body.innerHTML = listHTML // 3. írjuk bele a HTMLt a bodyba
 
 
 
+# Házi feladat: Books
+
+Írjunk egy könyveket nyilvánvtartó webalkalmazást.
+
+Legyen egy booksrv szerverünk.
+
+Memóriában tároljunk könyv objektumokat.
+
+A könyveknek IDja, címe és szerzője van.
+
+A szerver Handlebar templateket fog használni a HTML oldalak
+tartalmának megjelenítésére.
+
+A hibakezeléstől egyelőre eltekintünk.
+
+## `GET /books.html `
+
+Könyveket listázza egy táblázatban. A táblázat sorai a memóriában
+tárolt könyvek.
+
+A táblázat sorai könyveket reprezentálnak. Az oszlopok:
+- ID
+- Title
+- Author
+- Operations
+
+Az operations oszlopban két link van:
+- Edit book -> edit.html
+- Delete book -> delete.html
+
+
+Az edit.html és a delete.html query paraméterként kapják meg az adott könyv ID-ját.
+
+    <tr>
+      <td>1</td>
+      <td>Lord of the Kings</td>
+      <td>J. R. Jr. Talking</td>
+      <td>
+        <a href="edit.html?id=1">Edit</a>
+        <a href="delete.html?id=1">Delete</a>
+      </td>
+    </tr>
+
+
+A táblázat alatt egy New book link egy new-book.html oldalra
+mutat.
+
+## `GET /edit.html`
+
+Egy könyv adatait tudjuk szerkeszteni egy űrlapon. A könyvet
+egy id query string paraméter alapján töltjük be a szerveren, mikor
+összeállítjuk a HTMLt.
+
+    <form action="books" method="POST">
+
+Az űrlap a `POST /book/:id/edit` endpointra küldi az adatot (vigyázat, nincs .html
+a végén).
+
+## `POST /book/:id/edit`
+
+Az üzenet törzsében fogadja az :id path paraméter által meghatározott
+könyv adatait, amikkel egyszerűen felülírja a memóriában
+tárolt értékeket.
+
+A válasz egy 301 REDIRECT üzenet legyen, amely a /books.html
+oldalra irányít.
+
+Segítség: https://expressjs.com/en/4x/api.html#res.redirect
+
+
+## `GET /delete.html`
+
+Egy kérdést jelenít meg, hogy biztosan törölni akarjuk-e a könyvet.
+
+Egy egyetlen submit gombból álló űrlap van a megjelenített oldalon.
+
+Az űrlap a `POST /book/:id/delete` endpointra küldi a kérést.
+
+## `POST /book/:id/delete`
+
+Kitörli az :id által azonosított könyvet a memóriában tárolt
+adatszerkezetből.
+
+
+A válasz egy 301 REDIRECT üzenet legyen, amely a /books.html
+oldalra irányít.
+
+
+## `GET /new-book.html`
+
+A szerkesztés oldalhoz hasonló űrlapot jelenít meg, de a adatok
+nincsenek kitöltve, mert nincs mögöttes adat.
+
+Az űrlap az adatokat a `POST /books` endpointra küldi.
+
+## `POST /books`
+
+Elment egy új könyvet a törzsben érkező adatokkal. Az ID-t
+az endpoint handler generálja.
+
+
+
+
