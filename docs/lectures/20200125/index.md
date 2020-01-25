@@ -153,3 +153,108 @@ Legyen CLI paraméter, amit, ha megadunk, akkor nem lesz szám generálva, hanem
 Publikáljuk a szervert ngrokkal és játsszunk egy menetet egymás szerverével!
 
 Ha új számot akarunk megadni, elég a szervert újraindítani, az ngrok processz maradjon ép, különben az ngrok URL érvénytelenítve lesz!
+
+# 6. gyakorlat: árfolyam
+
+## Írjunk egy rate szervert.
+
+A szerver indításakor egy számot vár, egy képzeletbeli valuta, a Piréz Della (PDA) árfolyamát.
+
+    $ node ratesrv 110
+    ratesrv started on port 3000
+
+`GET /rate`
+
+A PDA árfolyamát adja vissza.
+
+>     $ curl localhost:3000/rate
+>     110
+
+## Írjunk egy product szervert
+
+A productsrv indításkor egy URLt vár, egy rate szerver URLjét.
+
+    $ node productsrv http://localhost:3000
+    productsrv started on port 3010
+
+A szerver forráskódjába égetve tartalmaz két terméket. A termékeknek
+nevük és egy alapáruk van, HUFban.
+
+`GET /products`
+
+A termékadatokat küldi vissza. A `curr=pda` query paraméter megadása
+esetén a termékek ára Piréz Dellában lesznek.
+
+    $ curl localhost:3030/products
+    [{"name":"spice","price":200},{"name":"koolaid","price":100}]
+    
+    $ curl localhost:3030/products?curr=pda
+    [{"name":"spice","price":22000},{"name":"koolaid","price":11000}]
+
+
+```
++------------------
+| Product
++------------------
+| id: number
+| name: string
+| price: number
++-------------------
+```
+
+POST /product
+
+Bejegyez egy új terméket.
+
+Egy Product adatait várja az üzenet törzsében. Az ID-t a szerver generálja.
+
+Ha sikeresen bejegyezte az új terméket, 201 CREATED választ küld. A válasz
+törzsében a kigenerált ID.
+
+PUT /product/:id
+
+Az :id paraméter által azonosított Product adatait szerkeszti
+
+
+
+
+# 7. gyakorlat: products.html
+
+## szerver oldali rendering
+
+Egészítsük ki az előző feladat product szerverét.
+
+`GET /products.html`
+
+Állítsunk elő egy HTML oldalt amely a termékadatokat egy listában tartalmazza. Az API-hoz hasonlóan,
+a `curr=pda` query paraméterrel tudjuk szabályozni
+a valutát.
+
+Legyen a termékoldalon két link: HUF és PDA
+
+Amelyik linkre kattintok, a megfelelő valutában
+jelenjenek meg a termékadatok.
+
+## kliens oldali rendering Fetchcsel
+
+Írjunk egy `fetch-products.html` oldalt. Figyelem: ez egy egyszerű HTML oldal, nem egy endpoint!
+
+A HTML oldalban, kliensoldalon implementáljunk egy Fetch alapú adatlekérést.
+
+A termékadatokat Fetchcsel kérjük le a product szerver product endpointjáról.
+
+A visszaérkező termékadatokat dinamikusan írjuk be az oldal tartalmába.
+
+Tipp: 
+```js
+const data = getData() // 1) írjuk meg az adatlekérő függvényt
+const listHTML = convertToHTML(data) // 2) Írjuk meg a JSON válaszból HTMLt előállító függvényt
+
+document.body.innerHTML = listHTML // 3. írjuk bele a HTMLt a bodyba
+```
+
+
+---
+
+
+
