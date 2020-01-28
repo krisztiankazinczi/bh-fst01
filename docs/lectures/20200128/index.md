@@ -3,12 +3,29 @@
 
 [előző alkalom](../20200125) [következő alkalom](../2020130)
 
+
+# Summary
+ - ismetles DOM
+ - document.querySelecotr vissza adja az elso talalatot
+ - document.querySelectorAll visszaadja az ossze talalalot
+ - document.getElementById id alapjan adja vissza
+ - document.getElementsByClassName az ossze egyezo class nevet visszaadja
+ - fentiek eredmenye vagy egy `Node` vagy egy `NodeList`
+ - `HTMLElement`-bol oroklodnek
+ - item.addEventListener(typeStringkent, handlerFunction);
+ - minden handler functionbe a megfeleloen castolt Event objektum injektalodik, pl keyup, keydown-nal KeyboardEvent, eger clicknel pedig MouseEvent
+ - fontos attr-ek: event.target, event.isTrusted, a koordinatak, key, which, buttons
+ - mi a bubbles, es mi a capture (bubbles gyermektol felfele aramlik a captures pedig a szulotol lefele a target-ig). 
+ - event.stopProgation(), event.preventDefault()
+ - innerHTML-el stringkent
+ - document.createElement('LI'), appenChild
+
 ## DOM
 
 - mi az a DOM (Document Object Model) ?
 - elemek lekerdezese
 - elemek beszurasa
-- elemek eltávolítása
+- elemek eltávolítása  (nem neztunk ra peldat)
 
 ## Események
 
