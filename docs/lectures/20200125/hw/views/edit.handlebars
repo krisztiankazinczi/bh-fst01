@@ -1,0 +1,24 @@
+<table border="1">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Author</td>
+        <td>Modify</td>
+    </tr>
+    </thead>
+    <tbody>
+        <form action="book/{{book.id}}/edit" method="POST">
+        <tr>
+            <td><input type="text" value="{{book.id}}" name="id" disabled required></td>
+            <td><input type="text" value="{{book.title}}" name="title" required></td>
+            <td><input type="text" value="{{book.author}}" name="author" required></td>
+            <td><input type="submit" value="Edit"></td>
+        </tr>
+    </form>
+    </tbody>
+</table>
+
+
+
+    

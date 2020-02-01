@@ -1,0 +1,21 @@
+<table border="1">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Author</td>
+        <td>Operations</td>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each books}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{title}}</td>
+            <td>{{author}}</td>
+            <td><a href="edit.html?id={{id}}">Edit</a>  <a href="delete.html?id={{id}}">Delete</a></td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+    <a href="new-book.html">Add new Book</a>
