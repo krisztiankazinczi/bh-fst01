@@ -11,9 +11,12 @@ const userData = ['John Doe', 'john@example.com']
 
 const [name = 'N/A', email = 'N/A', phone = 'N/A'] = userData;
 
+//Megoldás:
+    const [name='N/A', email='N/A', phone='N/A'] = userData
+
 console.log(name, email, phone)
 
-// (2)
+(2)
 
 const productData = {
     phones: ['phone 1', 'phone 2', 'phone 3'],
@@ -53,5 +56,16 @@ let products = {};
 // products.kitchen = productData.appliances === undefined? [] : productData.appliances.kitchen === undefined? [] : productData.appliances.kitchen
 // products.bathroom = productData.appliances === undefined? [] : productData.appliances.bathroom === undefined? [] : productData.appliances.bathroom
 // products.other = productData.appliances === undefined? [] : productData.appliances.other === undefined? [] : productData.appliances.other
+
+//Megoldás
+({ 
+    phones: products.phones = [], 
+    tablets: products.tablets = [], 
+    appliances: {
+        kitchen: products.kitchen = [], 
+        bathroom: products.bathroom = ['b','a'], 
+        other: products.other = []
+    } = {} 
+});
 
 console.log(products)
