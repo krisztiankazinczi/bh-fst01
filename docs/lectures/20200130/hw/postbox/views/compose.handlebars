@@ -1,0 +1,50 @@
+<h1>New email</h1>
+<form action="compose" method="POST">
+    <table>
+        <tr>
+            <td><label for="from">From </label></td>
+            <td><input id="from" type="text" value="" name="from"/></td>
+        </tr>
+        <tr>
+            <td><label for="to">To</label></td>
+            <td><input id="to" type="text" name="to"/></td>
+        </tr>
+        <tr>
+            <td><label for="subject">Subject</label></td>
+            <td><input id="subject" type="text" name="subject"/></td>
+        </tr>
+        <tr>
+            <td><label for="content">Content</label></td>
+            <td><input id="content" type="text" name="content"/></td>
+        </tr>
+        <tr >
+            <td colspan="2" align="right"><input type="submit" value="send" /></tdcolspan="2">
+        </tr>
+    </table>
+</form>
+
+<script>
+
+    function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+    const alert = getUrlParameter("alert");
+    const emailFrom = getUrlParameter("from");
+    const emailSubject = getUrlParameter("subject");
+
+    if (alert == "success") window.alert("The message was delivered successfully");
+    if (alert == "failed") window.alert("The message has not been delivered");
+    if (from) {
+        let to = document.getElementById('to');
+        to.value = emailFrom;
+    }
+    if (content) {
+        let subject = document.getElementById('subject');
+        subject.value = emailSubject;
+    }
+
+</script>

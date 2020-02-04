@@ -1,0 +1,21 @@
+<table border="1">
+    <thead>
+    <tr>
+        <td>From</td>
+        <td>Subject</td>
+        <td>Time</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each messages}}
+        <tr>
+            <td>{{from}}</td>
+            <td>{{subject}}</td>
+            <td>{{date}}</td>
+            <td><a href="view/{{id}}">View</a></td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+
